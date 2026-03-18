@@ -1,0 +1,536 @@
+[
+  {
+    "storyId": "story_21",
+    "sourceCount": 3,
+    "sources": [
+      "ABC News",
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Family of Georgia teacher killed in prank gone wrong want charges against teens dropped",
+        "summary": "# Summary\n\nJason Hughes, a 40-year-old math teacher in Georgia, died after being struck by a vehicle driven by 18-year-old Jayden Ryan Wallace during a prank at Hughes' home on Friday night. Hughes was allegedly waiting outside to catch teenagers who were toilet-papering his yard when he slipped on wet pavement and fell into the road as the vehicle was leaving. Hughes' family stated they want all charges against the teenagers dropped, describing the incident as a tragic accident and emphasizing that Hughes loved his students and would not have wanted their lives ruined.",
+        "url": "https://www.nbcnews.com/news/us-news/family-georgia-teacher-killed-prank-gone-wrong-want-charges-teens-drop-rcna262482",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:36:30.372Z",
+        "similarityScore": 0.9092
+      },
+      {
+        "source": "ABC News",
+        "title": "Teacher dies in student prank gone wrong, family supports dropping charges",
+        "summary": "# Summary\n\nA Georgia teacher, Jason Hughes, died over the weekend after being struck by a vehicle during a high school prank at his home. Five 18-year-old students had come to his property to throw toilet paper in the trees; when Hughes came outside, they attempted to flee, and student Jayden Wallace struck him with a vehicle. Hughes' family has publicly stated they support dropping criminal charges against the students, emphasizing they knew the teenagers and that the death was a tragic accident rather than a malicious act.",
+        "url": "https://abcnews.com/GMA/News/family-teacher-died-student-prank-wrong-support-dropping/story?id=130894777",
+        "category": "News",
+        "publishedAt": "2026-03-09T18:55:25+00:00",
+        "similarityScore": 0.9092
+      },
+      {
+        "source": "BBC News",
+        "title": "US teacher killed after toilet paper prank goes wrong",
+        "summary": "# Summary\n\nA 40-year-old high school teacher in Georgia was fatally struck by a car driven by one of his students during a toilet paper prank outside his home. The teacher, Jason Hughes, came out to surprise the students performing the prank, but slipped on wet ground and was accidentally run over as the students fled in cars. The 18-year-old student driver was charged with vehicular homicide, along with other charges related to trespassing and littering, but the teacher's family has requested that all charges be dropped. The family emphasized that Hughes was aware of and supportive of the prank, and that dropping the charges would honor his legacy of investing in students' lives.",
+        "url": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 17:09:21 GMT",
+        "similarityScore": 0.8724
+      }
+    ]
+  },
+  {
+    "storyId": "story_19",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Live Nation settles antitrust case with DOJ, avoids Ticketmaster breakup",
+        "summary": "# Summary\n\nLive Nation reached a settlement with the Department of Justice on Monday, avoiding a forced breakup that had been threatened during an antitrust trial. Under the agreement, Ticketmaster will provide a standalone ticketing system for third-party competitors, divest up to 13 amphitheaters, and reserve 50% of tickets for non-exclusive venues, while being prohibited from retaliating against venues using other ticket distributors. However, 26 states that joined the federal case have requested a mistrial and plan to continue their own lawsuit, with New York Attorney General Letitia James stating they will pursue the case \"without the federal government.\"",
+        "url": "https://www.nbcnews.com/business/consumer/ticketmaster-live-nation-settles-antitrust-case-rcna262392",
+        "category": "Business",
+        "publishedAt": "2026-03-09T13:56:22.966Z",
+        "similarityScore": 0.8808
+      },
+      {
+        "source": "ABC News",
+        "title": "Live Nation, Justice Department reach settlement in antitrust case",
+        "summary": "# Summary\n\nThe U.S. Department of Justice reached a settlement with Live Nation in its antitrust lawsuit over ticketing monopoly practices. Under the settlement, Ticketmaster must allow competitors to list tickets directly on its website, Live Nation will pay $280 million in fines to 40 states, and the company must divest up to 13 amphitheaters. However, New York Attorney General Letitia James and more than two dozen state attorneys general announced they will continue separate litigation against Live Nation, arguing the federal settlement fails to adequately address the company's monopoly.",
+        "url": "https://abcnews.com/GMA/News/live-nation-justice-department-reach-settlement-antitrust-case/story?id=130900006",
+        "category": "News",
+        "publishedAt": "2026-03-09T18:07:21+00:00",
+        "similarityScore": 0.8808
+      }
+    ]
+  },
+  {
+    "storyId": "story_10",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Explosives thrown near NYC mayor's home being investigated as 'ISIS-inspired' terrorism, officials say",
+        "summary": "# Summary\n\nTwo suspects, Ibrahim Kayumi, 19, and Emir Balat, 18, face federal charges after allegedly throwing improvised explosive devices near NYC Mayor Zohran Mamdani's residence during weekend protests on Saturday. The devices, which did not detonate and caused no injuries, are being investigated as \"ISIS-inspired\" terrorism, with authorities stating both suspects made statements referencing ISIS upon arrest. Police Commissioner Jessica Tisch confirmed the objects were designed to injure or kill, and one device contained highly volatile explosive material, though a third device tested negative for explosives.",
+        "url": "https://www.nbcnews.com/news/us-news/explosive-thrown-nyc-mayors-home-investigated-isis-inspired-terrorism-rcna262412",
+        "category": "US News",
+        "publishedAt": "2026-03-09T14:07:26.427Z",
+        "similarityScore": 0.8333
+      },
+      {
+        "source": "ABC News",
+        "title": "'ISIS-inspired terrorism' suspected after bombs thrown outside NYC mayor's home",
+        "summary": "# Summary\n\nTwo Pennsylvania men were arrested and charged with federal terrorism offenses after detonating improvised explosive devices outside Gracie Mansion during a counterprotest on Saturday. The suspects, identified as Emir Balat, 18, and Ibrahim Kayumi, 19, allegedly pledged allegiance to ISIS and told police they wanted to carry out an attack larger than the Boston Marathon bombing. The devices contained TATP explosive material and were designed to injure or kill; a third suspected device was also found in the suspects' vehicle. Both men are being held without bail and face charges including attempting to provide material support to ISIS, use of a weapon of mass destruction, and unlawful possession of destructive devices.",
+        "url": "https://abcnews.com/US/explosive-thrown-nyc-mayors-residents-probed-act-isis/story?id=130897179",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:55:48+00:00",
+        "similarityScore": 0.8333
+      }
+    ]
+  },
+  {
+    "storyId": "story_0",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Chiefs land Super Bowl MVP running back Kenneth Walker in free agency",
+        "summary": "# Summary\n\nThe Kansas City Chiefs signed free agent running back Kenneth Walker to a three-year deal worth up to $45 million, with $28.7 million guaranteed. Walker, who was the Super Bowl MVP after the previous season, addresses a major need for the Chiefs, who ranked 25th in the NFL in rushing last season after losing their top two running backs to free agency. The signing gives the Chiefs flexibility to address other roster needs in the draft, including pass rush, defensive line, offensive line depth, and wide receiver.",
+        "url": "https://www.nbcnews.com/sports/nfl/chiefs-land-super-bowl-mvp-running-back-kenneth-walker-free-agency-rcna262510",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T17:59:22.471Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_1",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "FBI subpoenas election records in Arizona, expanding 2020 inquiry",
+        "summary": "# Summary\n\nThe FBI obtained records from Arizona's state Senate relating to the 2020 election audit of Maricopa County, according to state Senate President Warren Petersen. The subpoena sought documents from the controversial Cyber Ninjas audit, which was hired by Republicans to review the 2020 election results and ultimately confirmed President Biden won Arizona. This marks an expansion of the FBI's 2020 election investigation beyond Georgia, though the 2020 ballots in Maricopa County were destroyed per state law.",
+        "url": "https://www.nbcnews.com/politics/elections/fbi-subpoenas-election-records-arizona-expanding-2020-inquiry-rcna262504",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T18:48:27.917Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_4",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Video appears to show U.S. Tomahawk missile hitting the area of the deadly school strike in Iran",
+        "summary": "",
+        "url": "https://www.nbcnews.com/world/iran/iran-school-strike-us-tomahawk-missile-minab-video-munitions-experts-rcna262391",
+        "category": "World",
+        "publishedAt": "2026-03-09T18:13:51.701Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_5",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Live updates: Oil prices soar past $100 per barrel; Iran celebrates new supreme leader",
+        "summary": "Follow live NBC News coverage and latest updates as Trump says oil price rises are a small price to pay, Iran names Mojtaba Khamenei supreme leader, and Israel strikes Tehran and Lebanon.",
+        "url": "https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-oil-prices-khamenei-supreme-leader-israel-trump-rcna262378",
+        "category": "World",
+        "publishedAt": "2026-03-09T07:55:45.305Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_6",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Woman identified in shooting at Rihanna's Los Angeles house",
+        "summary": "# Summary\n\nA 35-year-old Florida woman, Ivanna Lisette Ortiz, has been identified and arrested on suspicion of attempted murder for opening fire on Rihanna's Los Angeles home with an AR-15-style rifle on Sunday afternoon. Rihanna, A$AP Rocky, and their children were inside the Beverly Crest property when four rounds were fired at approximately 1:15 p.m., though no one was injured. Ortiz drove to the property's entrance and began shooting before being taken into custody, with her bail set at $10.225 million. The motive for the shooting remains unclear.",
+        "url": "https://www.nbcnews.com/news/us-news/woman-identified-shooting-rihannas-los-angeles-house-rcna262426",
+        "category": "US News",
+        "publishedAt": "2026-03-09T15:31:05.139Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_7",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Live updates: Trump hosts House GOP in Miami; new poll gives president negative marks on immigration and the economy",
+        "summary": "Live updates: Trump gets negative marks on immigration, the economy and Iran",
+        "url": "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-poll-immigration-economy-tariffs-elections-dhs-live-updates-rcna262253",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T11:23:52.040Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_9",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Oil price surge shocks markets worldwide and stokes inflation fears",
+        "summary": "# Summary\n\nOil prices surged following the Iran war, with U.S. crude rising to around $95 per barrel (up 5% on Monday) and Brent crude exceeding $100 per barrel, driven by production cuts and Strait of Hormuz closures. The price increases sparked global market declines, including a 5.2% drop in Japan's Nikkei 225 and significant losses in European and U.S. stock indices, while U.S. gasoline prices rose to $3.47 per gallon. Finance ministers from leading industrialized nations held a video conference to discuss releasing oil reserves but decided against it for now, though the White House indicated President Trump is reviewing multiple options to stabilize prices.",
+        "url": "https://www.nbcnews.com/business/energy/iran-oil-surges-markets-rcna262395",
+        "category": "Business",
+        "publishedAt": "2026-03-09T12:30:33.086Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_12",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Charles, William and Kate met by protesters at Commonwealth Day celebration",
+        "summary": "# Summary\n\nKing Charles III, Queen Camilla, Prince William, and Kate were met by anti-monarchy protesters at Westminster Abbey during the Commonwealth Day service on Monday, with demonstrators from the group Republic chanting and displaying signs opposing the monarchy. The protest occurred amid growing public scrutiny over the royal family's handling of Andrew Mountbatten-Windsor (formerly Prince Andrew), who was arrested in February on suspicion of misconduct in public office following his connection to late financier Jeffrey Epstein. The royals did not address the protesters, while the palace and Kensington Palace have issued statements expressing concern about the allegations and sympathy for victims, though critics argue the family has not adequately answered questions about what they knew regarding Andrew's conduct.",
+        "url": "https://abcnews.com/GMA/News/britains-royal-family-met-protesters-commonwealth-day-event/story?id=130896721",
+        "category": "News",
+        "publishedAt": "2026-03-09T18:49:11+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_13",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "A sweeping biography of Robert McNamara wins $50,000 book prize",
+        "summary": "# Summary\n\nPhilip and William Taubman's biography \"McNamara at War\" has won the $50,000 Barbara and David Zalaznick Book Prize in American History. The book traces former Defense Secretary Robert McNamara's rise as a business leader after World War II and his subsequent downfall as a major proponent of the Vietnam War in the 1960s, a conflict he later concluded was unwinnable. McNamara left the Pentagon in February 1968 after differing with President Johnson over Vietnam policy. The Taubman brothers will receive an engraved medal and the title of American Historian Laureate at a ceremony in April.",
+        "url": "https://abcnews.com/Entertainment/wireStory/sweeping-biography-robert-mcnamara-wins-50000-book-prize-130910267",
+        "category": "Culture",
+        "publishedAt": "2026-03-09T18:42:47+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_14",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "PA state trooper died 'doing what he dedicated his life to': Governor",
+        "summary": "# News Summary\n\nPennsylvania State Trooper Cpl. Timothy O'Connor Jr., a 15-year veteran, was fatally shot during a traffic stop near West Caln Township in Chester County on Sunday night. The alleged shooter, 32-year-old Jesse Nathan Elks, opened fire from his vehicle as O'Connor approached and then died by suicide at the scene. Governor Josh Shapiro called O'Connor a hero and dedicated public servant, noting he was a 40-year-old married father of a young daughter. Investigators are conducting a joint inquiry into the shooting and examining the suspect's background and motives.",
+        "url": "https://abcnews.com/US/pennsylvania-state-trooper-fatally-shot-authorities/story?id=130892008",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:38:34+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_15",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Bangladesh working with India to extradite 2 suspects in killing of prominent activist",
+        "summary": "# Summary\n\nBangladesh's police chief announced Monday that diplomatic efforts are underway with India to extradite two suspects arrested in the December killing of Bangladeshi activist Sharif Osman Hadi. Indian authorities arrested the two Bangladesh nationals, Faisal Karim Masud and Alamgir Hossain, in West Bengal on Sunday, and an Indian court ordered them held for questioning. Hadi, a student leader and spokesperson for a youth group, died on December 18 in Singapore after being shot in Dhaka on December 12, prompting widespread protests across Bangladesh. Bangladesh officials stated they need consular access to confirm the suspects' identities before proceeding with extradition through the countries' existing treaty.",
+        "url": "https://abcnews.com/International/wireStory/bangladesh-working-india-extradite-2-suspects-killing-prominent-130897030",
+        "category": "World",
+        "publishedAt": "2026-03-09T18:28:04+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_16",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Man who helped recruit players into a sprawling NCAA basketball point-shaving scheme pleads guilty",
+        "summary": "# Summary\n\nJalen Smith, a recruiter and \"fixer\" in a NCAA basketball point-shaving scheme, pleaded guilty Monday to wire fraud and bribery charges in federal court in Philadelphia. Smith helped recruit college players to intentionally underperform in games so that he and other fixers could profit from bets placed against those teams, with player payments typically ranging from $10,000 to $30,000 per game. The sprawling scheme involved over 39 players across more than 17 Division I teams and targeted more than 29 games from 2023 to January 2025, generating millions of dollars for the fixers while defrauding sportsbooks and bettors. Smith is the first of 26 people charged in the scheme to formally plead guilty.",
+        "url": "https://abcnews.com/Business/wireStory/man-helped-recruit-players-sprawling-ncaa-basketball-point-130908870",
+        "category": "Business",
+        "publishedAt": "2026-03-09T18:28:03+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_17",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "University's president resigns after reporting 'inappropriate relationship'",
+        "summary": "# Summary\n\nOhio State President Walter \"Ted\" Carter Jr. resigned on Monday after disclosing an \"inappropriate relationship\" with a woman seeking public resources for her private business. Carter, 66, stated he voluntarily resigned after informing the university's board of trustees that he had made a mistake in allowing inappropriate access to Ohio State leadership but did not provide further details. Carter, who joined Ohio State in 2023 from the University of Nebraska system, oversaw a $11.5 billion annual budget for the nation's sixth-largest university with over 60,000 students.",
+        "url": "https://abcnews.com/US/wireStory/ohio-state-universitys-president-resigns-after-reporting-inappropriate-130907127",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:15:41+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_18",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Vance reflects on attending his 1st dignified transfer for US service members",
+        "summary": "# Summary\n\nVice President JD Vance attended his first dignified transfer ceremony at Dover Air Force Base on Saturday, paying respects to six American service members killed overseas in a conflict with Iran, with a seventh service member expected to return Monday night. During remarks to the International Association of Fire Fighters in Washington on Monday, Vance reflected on the experience and called for prayers for the fallen soldiers and their families. He drew a connection between military service members and first responders like police officers and firefighters, noting the shared sacrifice of those who put on uniforms to serve their communities.",
+        "url": "https://abcnews.com/Politics/vance-reflects-attending-1st-dignified-transfer-us-service/story?id=130906865",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T18:07:43+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_20",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
+        "summary": "# Summary\n\nMojtaba Khamenei, 56-year-old son of Iran's deceased Ayatollah Ali Khamenei, has been selected as the new supreme leader of Iran. Despite keeping a low profile with no government experience or public appearances, US diplomatic cables described him as wielding considerable behind-the-scenes influence. His appointment is potentially controversial given that Iran's Islamic Republic was founded on the principle that leaders should be chosen for religious standing and proven leadership rather than through hereditary succession. Mojtaba faces significant challenges including his mid-ranking clerical status, public discontent over hereditary leadership, and security threats, while expectations suggest he will continue his father's hardline policies.",
+        "url": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 21:51:48 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_22",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "G7 to take 'necessary measures' to support energy supplies",
+        "summary": "# Summary\n\nG7 nations pledged to take \"necessary measures\" to support global energy supplies following escalating US-Israel conflict with Iran, though a meeting between G7 finance ministers and the International Energy Agency ended without agreement to release strategic oil reserves. Oil prices surged to nearly $120 a barrel amid concerns about supply disruptions, particularly through the Strait of Hormuz where about a fifth of global oil supply passes, leading to declines in global stock markets. The conflict has also driven up gas prices and prompted concerns about rising inflation, which could affect interest rate decisions by central banks worldwide. UK Chancellor Rachel Reeves expressed readiness to support a coordinated release of IEA oil reserves while calling for immediate de-escalation in the Middle East.",
+        "url": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 17:33:36 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_23",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+        "summary": "# Summary\n\nCroatia has reinstated compulsory military service for the first time since 2008, with hundreds of teenagers now reporting for duty. Around 800 recruits in the first batch will undergo two months of training at barracks across the country, covering traditional military skills alongside modern training in drone control and cyberwarfare. The reinstatement was prompted by regional instability caused by the war in Ukraine and Russia's actions in Europe. Croatia aims to train 4,000 recruits annually and is one of 10 NATO countries that have reintroduced mandatory military service.",
+        "url": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 14:49:34 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_24",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+        "summary": "# Summary\n\nNaveed Akram, the 24-year-old accused gunman in the December 14 Bondi Beach attack that killed 15 people, has sought a court order to suppress his family's identifying information, citing safety concerns. A Sydney magistrate granted a temporary non-publication order protecting the names, addresses, and workplaces of his mother, brother, and sister, though his mother's name has already been widely published. News Corp Australia indicated it would likely challenge the order, and the matter will return to court next week. Akram, who was injured in the incident and faces 59 charges, has not yet entered a plea.",
+        "url": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 08:13:58 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_25",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Carney calls three by-elections in Canada that could grant him a majority",
+        "summary": "# Summary\n\nCanadian Prime Minister Mark Carney has called three by-elections for April 13 that could give his Liberal Party a majority government. The Liberals currently hold 169 seats and need 172 for a majority; winning all three contested seats would give them the required numbers. Two of the by-elections are in Toronto Liberal strongholds vacated by Chrystia Freeland and Bill Blair, while the third is in Montreal's Terrebonne riding, which the Liberals won by a single vote in 2025 and must defend after a court-ordered re-run. If successful, the Liberals would secure a narrow majority, allowing the government to pass legislation more easily and avoid a general election for three more years.",
+        "url": "https://www.bbc.com/news/articles/cnv69zp3z4ro?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 14:49:39 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_26",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Bag of cannabis and cash accidentally donated to NZ charity shop",
+        "summary": "# Summary\n\nTwo teenagers in New Zealand were arrested after accidentally leaving a backpack containing 43.2 grams of cannabis and NZ$3,700 in cash at a charity shop donation area. A volunteer discovered the bag after noticing a strong smell and alerted police. When police searched the teens' vehicle, they found an unlicensed air pistol, a police scanner, and additional cash. Due to New Zealand's Youth Court privacy rules, details of charges and court appearances have not been released.",
+        "url": "https://www.bbc.com/news/articles/c1w5yq924j1o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 11:31:34 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_27",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Guinea opposition leader urges 'direct resistance' after 40 parties dissolved",
+        "summary": "# Summary\n\nGuinea's authorities dissolved 40 political parties, citing non-compliance with legal requirements, a move the dissolved parties deny. Opposition leader Cellou Dalein Diallo, whose party was among those dissolved, responded by calling for \"direct resistance\" against President Mamady Doumbouya, saying democratic processes are no longer viable. The dissolution occurred two months after Doumbouya's election as president and ahead of upcoming legislative elections, with Diallo arguing the move represents an attempt to consolidate one-party rule. Similar party bans have been implemented in Burkina Faso as military-led governments seek to consolidate power.",
+        "url": "https://www.bbc.com/news/articles/cjrqg80y57po?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 14:25:45 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_28",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Police release images of Oslo US embassy explosion suspect",
+        "summary": "# Summary\n\nPolice in Norway have released pixelated surveillance images of a suspect in connection with an explosion outside the US embassy in Oslo on Sunday. The blast, caused by an improvised device placed at the building's entrance, resulted in minor damage with no injuries reported. Investigators are treating the incident as high priority and examining evidence including a now-deleted Google Maps video featuring Iran's Supreme Leader; police have not yet determined the attacker's motive but have not ruled out terrorism.",
+        "url": "https://www.bbc.com/news/articles/ce8wk563473o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 12:45:09 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_29",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Australia urged to protect Iran women's football team as they prepare to fly home",
+        "summary": "# Summary\n\nFive members of the Iranian women's football team have sought refuge in a safe house in Australia after the squad declined to sing the national anthem at the Asian Cup, sparking criticism and safety concerns within Iran. The players, who faced backlash including accusations of being \"wartime traitors,\" have reportedly requested police protection and plan to claim asylum rather than return home. Former Australian football captain Craig Foster and human rights advocates have called on the Australian government to support the women, while concerns remain about potential repercussions for their families in Iran should they choose to stay.",
+        "url": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 16:29:46 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  }
+]

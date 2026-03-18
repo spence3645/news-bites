@@ -1,0 +1,13 @@
+{
+  "name": "news-bites",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "app",
+    "scraper"
+  ],
+  "scripts": {
+    "start": "npm start --workspace=app",
+    "scraper": "npm start --workspace=scraper"
+  }
+}

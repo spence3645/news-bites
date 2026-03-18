@@ -1,0 +1,2640 @@
+[
+  {
+    "storyId": "story_122",
+    "sourceCount": 3,
+    "sources": [
+      "ABC News",
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Anthropic sues Trump administration amid AI dispute with Pentagon",
+        "summary": "# Summary\n\nAnthropic filed lawsuits against the Pentagon and multiple federal agencies on Monday, alleging an \"unlawful campaign of retaliation\" after the Trump administration designated the AI company a national security threat and moved to ban its products government-wide. The dispute stems from failed negotiations over how the military could use Anthropic's AI systems, with the company seeking restrictions on use in autonomous weapons and mass surveillance, while the Pentagon wanted unrestricted \"lawful use.\" The Pentagon labeled Anthropic a \"supply-chain risk,\" a designation historically reserved for foreign adversaries, and President Trump ordered all federal agencies to cease using the company's technology; Anthropic claims this action violates required procedures and has already jeopardized hundreds of millions of dollars in business.",
+        "url": "https://www.nbcnews.com/tech/tech-news/anthropic-sues-trump-administration-ai-dispute-pentagon-rcna262444",
+        "category": "Tech",
+        "publishedAt": "2026-03-09T15:57:12.981Z",
+        "similarityScore": 0.9219
+      },
+      {
+        "source": "ABC News",
+        "title": "'Unprecedented': Anthropic sues Trump administration after clash over AI use",
+        "summary": "# Summary\n\nAnthropic filed a lawsuit against the Trump administration on Monday, alleging the Pentagon unlawfully designated it a \"supply-chain risk\" in retaliation for the company's opposition to using its AI for lethal autonomous weapons and mass surveillance. The company claims the government violated its First Amendment rights and circumvented proper procedures for canceling federal contracts, stating the actions have caused \"unrecoverable revenue losses\" and jeopardized existing and future federal contracts. Anthropic's CEO had previously insisted the company would not drop its demands against autonomous weapons and domestic surveillance use, despite Pentagon threats. The Department of Defense declined to comment on the litigation.",
+        "url": "https://abcnews.com/Business/anthropic-sues-trump-administration-after-clash-ai/story?id=130905672",
+        "category": "Business",
+        "publishedAt": "2026-03-09T17:18:26+00:00",
+        "similarityScore": 0.9219
+      },
+      {
+        "source": "BBC News",
+        "title": "Anthropic sues US government for calling it a risk",
+        "summary": "# Summary\n\nAnthropic has sued the US government, claiming its designation as a \"supply chain risk\" by the Department of Defense is unconstitutional retaliation for the company's refusal to remove restrictions on military use of its AI tools, particularly regarding lethal autonomous weapons and mass surveillance. The lawsuit was filed after Trump directed all government agencies to stop using Anthropic's Claude AI tool and Hegseth labeled the company a supply chain risk, allegedly in response to failed contract negotiations. Anthropic argues the government violated its First Amendment rights and the actions lack statutory authority, and is asking the court to declare Trump's directive unconstitutional and revoke the supply chain risk designation. The company claims it has suffered irreparable harm to its reputation and contracts, though legal experts suggest the case may eventually reach the Supreme Court.",
+        "url": "https://www.bbc.com/news/articles/cq571w5vllxo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 19:49:58 GMT",
+        "similarityScore": 0.8666
+      }
+    ]
+  },
+  {
+    "storyId": "story_121",
+    "sourceCount": 3,
+    "sources": [
+      "ABC News",
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Woman identified in shooting at Rihanna's Los Angeles house",
+        "summary": "# Summary\n\nA 35-year-old Florida woman, Ivanna Lisette Ortiz, was arrested and booked on suspicion of attempted murder after firing four rounds from an AR-15-style rifle at Rihanna's home in Southern California on Sunday afternoon. Rihanna, A$AP Rocky, and their children were inside the Beverly Crest property at the time but were not injured in the shooting. The suspect was apprehended following a traffic stop in Sherman Oaks after police matched her vehicle to descriptions from the incident. Her bail was set at $10.225 million, and investigators noted that a clear motive had not been established at the time of reporting.",
+        "url": "https://www.nbcnews.com/news/us-news/woman-identified-shooting-rihannas-los-angeles-house-rcna262426",
+        "category": "US News",
+        "publishedAt": "2026-03-09T15:31:05.139Z",
+        "similarityScore": 0.9089
+      },
+      {
+        "source": "ABC News",
+        "title": "Suspect identified in shooting at Rihanna\u2019s Los Angeles home",
+        "summary": "# Summary\n\nA 35-year-old suspect, Ivanna Lisette Ortiz, was arrested and booked on attempted murder charges following a shooting at Rihanna's Los Angeles home on Sunday. Multiple shots were fired at the mansion's exterior and a parked vehicle, though none penetrated the home's interior. Rihanna was home during the incident. The suspect was apprehended in a mall parking garage after being followed by an LAPD helicopter.",
+        "url": "https://abcnews.com/US/rihannas-beverly-hills-mansion-struck-gunfire-woman-arrested/story?id=130887382",
+        "category": "US News",
+        "publishedAt": "2026-03-09T16:20:14+00:00",
+        "similarityScore": 0.9089
+      },
+      {
+        "source": "BBC News",
+        "title": "Woman arrested after Rihanna's Beverly Hills mansion hit by gunfire",
+        "summary": "# Summary\n\nA 35-year-old woman, Ivanna Lisette Ortiz, has been arrested on suspicion of attempted murder after Rihanna's Beverly Hills mansion was struck by gunfire on Sunday. The suspect allegedly fired an AR-15-style weapon from a vehicle at the home while Rihanna was inside, though no one was injured. Ortiz was apprehended about eight miles away at a shopping center, and bail has been set at $10.2 million.",
+        "url": "https://www.bbc.com/news/articles/ckg2pm2kvkeo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 17:36:32 GMT",
+        "similarityScore": 0.8854
+      }
+    ]
+  },
+  {
+    "storyId": "story_111",
+    "sourceCount": 3,
+    "sources": [
+      "ABC News",
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Live Nation settles antitrust case with DOJ, avoids Ticketmaster breakup",
+        "summary": "# Summary\n\nLive Nation has settled its antitrust case with the Department of Justice, avoiding a breakup that could have separated the entertainment company from its Ticketmaster subsidiary. Under the settlement terms, Ticketmaster must provide a standalone ticketing system for third-party competitors, divest up to 13 amphitheaters, and reserve 50% of tickets for nonexclusive venues, while being prohibited from retaliating against venues that use other ticket distributors. However, 26 states that joined the federal case are continuing their own lawsuits, with New York Attorney General Letitia James vowing to pursue the case independently to address consumer concerns over high prices and competition in the live entertainment industry.",
+        "url": "https://www.nbcnews.com/business/consumer/ticketmaster-live-nation-settles-antitrust-case-rcna262392",
+        "category": "Business",
+        "publishedAt": "2026-03-09T13:56:22.966Z",
+        "similarityScore": 0.8814
+      },
+      {
+        "source": "ABC News",
+        "title": "Live Nation, Justice Department reach settlement in antitrust case",
+        "summary": "# Summary\n\nThe U.S. Department of Justice has settled its antitrust lawsuit against Live Nation, parent company of Ticketmaster, requiring the ticket platform to allow competitors like SeatGeek and StubHub to list tickets directly on its website and to divest up to 13 amphitheaters. Live Nation will pay $280 million in fines to 40 states that joined the lawsuit and must cap ticketing service fees at 15%. However, New York Attorney General Letitia James and other state attorneys general plan to continue separate litigation against Live Nation, arguing the settlement fails to address the monopoly concerns at the center of the case.",
+        "url": "https://abcnews.com/GMA/News/live-nation-justice-department-reach-settlement-antitrust-case/story?id=130900006",
+        "category": "News",
+        "publishedAt": "2026-03-09T19:05:35+00:00",
+        "similarityScore": 0.8814
+      },
+      {
+        "source": "BBC News",
+        "title": "Ticketmaster owner Live Nation agrees to pay $280m to end US monopoly case",
+        "summary": "# Summary\n\nLive Nation, owner of Ticketmaster, has reached a tentative settlement with the US Justice Department to resolve an antitrust case alleging the company holds a monopoly over the live events industry. Under the deal, Live Nation will allow venues and artists to use competing ticket vendors and promoters, divest up to 13 concert halls, and pay $280 million in damages to nearly 40 states. The settlement still requires judicial approval, and some state attorneys general have rejected it, saying it fails to address Live Nation's core monopolistic practices and does not sufficiently protect consumers from inflated ticket prices.",
+        "url": "https://www.bbc.com/news/articles/clygrnv2rdpo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:13:14 GMT",
+        "similarityScore": 0.8574
+      }
+    ]
+  },
+  {
+    "storyId": "story_132",
+    "sourceCount": 3,
+    "sources": [
+      "ABC News",
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Family of Georgia teacher killed in prank gone wrong want charges against teens dropped",
+        "summary": "# Summary\n\nJason Hughes, a 40-year-old math teacher at North Hall High School in Georgia, died Friday night after being struck by a vehicle driven by 18-year-old Jayden Ryan Wallace during a toilet-papering prank at Hughes' home. Hughes slipped and fell into the road after exiting his house in wet conditions as the teenagers were leaving, and was run over by the vehicle. Hughes' family stated they want all charges against the teenagers dropped, emphasizing that Hughes knew about and was excited for the prank, and characterizing the incident as a tragic accident rather than a crime. Wallace has been charged with first-degree vehicular homicide, reckless driving, criminal trespass and littering, while four others face criminal trespass and littering charges.",
+        "url": "https://www.nbcnews.com/news/us-news/family-georgia-teacher-killed-prank-gone-wrong-want-charges-teens-drop-rcna262482",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:36:30.372Z",
+        "similarityScore": 0.8827
+      },
+      {
+        "source": "NBC News",
+        "title": "Georgia high school teacher dies after being run over by teen in prank gone wrong",
+        "summary": "# Summary\n\nAn 18-year-old Georgia teenager, Jayden Ryan Wallace, is facing first-degree vehicular homicide charges after running over high school math teacher Jason Hughes, 40, during a prank on Friday night. Wallace and four others had been \"rolling\" trees with toilet paper outside Hughes' residence when the group got into vehicles; Hughes tripped and fell into the road as Wallace's pickup truck was driving away, and he was run over and killed. The four other participants have been charged with criminal trespass and littering, while Wallace remains in custody facing additional charges including reckless driving and criminal trespass. Hughes, described as a dedicated teacher, mentor, and coach, was also involved in community organizations focused on youth development.",
+        "url": "https://www.nbcnews.com/news/us-news/high-school-teacher-dies-teenager-prank-gone-wrong-rcna262304",
+        "category": "US News",
+        "publishedAt": "2026-03-08T16:57:49.120Z",
+        "similarityScore": 0.8827
+      },
+      {
+        "source": "ABC News",
+        "title": "Teacher dies in student prank gone wrong, family supports dropping charges",
+        "summary": "# Summary\n\nGeorgia math teacher Jason Hughes died over the weekend after being struck by a vehicle driven by one of five teenage students who came to his home for a toilet paper prank. The 18-year-old students fled when Hughes came outside to catch them, and driver Jayden Wallace accidentally ran over Hughes, who fell into the roadway; Hughes later died at the hospital. The students have been charged with various crimes including vehicular homicide and trespassing, but Hughes' family has issued a statement asking that criminal charges be dropped, emphasizing that Hughes knew the students were coming and requesting grace and mercy for the teenagers. The family stated they want to prevent \"a separate tragedy from occurring\" and noted that Hughes was devoted to investing in the lives of young people.",
+        "url": "https://abcnews.com/GMA/News/family-teacher-died-student-prank-wrong-support-dropping/story?id=130894777",
+        "category": "News",
+        "publishedAt": "2026-03-09T18:55:25+00:00",
+        "similarityScore": 0.8735
+      },
+      {
+        "source": "BBC News",
+        "title": "US teacher killed after toilet paper prank goes wrong",
+        "summary": "# Summary\n\nJason Hughes, a 40-year-old high school teacher in Georgia, was accidentally run over and killed when he came outside to catch students toilet papering trees as a prank. Hughes tripped on wet ground and was struck by a car driven by one of the students as they attempted to flee the scene. The 18-year-old driver, Jayden Ryan Wallace, was charged with vehicular homicide, but Hughes's wife has requested that all charges be dropped, stating the family wants to prevent further tragedy and honor her husband's legacy of investing in students' lives.",
+        "url": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 17:09:21 GMT",
+        "similarityScore": 0.823
+      }
+    ]
+  },
+  {
+    "storyId": "story_51",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Oil prices sink, stocks jump in dramatic reversal",
+        "summary": "# Summary\n\nOil prices and stock markets experienced a sharp reversal Monday afternoon after President Trump told CBS News the war in Iran was \"very complete.\" U.S. crude oil plummeted roughly 5% to around $86 per barrel after surging as much as 32% overnight, while major U.S. stock indices erased earlier losses to finish the day higher. Despite the reversal, oil prices remain up more than 50% since the start of the year, and gas prices have climbed to $3.49 per gallon nationwide. Finance ministers from leading industrialized nations decided against releasing oil reserves for now but pledged to continue monitoring the situation closely.",
+        "url": "https://www.nbcnews.com/business/energy/iran-oil-surges-markets-rcna262395",
+        "category": "Business",
+        "publishedAt": "2026-03-09T12:30:33.086Z",
+        "similarityScore": 0.8229
+      },
+      {
+        "source": "ABC News",
+        "title": "Stocks close higher, reversing sharp losses after oil prices fall",
+        "summary": "# Summary\n\nU.S. stocks closed higher on Monday after reversing sharp morning losses, with the Dow up 0.4%, S&P 500 up 0.8%, and Nasdaq up 1.3%. The recovery followed comments by President Trump suggesting the war with Iran was \"very complete,\" which prompted oil prices to fall from a peak of nearly $120 to about $85 per barrel. Global markets had initially declined as oil prices surged, with Tokyo's Nikkei falling 5.2% and Europe's STOXX 600 slipping 0.6%. U.S. gas prices have risen to $3.47 per gallon from $2.99 a week earlier, though crude prices remain down roughly 6% from the previous day.",
+        "url": "https://abcnews.com/Business/stocks-tumble-oil-climbs-100-barrel/story?id=130895636",
+        "category": "Business",
+        "publishedAt": "2026-03-09T20:21:36+00:00",
+        "similarityScore": 0.8229
+      }
+    ]
+  },
+  {
+    "storyId": "story_56",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "'Fixer' in massive point-shaving scheme that rigged college basketball games pleads guilty",
+        "summary": "# Summary\n\nJalen Smith, a 30-year-old North Carolina man, pleaded guilty to bribery, wire fraud, and illegal firearms possession for his \"leadership role\" as a \"fixer\" in a point-shaving scheme that manipulated college basketball games during the 2023-2024 and 2024-2025 seasons. Smith recruited players to underperform, managed payments to them, and coordinated large wagers placed against teams whose players were bribed. The scheme involved over 39 players from 17 NCAA Division I teams who fixed or attempted to fix more than 29 games. Smith is the first of 26 defendants in the federal prosecution to plead guilty, and faces maximum sentences of 5 years for bribery, 20 years for wire fraud, and 20 years for the firearms charge.",
+        "url": "https://www.nbcnews.com/news/us-news/fixer-massive-point-shaving-scheme-rigged-college-basketball-games-ple-rcna262550",
+        "category": "US News",
+        "publishedAt": "2026-03-09T20:16:51.021Z",
+        "similarityScore": 0.8479
+      },
+      {
+        "source": "ABC News",
+        "title": "Man who helped recruit players into sprawling NCAA point-shaving scheme pleads guilty",
+        "summary": "# Summary\n\nJalen Smith of Charlotte, North Carolina pleaded guilty Monday to wire fraud and bribery charges as the first of 26 people charged in a NCAA basketball point-shaving scheme. Smith, who trained basketball players for professional combines, used those connections to recruit players to intentionally underperform in games while fixers bet against their teams, defrauding sportsbooks and other bettors. The scheme involved more than 39 players across 17 NCAA Division I teams who rigged or attempted to rig over 29 games since 2023, generating millions in wagered money with player payments typically ranging from $10,000 to $30,000 per game.",
+        "url": "https://abcnews.com/Business/wireStory/man-helped-recruit-players-sprawling-ncaa-basketball-point-130908870",
+        "category": "Business",
+        "publishedAt": "2026-03-09T19:13:02+00:00",
+        "similarityScore": 0.8479
+      }
+    ]
+  },
+  {
+    "storyId": "story_95",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Explosives thrown near NYC mayor's home being investigated as 'ISIS-inspired' terrorism, officials say",
+        "summary": "# Summary\n\nTwo Pennsylvania residents, Ibrahim Kayumi, 19, and Emir Balat, 18, have been charged with federal terrorism offenses after throwing improvised explosive devices near NYC Mayor Zohran Mamdani's residence during weekend protests. The suspects face charges including unlawfully possessing weapons of mass destruction and attempting to aid ISIS, with authorities noting that preliminary testing revealed one device contained highly volatile explosive material that would have caused \"death and destruction\" if detonated. Both men made statements expressing allegiance to ISIS upon arrest, though police have not determined whether they were recruited or self-radicalized. The incident occurred during an anti-Muslim demonstration and counterprotest, with no injuries reported as none of the devices detonated.",
+        "url": "https://www.nbcnews.com/news/us-news/explosive-thrown-nyc-mayors-home-investigated-isis-inspired-terrorism-rcna262412",
+        "category": "US News",
+        "publishedAt": "2026-03-09T14:07:26.427Z",
+        "similarityScore": 0.8576
+      },
+      {
+        "source": "ABC News",
+        "title": "'ISIS-inspired terrorism' suspected after bombs thrown outside NYC mayor's home",
+        "summary": "# Summary\n\nTwo Pennsylvania men, Emir Balat and Ibrahim Kayumi, were arrested and charged with federal terrorism offenses after improvised explosive devices were detonated outside Gracie Mansion during a counterprotest on Saturday. The devices, containing the explosive material TATP, were deployed at counterprotesters opposing an anti-Muslim demonstration; both suspects allegedly pledged allegiance to ISIS and told police they wanted to carry out an attack larger than the Boston Marathon bombing. A third suspected IED was found in the suspects' vehicle. The suspects, ages 18 and 19, have been ordered held without bail and face charges including attempting to provide material support to ISIS and use of a weapon of mass destruction.",
+        "url": "https://abcnews.com/US/explosive-thrown-nyc-mayors-residents-probed-act-isis/story?id=130897179",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:55:48+00:00",
+        "similarityScore": 0.8576
+      },
+      {
+        "source": "ABC News",
+        "title": "Explosives thrown near New York City mayor's residence investigated as 'ISIS-related terrorism'",
+        "summary": "# Summary\n\nNew York City authorities are investigating the throwing of improvised explosive devices near the mayor's residence during a Saturday protest as potential ISIS-inspired terrorism. Two people are in custody for their alleged roles in the incident, which occurred during counterprotests at a \"Stop the Islamic Takeover of New York City\" event led by far-right activist Jake Lang. The devices, which contained nuts, bolts, screws, and a fuse, did not fully detonate but could have caused serious injury or death, according to Police Commissioner Jessica Tisch. The FBI's Joint Terrorism Task Force is assisting in the investigation, and authorities have found no connection to Iran or overseas conflicts.",
+        "url": "https://abcnews.com/US/wireStory/explosives-thrown-new-york-city-mayors-residence-investigated-130898636",
+        "category": "US News",
+        "publishedAt": "2026-03-09T13:49:22+00:00",
+        "similarityScore": 0.8159
+      }
+    ]
+  },
+  {
+    "storyId": "story_100",
+    "sourceCount": 2,
+    "sources": [
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Video appears to show U.S. Tomahawk missile hitting the area of the deadly school strike in Iran",
+        "summary": "# Summary\n\nNewly surfaced video geolocated by NBC News appears to show a U.S. Tomahawk missile striking a compound near Shajareh Tayyebeh elementary school in Iran on February 28, killing more than 170 people, including many children. Multiple munitions experts analyzed the footage and confirmed it shows a Tomahawk missile, which only the U.S. possesses in this conflict, though they note targeting errors can occur despite the weapon's precision. The Pentagon is investigating the strike while Trump administration officials previously told Congress the U.S. had been targeting the area, and Iranian officials have blamed the U.S. for the attack.",
+        "url": "https://www.nbcnews.com/world/iran/iran-school-strike-us-tomahawk-missile-minab-video-munitions-experts-rcna262391",
+        "category": "World",
+        "publishedAt": "2026-03-09T18:13:51.701Z",
+        "similarityScore": 0.8641
+      },
+      {
+        "source": "BBC News",
+        "title": "US missile hit military base near Iran school, video analysis shows",
+        "summary": "# Summary\n\nVideo analysis confirmed by BBC Verify shows a US Tomahawk missile struck an Iranian Revolutionary Guard Corps military base adjacent to a primary school in Minab, southern Iran, where Iranian authorities reported 168 deaths including around 110 children. Three military experts identified the munition in verified video footage as a Tomahawk cruise missile, and evidence indicates multiple strikes on the IRGC compound in what analysts described as a deliberate operation. A US preliminary assessment suggests the US was \"likely\" responsible for the attack but did not intentionally target the school, possibly hitting it in error. Neither the US nor Israel has publicly accepted or denied responsibility, though Iran has blamed both countries.",
+        "url": "https://www.bbc.com/news/articles/cvg548lyjnyo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 15:09:05 GMT",
+        "similarityScore": 0.8641
+      }
+    ]
+  },
+  {
+    "storyId": "story_65",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Ohio State President Ted Carter resigns over 'inappropriate relationship'",
+        "summary": "# Summary\n\nOhio State University President Ted Carter Jr. resigned after disclosing to the board of trustees that he had an \"inappropriate relationship\" with someone seeking public resources for a personal business. Carter submitted his resignation on Saturday, which the university accepted on Sunday and announced Monday. In his resignation statement, Carter acknowledged making a mistake by allowing \"inappropriate access to Ohio State leadership.\" Carter, who was hired as the university's 17th president in 2023, said he believes progress was made during his tenure.",
+        "url": "https://www.nbcnews.com/news/us-news/ohio-state-president-resigns-inappropriate-relationship-person-seeking-rcna262479",
+        "category": "US News",
+        "publishedAt": "2026-03-09T17:10:29.307Z",
+        "similarityScore": 0.8935
+      },
+      {
+        "source": "ABC News",
+        "title": "University's president resigns after reporting 'inappropriate relationship'",
+        "summary": "# Ohio State President Resigns Over Inappropriate Relationship\n\nOhio State University President Walter \"Ted\" Carter Jr. resigned on Monday after disclosing an inappropriate relationship with a woman who was seeking public resources for her private business. Carter, 66, stated he voluntarily resigned after informing the university's board of trustees that he had made a mistake in allowing inappropriate access to Ohio State leadership, though he did not provide further details. Carter had been leading the nation's sixth-largest university since 2023, overseeing a $11.5 billion annual budget, before departing with his wife, Lynda.",
+        "url": "https://abcnews.com/US/wireStory/ohio-state-universitys-president-resigns-after-reporting-inappropriate-130907127",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:15:41+00:00",
+        "similarityScore": 0.8935
+      }
+    ]
+  },
+  {
+    "storyId": "story_112",
+    "sourceCount": 2,
+    "sources": [
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Mojtaba Khamenei, son of ayatollah killed in U.S.-Israeli strikes, named Iran's new supreme leader, state media reports",
+        "summary": "# Summary\n\nMojtaba Khamenei, 56-year-old son of Ayatollah Ali Khamenei, has been named Iran's new supreme leader by the Assembly of Experts following his father's death in U.S.-Israeli strikes more than a week ago. Mojtaba is a politician and cleric with strong ties to the Revolutionary Guard, though analysts note he lacks the religious credentials of his father and has faced criticism, including from President Trump, who called the appointment \"unacceptable.\" The selection aims to demonstrate regime stability to Iran's adversaries and population, though questions remain about his long-term viability as leader given his limited religious authority.",
+        "url": "https://www.nbcnews.com/world/iran/iran-supreme-leader-mojtaba-khamenei-rcna261645",
+        "category": "World",
+        "publishedAt": "2026-03-08T21:45:36.486Z",
+        "similarityScore": 0.901
+      },
+      {
+        "source": "BBC News",
+        "title": "Iran's new leader has never been tested. He now faces an existential battle",
+        "summary": "# Summary\n\nMojtaba Khamenei, 56, has been selected as Iran's new supreme leader following his father Ayatollah Ali Khamenei's assassination, taking charge as the Islamic Republic faces major regional conflict. A relatively untested figure who has never held formal government positions, Mojtaba is closely aligned with the Islamic Revolutionary Guard Corps and represents a hardline continuation of his father's policies, potentially sidelining reformist factions. His appointment is viewed negatively by the United States and Israel, with Trump warning he \"won't last long\" and Israeli officials calling him a target. The succession signals a consolidation of power among hardliners as Iran navigates escalating regional tensions and economic challenges.",
+        "url": "https://www.bbc.com/news/articles/cwykdn0yn4wo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 19:51:00 GMT",
+        "similarityScore": 0.901
+      },
+      {
+        "source": "BBC News",
+        "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
+        "summary": "# Summary\n\nMojtaba Khamenei, the 56-year-old son of Iran's former Supreme Leader Ayatollah Ali Khamenei, has been chosen as his successor following his death in US-Israeli strikes. Despite having no government experience and maintaining a low profile, US diplomatic cables described him as wielding considerable behind-the-scenes influence in Iran. His selection is potentially controversial, as Iran's founding ideology emphasizes that the supreme leader should be chosen for religious standing and proven leadership rather than through hereditary succession. Mojtaba faces significant challenges in establishing credibility, including his relatively low clerical rank and public perception that the Islamic Republic is becoming a hereditary system.",
+        "url": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 21:51:48 GMT",
+        "similarityScore": 0.895
+      },
+      {
+        "source": "BBC News",
+        "title": "Iranians deeply divided over Mojtaba Khamenei's rise to power",
+        "summary": "# Summary\n\nMojtaba Khamenei has been appointed as Iran's new supreme leader following his father Ayatollah Ali Khamenei's death at the start of a war with the US and Iran. While pro-establishment supporters have celebrated his appointment as a hardliner close to the Islamic Revolutionary Guard Corps, many ordinary Iranians express opposition, with critics saying he will bring no meaningful change or may be even more oppressive than his father. The 56-year-old cleric, who historically maintained a low profile but was rumored to wield considerable behind-the-scenes influence, was selected by the Assembly of Experts, Iran's clerical body responsible for choosing the supreme leader. The appointment has drawn international criticism, with US President Trump and Israel both warning they will not accept him as leader.",
+        "url": "https://www.bbc.com/news/articles/cwy8ldyp2zwo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 15:27:35 GMT",
+        "similarityScore": 0.8917
+      }
+    ]
+  },
+  {
+    "storyId": "story_54",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Trump says he won't sign any bills until SAVE America Act passes",
+        "summary": "# Summary\n\nPresident Trump announced he will not sign any bills until the SAVE America Act\u2014legislation requiring proof of citizenship to vote nationwide\u2014is passed, and he rejected any \"watered down\" version. The bill faces significant obstacles in the Senate, where Republicans lack the unified support needed and Democrats strongly oppose it, with Senate Minority Leader Schumer warning it would \"disenfranchise tens of millions of people.\" Trump's stance creates potential gridlock, as Senate Majority Leader Thune indicated difficulty advancing the bill while also reopening the government, and bills can become law without presidential signature after 10 days.",
+        "url": "https://www.nbcnews.com/politics/donald-trump/trump-says-will-not-sign-bills-america-act-passes-rcna262336",
+        "category": "Politics",
+        "publishedAt": "2026-03-08T23:25:02.379Z",
+        "similarityScore": 0.8132
+      },
+      {
+        "source": "ABC News",
+        "title": "What Trump has said about SAVE America Act amid his push for passage",
+        "summary": "# Summary\n\nPresident Trump announced he will not sign any legislation until Congress passes the SAVE America Act, which would require all 50 states to mandate photo ID or proof of citizenship for voter registration and voting. The House passed the bill in February, but it faces a 60-vote threshold in the Senate where Republican leaders acknowledge there is insufficient support for passage. Democrats and voting rights groups argue the bill is discriminatory, citing data showing millions of Americans lack required citizenship documents at disproportionate rates among communities of color, while Republicans contend it is necessary to ensure election integrity.",
+        "url": "https://abcnews.com/Politics/fact-check-trump-save-america-act-amid-push/story?id=130505183",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T19:54:54+00:00",
+        "similarityScore": 0.8132
+      }
+    ]
+  },
+  {
+    "storyId": "story_139",
+    "sourceCount": 2,
+    "sources": [
+      "BBC News",
+      "NBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Police release images of Oslo US embassy explosion suspect",
+        "summary": "# Summary\n\nNorwegian police have released pixelated surveillance images of a suspect in connection with an explosion outside the US embassy in Oslo on Sunday. The blast, caused by an improvised device placed at the building's entrance, resulted in minor damage with no injuries reported. Police are treating the investigation as high priority and possible terrorism, though they have not yet identified a motive; investigators are also examining a video published on Google Maps around the time of the incident that featured Iran's Supreme Leader.",
+        "url": "https://www.bbc.com/news/articles/ce8wk563473o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 12:45:09 GMT",
+        "similarityScore": 0.8883
+      },
+      {
+        "source": "BBC News",
+        "title": "Explosion at US embassy in Oslo may have been terrorism, Norway police say",
+        "summary": "# Summary\n\nAn explosion occurred at the US embassy in Oslo early Sunday morning, causing minor damage to the building's public entrance with no injuries reported. Norwegian police say terrorism is one hypothesis being investigated, though they remain open to other possible causes. Police conducted searches in the area and stated the blast was caused by an improvised device, while authorities characterized the incident as \"unacceptable\" and emphasized the importance of diplomatic mission security.",
+        "url": "https://www.bbc.com/news/articles/c5yjegg892lo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 18:32:37 GMT",
+        "similarityScore": 0.8883
+      },
+      {
+        "source": "NBC News",
+        "title": "Police search for perpetrators after explosion damages entrance of U.S. Embassy in Oslo",
+        "summary": "# Summary\n\nAn explosion damaged the entrance of the U.S. Embassy in Oslo, Norway early Sunday morning, with no injuries reported. Norwegian police say the blast may have been a deliberate attack linked to the current security situation, though they are investigating multiple hypotheses including terrorism. The incident occurred amid heightened tensions following recent U.S. and Israeli military operations against Iran, which has conducted retaliatory strikes on other U.S. diplomatic facilities in the region. Police are actively searching for one or more perpetrators and have deployed significant resources including dogs, drones, and a helicopter to the area.",
+        "url": "https://www.nbcnews.com/world/europe/no-injuries-reported-explosion-us-embassy-oslo-police-say-rcna262282",
+        "category": "World",
+        "publishedAt": "2026-03-08T05:13:14.696Z",
+        "similarityScore": 0.8751
+      }
+    ]
+  },
+  {
+    "storyId": "story_129",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "BBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "The Dolphins are releasing quarterback Tua Tagovailoa, resulting in a $99 million dead cap hit",
+        "summary": "# Summary\n\nThe Miami Dolphins are releasing quarterback Tua Tagovailoa after six seasons, resulting in a $99 million dead cap hit\u2014the largest in NFL history. Tagovailoa, who signed a $212 million extension less than two years ago, was benched toward the end of last season due to poor performance and was replaced by rookie Quinn Ewers. The decision comes as part of a broader organizational overhaul under new general manager Jon-Eric Sullivan and head coach Jeff Hafley. Tagovailoa completed 68.6% of his passes over the last five seasons and went 44-32 as Miami's starter, but never delivered a playoff victory for the franchise.",
+        "url": "https://abcnews.com/Sports/wireStory/dolphins-releasing-quarterback-tua-tagovailoa-resulting-99-million-130897945",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T14:11:04+00:00",
+        "similarityScore": 0.9452
+      },
+      {
+        "source": "BBC News",
+        "title": "Dolphins to release Tagovailoa at record \u00a374m cost",
+        "summary": "# Summary\n\nThe Miami Dolphins are releasing quarterback Tua Tagovailoa, resulting in a record $99.2 million dead cap hit\u2014the highest in NFL history. Tagovailoa, who has been Miami's starter since 2020 and signed a four-year, $212.4 million extension in 2024, was benched for the final three games of last season after underwhelming performance. The move comes as new general manager Jon-Eric Sullivan and head coach Jeff Hafley are rebuilding the roster following Mike McDaniel's firing in January. Tagovailoa is the second franchise quarterback released during the current free agency period, following Arizona's decision to release Kyler Murray.",
+        "url": "https://www.bbc.com/sport/american-football/articles/c6271g23jdno?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:12:00 GMT",
+        "similarityScore": 0.9452
+      }
+    ]
+  },
+  {
+    "storyId": "story_105",
+    "sourceCount": 2,
+    "sources": [
+      "ABC News",
+      "BBC News"
+    ],
+    "unique": false,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Glasgow building fire closes Scotland's busiest train station, disrupts rail services",
+        "summary": "# Summary\n\nA major fire that broke out Sunday afternoon in a vape shop on Union Street in Glasgow destroyed a four-story building dating to 1851 and forced the closure of Scotland's busiest train station, Glasgow Central. The fire spread through the night, causing most of the building to collapse and destroying several nearby businesses including a cafe, fish and chip shop, and hair salon. Glasgow Central Station was closed Monday with all rail travel to, from, and through the station disrupted, with the station expected to remain closed through Tuesday. First Minister John Swinney confirmed no injuries occurred and announced the government would provide financial support to help the city recover.",
+        "url": "https://abcnews.com/International/wireStory/glasgow-building-fire-closes-scotlands-busiest-train-station-130892834",
+        "category": "World",
+        "publishedAt": "2026-03-09T14:50:35+00:00",
+        "similarityScore": 0.8387
+      },
+      {
+        "source": "BBC News",
+        "title": "Days of disruption expected as Glasgow Central closed after fire near station",
+        "summary": "# Summary\n\nA major fire destroyed a Victorian building next to Glasgow Central Station on Sunday, starting in a vape shop and spreading through the B-listed structure. While the station itself avoided significant damage, it is expected to remain closed on Tuesday for safety inspections, with ScotRail warning of several days of disruption to rail services. The Scottish Fire and Rescue Service brought the blaze under control after battling it through Sunday night with 18 vehicles, and no injuries were reported. A multi-agency investigation into the fire's cause has begun.",
+        "url": "https://www.bbc.com/news/articles/c1w5yjjylzzo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 17:51:31 GMT",
+        "similarityScore": 0.8387
+      }
+    ]
+  },
+  {
+    "storyId": "story_1",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "FBI subpoenas election records in Arizona, expanding 2020 inquiry",
+        "summary": "# Summary\n\nThe FBI obtained records from Arizona's state Senate relating to the 2020 election audit of Maricopa County, according to Republican state Senate President Warren Petersen. The subpoena signals the FBI's investigation into the 2020 election extends beyond Georgia to Arizona, a key battleground state. The records pertain to the controversial Cyber Ninjas audit, which was funded by millions of dollars from groups advancing voter fraud claims and ultimately concluded that President Biden won Maricopa County, though internal documents later revealed problems with the investigation's methodology and analysis.",
+        "url": "https://www.nbcnews.com/politics/elections/fbi-subpoenas-election-records-arizona-expanding-2020-inquiry-rcna262504",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T18:48:27.917Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_2",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Storm-battered Midwest and South on high alert again for severe weather",
+        "summary": "# Summary\n\nSevere weather is expected across the United States over the next three days, with approximately 27 million people at risk as storms move from the Southeast through the Midwest and Southwest, bringing potential tornadoes, strong winds, hail, and flash flooding. This new weather event follows recent deadly tornadoes that killed six people in Michigan and Oklahoma, including a mother and daughter in Fairview, Oklahoma, and four people in Michigan's Union City area. The tornado risk will continue throughout the week for the Midwest and Southwest regions. Meanwhile, the East Coast is experiencing warmer temperatures, with New York City reaching 69 degrees and Tampa hitting 90 degrees on Sunday.",
+        "url": "https://www.nbcnews.com/news/us-news/storm-battered-midwest-south-high-alert-severe-weather-rcna262467",
+        "category": "US News",
+        "publishedAt": "2026-03-09T20:20:46.004Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_4",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Major League Soccer bans two former players for 'extensive gambling' on matches",
+        "summary": "# Summary\n\nMajor League Soccer has issued lifetime bans to former players Derrick Jones and Yaw Yeboah for \"extensive gambling\" on matches during the 2024 and 2025 seasons. The league's investigation found the players bet on their own matches, including a specific October 2024 game where both wagered on Jones receiving a yellow card\u2014which he subsequently did\u2014and likely shared inside information with other bettors. MLS Commissioner Don Garber stated the league remains committed to protecting match integrity, while the Columbus Crew, where both players most recently played, said it fully cooperated with the investigation and adheres to all league gambling policies.",
+        "url": "https://www.nbcnews.com/sports/soccer/major-league-soccer-bans-two-former-players-extensive-gambling-matches-rcna262549",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T19:50:56.347Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_6",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Dr. Oz says Obamacare enrollment may be \u2018too high\u2019",
+        "summary": "# Summary\n\nDr. Mehmet Oz, the Trump administration's top ACA official, stated that current Obamacare enrollment of 23 million people is \"too high\" and expects it to drop to around 19 million, citing concerns about fraudulent enrollment, duplicate coverage, and people receiving benefits they don't qualify for. The administration previously claimed 4 million to 5 million people were improperly enrolled in 2024, though health policy experts dispute this scale, with some calling the administration's estimates \"implausible\" and noting that many issues are bookkeeping errors rather than fraud. Enrollment dropped by 1.2-1.3 million this year due to skyrocketing premiums after enhanced tax credits expired, while the administration simultaneously proposes changes to attract younger, healthier uninsured Americans into the ACA marketplace through higher-deductible catastrophic plans.",
+        "url": "https://www.nbcnews.com/health/health-news/dr-oz-trump-obamacare-aca-insurance-fraud-deductible-plans-rcna262468",
+        "category": "Health",
+        "publishedAt": "2026-03-09T19:41:20.440Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_8",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Trump says it's 'too soon' to talk about seizing Iran's oil \u2014 but doesn't rule it out",
+        "summary": "# Summary\n\nPresident Trump told NBC News he doesn't want to discuss seizing Iranian oil, saying \"it's too soon to talk about that,\" but left the possibility open, noting that people have discussed it. He referenced the U.S. approach to Venezuela's oil reserves as a precedent. Taking Iranian oil could strain U.S. relations with China, which receives about 80% of Iran's crude oil exports. In other comments, Trump said he will not sign other legislation until Congress passes the SAVE America Act, a voting restrictions bill, though a White House official clarified he would sign Department of Homeland Security funding if sent to his desk.",
+        "url": "https://www.nbcnews.com/politics/donald-trump/trump-seizing-iran-oil-rcna262437",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T17:16:21.377Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_9",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Iran war elevates Marco Rubio in Trump's 2028 succession jockeying",
+        "summary": "# Summary\n\nFollowing the February 28 Iran strikes, President Trump polled approximately 25 GOP donors at Mar-a-Lago about his preference between Secretary of State Marco Rubio and Vice President JD Vance for the 2028 Republican presidential nomination, with attendees reportedly showing strong or mixed support for Rubio. While Vance has long been considered the frontrunner based on public polling and Trump's previous comments, Rubio's profile has recently risen due to his prominent role in foreign policy, including his visible presence during the Iran operations, leading Trump to increasingly praise him publicly. However, experts caution that Rubio's elevated position comes amid an unpopular war, which could prove risky for his future political prospects, and that Trump's informal polling doesn't necessarily indicate a final shift in preference.",
+        "url": "https://www.nbcnews.com/politics/2028-election/iran-marco-rubio-trump-2028-succession-jd-vance-rcna261794",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T15:31:53.031Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_11",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Toxic rain mixed with oil rains down on Tehran as expanding war threatens new global shock",
+        "summary": "# Summary\n\nIsraeli airstrikes on Tehran's oil facilities on Saturday night caused thick black smoke and toxic rain mixed with oil to fall on the city, forcing residents indoors and prompting warnings from Iranian authorities about hazardous chemicals causing potential chemical burns and lung damage. The strikes hit fuel storage facilities in and around the capital, with video evidence showing major fires at locations like the Aghdasieh fuel depot. The attacks have driven global oil prices above $100 per barrel for the first time since July 2022, with U.S. crude futures rising over 25% and raising concerns about prolonged economic uncertainty as the Middle East conflict threatens global energy supplies.",
+        "url": "https://www.nbcnews.com/world/iran/iran-war-israel-us-tehran-oil-refineries-acid-rain-global-markets-rcna262390",
+        "category": "World",
+        "publishedAt": "2026-03-09T19:13:57.621Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_12",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Chiefs land Super Bowl MVP running back Kenneth Walker in free agency",
+        "summary": "# Summary\n\nThe Kansas City Chiefs have signed Super Bowl MVP running back Kenneth Walker to a three-year deal worth up to $45 million with $28.7 million guaranteed. Walker, a former Seattle Seahawks player, addresses a major need for the Chiefs after they ranked 25th in the NFL in rushing last season and lost their top two running backs to free agency. The signing also allows the Chiefs flexibility in the draft to address other roster needs such as pass rush, defensive line, and offensive line depth.",
+        "url": "https://www.nbcnews.com/sports/nfl/chiefs-land-super-bowl-mvp-running-back-kenneth-walker-free-agency-rcna262510",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T17:59:22.471Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_17",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "'Ghostbusters' actor Jennifer Runyon dies at 65",
+        "summary": "# Summary\n\nJennifer Runyon, best known for her roles in \"Ghostbusters\" and the sitcom \"Charles in Charge,\" died at age 65 after a brief battle with cancer. Her daughter, actress Bayley Corman, shared the news on social media along with a tribute honoring her mother. Runyon's career began with a 1980 horror film and included roles in \"A Very Brady Christmas\" and other films before she largely stepped back from acting after starting a family in the early 1990s.",
+        "url": "https://www.nbcnews.com/news/obituaries/ghostbusters-actor-jennifer-runyon-dies-65-rcna262411",
+        "category": "News",
+        "publishedAt": "2026-03-09T14:35:16.914Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_18",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Multivitamins may slow biological aging in older adults, study finds",
+        "summary": "# Summary\n\nA two-year randomized study of 958 older adults found that those taking a daily multivitamin experienced slowed biological aging by approximately four months compared to a placebo group, according to research published in Nature Medicine. Biological aging, which measures cellular wear and tear, differs from chronological age, and the study used epigenetic clocks to track changes in DNA over time. The benefit was greater for participants who showed signs of accelerated biological aging at the study's start. However, researchers cautioned that the findings don't necessarily translate to increased lifespan and that more research is needed, particularly in diverse populations and over longer periods.",
+        "url": "https://www.nbcnews.com/health/aging/multivitamins-may-slow-biological-aging-older-adults-supplements-rcna262002",
+        "category": "Health",
+        "publishedAt": "2026-03-09T16:00:00.000Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_19",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "As deadline looms, WNBA remains stuck in labor contract stalemate",
+        "summary": "# WNBA Labor Negotiations Summary\n\nThe WNBA and players union are deadlocked in contract negotiations with a March 10 deadline to secure a deal for the 2026 season. The union is requesting 26% of gross revenue for players, while the league counters with offers of over 70% of net revenue, citing ongoing losses despite increased league revenues. The dispute comes as the WNBA experiences rapid growth\u2014including a new television deal worth $200 million annually, expansion to 18 teams by 2030, and surging interest following Caitlin Clark's arrival\u2014yet players argue they deserve a larger share of the league's success.",
+        "url": "https://www.nbcnews.com/sports/wnba/deadline-looms-wnba-remains-stuck-labor-contract-stalemate-rcna262159",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T15:48:18.251Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_20",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Iran's new supreme leader and the AI threat to white-collar jobs: Morning Rundown",
+        "summary": "# News Summary\n\nMojtaba Khamenei, son of Iran's recently killed supreme leader, has been named as his replacement, despite lacking his father's religious credentials and having limited popularity in Iran. Meanwhile, AI advancements are prompting warnings from political leaders in both parties about potential job displacement for white-collar professionals, comparable to past manufacturing job losses. Death Valley National Park is experiencing its most spectacular wildflower superbloom in a decade due to rainier-than-normal weather conditions, with oil prices simultaneously surging to over $100 per barrel amid ongoing regional tensions.",
+        "url": "https://www.nbcnews.com/news/us-news/iran-new-supreme-leader-ai-threatens-white-collar-jobs-morning-rundown-rcna262287",
+        "category": "US News",
+        "publishedAt": "2026-03-09T11:01:46.528Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_21",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Pixar's 'Hoppers' bounds to No. 1 as Warner Bros.' 'The Bride!' is on life support",
+        "summary": "# Box Office Summary\n\nDisney and Pixar's \"Hoppers\" debuted at No. 1 with $46 million domestically and $88 million globally, marking the biggest opening for an original animated film since \"Coco\" in 2017. Warner Bros.' \"The Bride!\" starring Jessie Buckley and Christian Bale underperformed significantly, opening to only $7.3 million domestically and $13.6 million globally despite an $80 million production budget. \"Hoppers,\" which received critical acclaim with a 94% Rotten Tomatoes score and an A CinemaScore, represents a significant win for Pixar's original content after the studio's struggles with \"Elio\" last year. \"Scream 7\" held second place in its second weekend with $17.3 million, down 73% from its opening.",
+        "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/pixars-hoppers-bounds-no-1-warner-bros-bride-life-support-rcna262387",
+        "category": "News",
+        "publishedAt": "2026-03-09T09:25:03.257Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_22",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Oil hits $100 per barrel for first time since July 2022",
+        "summary": "# Summary\n\nOil prices surged past $100 per barrel for the first time since July 2022, with U.S. crude reaching nearly $115 and Brent crude hitting $110, driven by ongoing conflict between the U.S., Israel, and Iran. The spike caused significant global market declines, with major stock indices falling across the U.S., Asia, and Europe, and U.S. retail gas prices averaging over $3.45 per gallon. Major OPEC oil producers including Iraq, Kuwait, and the UAE have cut or are reducing production, while the Strait of Hormuz remains largely impassable for tankers, further constraining global oil supply. An analyst predicts an 80% likelihood that U.S. gas prices could reach $4 per gallon within a month, though the Trump administration has stated it does not view the price increases as a concern.",
+        "url": "https://www.nbcnews.com/business/markets/oil-hits-100-barrel-first-time-july-2022-iran-war-rcna262347",
+        "category": "Business",
+        "publishedAt": "2026-03-08T22:45:44.644Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_23",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Politicians are starting to pay a lot more attention to the plight of white-collar workers",
+        "summary": "# Summary\n\nPoliticians are increasingly focusing attention on how artificial intelligence may displace white-collar workers, a demographic shift from decades of prioritizing blue-collar job concerns. Florida Governor Ron DeSantis has emerged as a leading voice on AI skepticism, raising alarms about job obsolescence, while other officials including Senators Josh Hawley and Bernie Sanders have expressed similar concerns. Industry insiders predict significant job losses\u2014with AI CEOs projecting 10-20% unemployment increases and the elimination of half of entry-level white-collar positions within five years\u2014though some economists argue past technological advances ultimately created new industries rather than eliminating jobs entirely. The political response remains fragmented, with potential 2028 presidential candidates positioning themselves on AI policy while policymakers grapple with how to address potential displacement through regulation, transition funding, and infrastructure investment.",
+        "url": "https://www.nbcnews.com/politics/elections/politicians-attention-white-collar-workers-rcna259447",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T09:18:41.000Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_25",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Why daylight saving time is the bane of parents' existence",
+        "summary": "# Daylight Saving Time Summary\n\nDaylight saving time poses particular challenges for parents of young children, as the one-hour time shift disrupts sleep schedules and can lead to increased behavioral problems. Several U.S. states and territories\u2014including Hawaii, most of Arizona, Puerto Rico, and several Pacific island territories\u2014do not observe daylight saving time, allowing parents in these locations to avoid this biannual disruption. Interviews with families living in non-observing regions confirm they appreciate avoiding the sleep disruptions and behavioral issues associated with time changes. The 2022 Sunshine Protection Act would have made daylight saving time permanent nationwide, but failed to pass in the House despite unanimous Senate approval.",
+        "url": "https://www.nbcnews.com/news/us-news/daylight-saving-time-bane-parents-existence-rcna262384",
+        "category": "US News",
+        "publishedAt": "2026-03-09T09:07:20.315Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_26",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Ahead of 2028, Sen. Cory Booker to unveil bill to make $75,000 in income tax-free",
+        "summary": "# Summary\n\nSen. Cory Booker plans to introduce legislation this week that would nearly double the standard tax deduction to $75,000 for married couples and $37,500 for individuals, significantly lowering taxes on low- and middle-income earners. The bill would also increase the child tax credit and include a new \"baby bonus\" for newborns. Booker, a potential 2028 presidential candidate who is currently focused on his Senate re-election, stated the proposal would be \"fully paid for\" through taxes on upper earners and corporations, though specific provisions have not yet been detailed and the bill lacks a cost estimate.",
+        "url": "https://www.nbcnews.com/politics/congress/sen-cory-booker-2028-potential-unveil-bill-making-75000-income-tax-fre-rcna262093",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T09:00:40.000Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_27",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "'Country' Joe McDonald, '60s rock star and proud protest counterculture icon, dies at 84",
+        "summary": "# Summary\n\n\"Country\" Joe McDonald, a 1960s rock icon whose anti-war song \"I-Feel-Like-I'm-Fixin'-To-Die Rag\" became an anthem for Vietnam War protesters and a highlight of Woodstock, died Sunday at age 84 from complications of Parkinson's disease. McDonald wrote the satirical talking blues in 1965 and performed it with his band Country Joe and the Fish, becoming known for an opening chant that spelled out a four-letter expletive expressing anger over the Vietnam War. The song brought him fame but also legal consequences, including arrest for performing the chant at a 1968 show in Massachusetts. Born in Washington, D.C., in 1942 and raised by Communist parents who named him after Josef Stalin, McDonald went on to write hundreds of songs and remain a fixture of the Bay Area music scene throughout his life.",
+        "url": "https://www.nbcnews.com/news/obituaries/country-joe-mcdonald-60s-rock-star-proud-protest-counterculture-icon-d-rcna262379",
+        "category": "News",
+        "publishedAt": "2026-03-09T04:53:11.543Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_28",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "U.S. strikes alleged drug boat in the eastern Pacific, killing 6",
+        "summary": "# Summary\n\nThe U.S. military conducted a strike on a vessel in the eastern Pacific on Sunday, killing six people identified by U.S. Southern Command as narco-terrorists engaged in drug trafficking operations. The strike was ordered by Marine Gen. Francis L. Donovan and targeted a boat allegedly operated by designated terrorist organizations transiting known drug-trafficking routes. The U.S. has conducted more than 40 similar strikes in the Caribbean and eastern Pacific since September, killing over 140 people, though the strikes have faced criticism from lawmakers and advocacy groups regarding their legal justification.",
+        "url": "https://www.nbcnews.com/politics/national-security/us-strikes-alleged-drug-boat-eastern-pacific-killing-6-rcna262363",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T02:53:33.896Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_29",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Woman shoots at Rihanna's L.A. home with AR-15-style rifle; no injuries reported, police say",
+        "summary": "# Summary\n\nA woman opened fire on pop star Rihanna's Los Angeles home with an AR-15-style rifle on Sunday while Rihanna was inside, with four rounds or fragments striking the property. The suspected shooter was taken into custody, though her name and motive have not been released. No injuries were reported, and the weapon was recovered by police. The LAPD's Robbery-Homicide Division is investigating the incident.",
+        "url": "https://www.nbcnews.com/news/us-news/woman-shoots-rihannas-l-home-ar-15-style-rifle-no-injuries-reported-po-rcna262362",
+        "category": "US News",
+        "publishedAt": "2026-03-09T01:07:20.263Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_30",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Device ignited at Gracie Mansion protest was an improvised explosive, NYPD says",
+        "summary": "# Summary\n\nTwo men, ages 18 and 19, were arrested after devices were thrown outside Gracie Mansion during dueling protests on Saturday, with at least one device ignited. Police confirmed the devices were improvised explosive devices containing what preliminary testing identified as TATP, a volatile homemade explosive, along with nuts, bolts, screws, and a hobby fuse. The incident occurred during an anti-Islam demonstration led by conservative influencer Jake Lang and a larger counterprotest; the FBI's Joint Terrorism Task Force is investigating the matter as a potential act of terrorism, in part because one suspect referenced ISIS to law enforcement. Both men, from Pennsylvania, are in federal custody as law enforcement conducts searches of their homes and electronic devices.",
+        "url": "https://www.nbcnews.com/news/us-news/gracie-mansion-devices-bombs-rcna262321",
+        "category": "US News",
+        "publishedAt": "2026-03-08T17:44:30.689Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_32",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "TSA staffing shortages amid partial government shutdown lead to long lines at airports",
+        "summary": "# Summary\n\nA partial government shutdown has left TSA workers without pay, causing severe airport congestion during spring break travel. Major U.S. airports experienced security wait times up to three hours on Sunday, with the Houston and Atlanta airports being hit particularly hard. The shutdown occurred after lawmakers deadlocked over funding for the Department of Homeland Security, with Democrats seeking reforms to ICE and Customs and Border Protection following federal agents killing two Americans in Minneapolis, while Republicans argued sufficient changes had already been made. TSA officers, classified as essential employees, must continue working without compensation while Congress remains stalled on a funding agreement.",
+        "url": "https://www.nbcnews.com/news/us-news/major-airports-grapple-hourslong-security-wait-tsa-staffing-shortages-rcna262344",
+        "category": "US News",
+        "publishedAt": "2026-03-08T23:19:10.998Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_33",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Meet the Press - March 8, 2026",
+        "summary": "I don't see the actual article content in your message\u2014only a title and a note about transcripts. To provide an accurate summary, I would need the full text of the Meet the Press episode from March 8, 2026. \n\nCould you please share the article content so I can summarize the key facts for you?",
+        "url": "https://www.nbcnews.com/meet-the-press/transcripts/meet-press-march-8-2026-rcna262293",
+        "category": "News",
+        "publishedAt": "2026-03-08T15:25:00.459Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_34",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Iran selects a new supreme leader, and Trump struggles on key issues: Weekend Rundown",
+        "summary": "# Summary\n\nIran has selected Mojtaba Khamenei, son of the former supreme leader, as his replacement, though President Trump and Israel have threatened the new leader will not survive without their approval. The escalating conflict has killed hundreds across the Middle East, including at least 940 in Iran, nearly 400 in Lebanon, 11 in Israel, and seven American troops. According to a new NBC News poll, majorities of voters disapprove of Trump's handling of key issues, particularly the economy, with Democrats maintaining a congressional control advantage ahead of midterm elections. Oil prices surged to $100 per barrel as global markets respond to the ongoing conflict.",
+        "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-march-8-rcna262186",
+        "category": "US News",
+        "publishedAt": "2026-03-08T22:00:40.000Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_35",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "NYPD officer dies in medical episode while deployed to Kuwait in Iran war",
+        "summary": "# Summary\n\nNYPD Officer Sorffly Davius died Friday at Camp Buehring in Kuwait while deployed in support of military operations in the region. Davius, who had served with the NYPD since 2014 and held the rank of major in the Army National Guard's 42nd Infantry Division, was a decorated veteran who previously served with Joint Task Force Empire Shield. State and city officials honored his service to both the military and the police department. His death brings the total number of U.S. service members killed in the ongoing military operation to seven.",
+        "url": "https://www.nbcnews.com/news/us-news/nypd-officer-dies-medical-episode-operation-epic-fury-rcna262252",
+        "category": "US News",
+        "publishedAt": "2026-03-08T21:11:19.584Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_36",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "3 arrested in Peru nightclub bombing as number of injured rises to 44, officials say",
+        "summary": "# Summary\n\nA nightclub bombing in Trujillo, Peru on Saturday left 44 people injured, including three minors, with authorities arresting three suspects by Sunday. The explosion at the Dal\u00ed nightclub occurred in La Libertad region, an area affected by extortion and illegal mining, and municipal officials subsequently closed the club for 30 days due to operating violations. La Libertad has experienced a surge in explosions, with 286 recorded in 2025, including previous incidents that injured dozens and damaged homes.",
+        "url": "https://www.nbcnews.com/world/south-america/3-arrested-peru-nightclub-bombing-rcna262331",
+        "category": "World",
+        "publishedAt": "2026-03-08T21:00:24.577Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_38",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "U.S. judge voids 2025 actions taken by Kari Lake as Voice of America CEO, including job cuts",
+        "summary": "# Summary\n\nA federal judge ruled that Kari Lake's tenure as acting CEO of the U.S. Agency for Global Media violated federal law, voiding all actions she took between July and November 2025, including significant staff cuts at Voice of America. Judge Royce Lamberth found Lake ineligible for the position because she was not employed by the agency when the previous CEO resigned and had not been Senate-confirmed to any federal post. The ruling invalidates a reduction-in-force affecting hundreds of employees and marks the third time this judge has ruled against the Trump administration in VOA-related cases. Lake has indicated she plans to appeal the decision.",
+        "url": "https://www.nbcnews.com/politics/trump-administration/us-judge-voids-2025-actions-taken-kari-lake-voice-america-ceo-job-cuts-rcna262277",
+        "category": "Politics",
+        "publishedAt": "2026-03-08T02:44:54.965Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_39",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Mercedes' George Russell wins F1 season opener as polarizing rule change takes effect",
+        "summary": "# Summary\n\nGeorge Russell won the Australian Grand Prix season opener for Mercedes, with teammate Kimi Antonelli finishing second and Ferrari's Charles Leclerc third, establishing Mercedes as the championship favorite. The race marked the debut of sweeping new F1 regulations that emphasize battery power and strategic deployment over raw speed, a change that has polarized drivers\u2014with some like Max Verstappen and Lando Norris criticizing the rules as \"artificial\" and detrimental to racing. Despite the new regulations resetting the competitive order, Mercedes' strong qualifying and race performance, combined with Ferrari's strategic pit stop mistake during a virtual safety car period, secured the team's dominant result. Several drivers encountered difficulties, including Oscar Piastri crashing before the race start and Aston Martin's drivers failing to finish, while new Cadillac team struggled in its debut.",
+        "url": "https://www.nbcnews.com/sports/formula-1/mercedes-george-russell-wins-f1-season-opener-polarizing-rule-change-t-rcna262280",
+        "category": "Sports",
+        "publishedAt": "2026-03-08T06:02:25.439Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_41",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Niece pushing for 1977 Illinois homicide of Sharrey Case to be solved",
+        "summary": "# Summary\n\nSharrey Lynn Case, a 17-year-old from Belleville, Illinois, disappeared on October 28, 1977, and her body was found eight weeks later strangled with wire and hidden under construction debris. Her niece, Melissa Winnie, is now pushing to solve the cold case, which has seen renewed interest from Senior Detective Ben Vise, who believes modern technology could help crack what he considers a solvable case. Despite a 2005 exhumation attempt and interviews with potential suspects including violent offender Gregory Bowman, no arrests have been made, though DNA and forensic techniques could potentially yield new leads.",
+        "url": "https://www.nbcnews.com/dateline/cold-case-spotlight/detectives-work-solve-1977-illinois-homicide-sharrey-case-dateline-rcna262003",
+        "category": "News",
+        "publishedAt": "2026-03-08T16:41:12.699Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_42",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Museums looted of priceless artifacts as Sudan counts the cost of a deadly conflict",
+        "summary": "# Summary\n\nSudan's National Museum and at least 20 other museums have been systematically looted during the ongoing conflict between the Rapid Support Forces and the Sudanese military, with more than 60% of the National Museum's holdings stolen, including gold and jewelry from ancient kingdoms. The war has caused an estimated $110 million in losses to the culture, antiquities, and tourism sector, while also threatening World Heritage Sites through illegal mining, displacement, and halted maintenance. UNESCO has warned of \"unprecedented\" levels of illicit artifact trafficking, with thousands of priceless pieces smuggled out of the country and sold online, though a recovery committee has retrieved 570 items thus far. The conflict, which has killed at least 40,000 people and displaced 13.6 million, continues with no resolution in sight, hampering efforts to protect and recover Sudan's irreplaceable cultural heritage.",
+        "url": "https://www.nbcnews.com/world/africa/museums-looted-priceless-artifacts-sudan-counts-cost-deadly-conflict-rcna260473",
+        "category": "World",
+        "publishedAt": "2026-03-08T16:00:00.000Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_43",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "International Women's Day is a celebration and a call to action. Here are things to know.",
+        "summary": "# Summary\n\nInternational Women's Day, observed on March 8 and officially recognized by the United Nations in 1977, is a global day of demonstrations and celebrations focused on advancing women's rights and equality. This year's theme, \"Give to Gain,\" emphasizes fundraising and support for women's organizations, while activists worldwide advocate for equal pay, reproductive rights, education, and justice. The day originated in the U.S. in 1909 and became globally observed after a major Russian women's protest in 1917, with 2026 marking the 115th anniversary. According to UN data, women currently hold only 64% of the legal rights that men have, and some argue the observance is increasingly vital as recent developments\u2014including the U.S. Supreme Court's 2022 abortion decision\u2014have threatened women's rights gains.",
+        "url": "https://www.nbcnews.com/news/us-news/international-womens-day-celebration-call-action-rcna262306",
+        "category": "US News",
+        "publishedAt": "2026-03-08T15:52:55.475Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_44",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Meet the Press Transcripts",
+        "summary": "This is a comprehensive archive of Meet the Press transcripts spanning from December 2025 back to January 2013. The document lists episodes chronologically with their air dates and includes the names of all guests who appeared on each episode, including government officials, senators, representatives, governors, political analysts, and various other commentators. The transcripts are organized by date with links to full episode transcripts for reference.",
+        "url": "https://www.nbcnews.com/meet-the-press/news/meet-the-press-transcripts-archive-rcna254151",
+        "category": "News",
+        "publishedAt": "2026-01-15T22:30:24.995Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_45",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Iran soccer team exits Women\u2019s Asian Cup and faces the prospect of a return home",
+        "summary": "# Summary\n\nIran's women's soccer team was eliminated from the Women's Asian Cup after losing to the Philippines on Sunday, forcing them to contemplate returning to Iran amid an ongoing war. The team's departure timeline remains unclear as organizers have not announced details. An Australian Iranian Council petition with over 50,000 signatures is urging the government to protect team members from potential persecution upon return, citing safety concerns for the players. Iran's head coach stated the team wants to return home as soon as possible, though some activists and organizations are requesting the Australian government provide the players safe options and legal support.",
+        "url": "https://www.nbcnews.com/world/iran/iran-soccer-team-womens-asian-cup-rcna262299",
+        "category": "World",
+        "publishedAt": "2026-03-08T15:25:37.148Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_46",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "NFL's free-agent spending frenzy begins first with a legal tampering period",
+        "summary": "# NFL Free Agency Summary\n\nThe NFL's free agency period begins Monday with a 52-hour legal tampering window, allowing teams to negotiate contracts with agents of unrestricted free agents before the official league year starts Wednesday. High-profile free agents include edge rusher Trey Hendrickson, wide receiver Mike Evans, quarterbacks Kirk Cousins and Kyler Murray, and Super Bowl MVP Kenneth Walker III. The 2026 salary cap is set at $301.2 million per team, up from $279.2 million last year, with teams required to be under the cap by Wednesday at 4 p.m. ET. The tampering period applies only to unrestricted free agents, while restricted free agents and players with franchise or transition tags operate under different rules.",
+        "url": "https://www.nbcnews.com/sports/nfl/nfls-free-agent-spending-frenzy-begins-first-legal-tampering-period-rcna262294",
+        "category": "Sports",
+        "publishedAt": "2026-03-08T15:07:17.976Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_47",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "12 years on, renewed hunt for missing Flight MH370 comes up empty as families press for answers",
+        "summary": "# Summary\n\nTwelve years after Malaysia Airlines Flight MH370 disappeared with 239 people aboard in 2014, a renewed deep-sea search in the southern Indian Ocean conducted by Ocean Infinity between March 2025 and January 2026 has found no confirmed aircraft wreckage. The Texas-based company surveyed approximately 2,900 square miles of seabed under a \"no-find, no-fee\" contract worth $70 million, with weather occasionally disrupting operations. Families of the missing passengers are pressing the Malaysian government to extend Ocean Infinity's contract and to pursue similar arrangements with other deep-sea exploration companies to continue searching the remaining areas.",
+        "url": "https://www.nbcnews.com/world/asia/12-years-hunt-missing-flight-mh370-rcna262296",
+        "category": "World",
+        "publishedAt": "2026-03-08T14:38:50.229Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_48",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Iran's foreign minister rejects calls for a ceasefire: 'We need to continue fighting for the sake of our people'",
+        "summary": "# Summary\n\nIran's Foreign Minister Abbas Araghchi rejected calls for a ceasefire, stating Iran must \"continue fighting for the sake of our people\" and that a permanent end to the war is necessary. Araghchi acknowledged cooperation between Iran and Russia but did not confirm reports that Russia is providing intelligence to Iran on U.S. military positions in the Middle East. He also stated that Iran's attacks target American military installations located in neighboring countries, not the countries themselves, and warned that Iran has soldiers prepared to fight any U.S. ground invasion. Additionally, Araghchi said Iran's new supreme leader would be chosen by the Assembly of Experts and rejected any foreign interference in Iran's domestic affairs.",
+        "url": "https://www.nbcnews.com/world/iran/irans-foreign-minister-rejects-calls-ceasefire-continue-fighting-rcna262291",
+        "category": "World",
+        "publishedAt": "2026-03-08T13:56:33.114Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_49",
+    "sourceCount": 1,
+    "sources": [
+      "NBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "NBC News",
+        "title": "Hakeem Jeffries won't commit to blocking additional Iran war funding",
+        "summary": "# Summary\n\nHouse Minority Leader Hakeem Jeffries declined to commit to blocking additional Iran war funding on Sunday, stating that President Trump has failed to justify the military operation but saying Democrats would address the issue \"when we get to it.\" Jeffries criticized the administration for not making its case to Congress and the American people, saying Trump bears responsibility for explaining the war's rationale. Democratic lawmakers, including Senator Chris Coons, expect the Trump administration will request supplemental funding and are demanding more transparency about the war's planning and outcomes before committing support. Jeffries also addressed the ongoing Department of Homeland Security shutdown, rejecting the recent firing of Secretary Kristi Noem as insufficient without policy changes regarding Immigration and Customs Enforcement.",
+        "url": "https://www.nbcnews.com/politics/congress/hakeem-jeffries-wont-commit-iran-war-funding-defense-department-rcna262271",
+        "category": "Politics",
+        "publishedAt": "2026-03-08T14:24:07.598Z",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_50",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Alexander Butterfield, the Nixon aide who disclosed Watergate tapes, dies at 99",
+        "summary": "# Summary\n\nAlexander Butterfield, the White House aide who revealed that President Richard Nixon had secretly installed a taping system in the Oval Office, has died at age 99. Butterfield's disclosure in July 1973 to Senate investigators about the existence of recordings of Nixon's conversations proved pivotal to the Watergate scandal, ultimately leading to Nixon's resignation in August 1974 after the Supreme Court ordered him to release the tapes. As deputy assistant to the president from 1969 to 1973, Butterfield oversaw the voice-activated listening devices placed in multiple locations, and later expressed that he believed Nixon knew about the Watergate break-in and orchestrated its cover-up.",
+        "url": "https://abcnews.com/Politics/wireStory/alexander-butterfield-nixon-aide-disclosed-watergate-tapes-dies-130912460",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T20:27:51+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_52",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Charles, William and Kate met by protesters at Commonwealth Day celebration",
+        "summary": "# Summary\n\nMembers of the British royal family, including King Charles III, Queen Camilla, Prince William, and Kate, were met by anti-monarchy protesters at Westminster Abbey on Monday during the Commonwealth Day service. The protesters, organized by the group Republic, displayed signs and chanted as the royals arrived, expressing concerns about the family's handling of Andrew Mountbatten-Windsor (formerly Prince Andrew), who was arrested on February 23 on suspicion of misconduct in public office. Andrew's name appeared in documents related to the late Jeffrey Epstein released by the U.S. Department of Justice in January. The royal family has largely remained silent on the matter, with only Prince Edward and statements from Buckingham Palace and Kensington Palace expressing concern for victims.",
+        "url": "https://abcnews.com/GMA/News/britains-royal-family-met-protesters-commonwealth-day-event/story?id=130896721",
+        "category": "News",
+        "publishedAt": "2026-03-09T20:20:21+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_53",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Timoth\u00e9e Chalamet faces criticism for opera, ballet comments ahead of Oscars",
+        "summary": "# Summary\n\nTimoth\u00e9e Chalamet is facing criticism from the arts community after comments he made during a February town hall in which he said \"no one cares\" about ballet and opera anymore. Ballet dancers, conductors, and opera companies have responded publicly on social media, with New York City Ballet principal dancer Megan Fairchild and conductor Alondra de la Parra among those pushing back, arguing that these are rigorous disciplines worthy of respect. The backlash comes days before the 2026 Oscars, where Chalamet is a leading contender for best actor, though critics note the timing may be strategic given the competitive nature of awards season.",
+        "url": "https://abcnews.com/GMA/Culture/timothee-chalamet-faces-criticism-opera-ballet-comments-ahead/story?id=130896360",
+        "category": "News",
+        "publishedAt": "2026-03-09T20:04:31+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_55",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Trump dismisses soaring gas prices as 'a little glitch' of Iran war",
+        "summary": "# Summary\n\nTen days into a U.S. military conflict with Iran, gas prices have surged to a national average of $3.47 per gallon and oil exceeded $100 a barrel, prompting concerns about the impact on the cost of living ahead of the 2026 midterms. President Trump dismissed the price increases as \"a little glitch,\" arguing the economic cost is worthwhile for security, though polling shows only 36% of voters approve of his handling of inflation. Democrats, including Senate Minority Leader Chuck Schumer, are calling for Trump to release oil from the Strategic Petroleum Reserve to provide relief, while analysts warn gas prices could rise another 15-35 cents over the next few days if the conflict continues.",
+        "url": "https://abcnews.com/Politics/trump-dismisses-soaring-gas-prices-glitch-iran-war/story?id=130903288",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T19:45:30+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_57",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "ACC Tournament arrives with league poised to claim hefty haul of March Madness bids",
+        "summary": "# Summary\n\nThe ACC men's basketball tournament begins this week in Charlotte with the conference positioned to secure significantly more NCAA Tournament bids after a recent decline. Duke enters as the No. 1-ranked team, and the ACC is projected to receive eight bids according to major projection sources, rebounding from four bids last year\u2014the fewest since 2013. The league improved through multiple initiatives including reducing the conference schedule to 18 games to allow better nonconference scheduling, and metrics show substantial progress: four or five teams ranked in the AP Top 25 in most polls this year compared to a maximum of three last year, and 74 Quadrant 1 wins compared to just 29 last year.",
+        "url": "https://abcnews.com/Sports/wireStory/acc-tournament-arrives-league-poised-claim-hefty-haul-130910654",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T19:10:52+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_59",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "A 1-pound lawsuit puts Gerry Adams\u2019 alleged IRA role on trial in London",
+        "summary": "# Summary\n\nFormer Sinn F\u00e9in leader Gerry Adams is being sued in London's High Court over allegations that he was an Irish Republican Army leader responsible for IRA bombings in England in 1973 and 1996. The claimants\u2014three people injured in the attacks\u2014are seeking a nominal 1 pound in damages and vindication rather than monetary compensation. Adams has consistently denied ever being an IRA member, though some former colleagues have claimed he held leadership positions within the organization. The nonjury trial, expected to conclude next week, marks the first time a court has been asked to determine the truth of these long-standing allegations.",
+        "url": "https://abcnews.com/International/wireStory/1-pound-lawsuit-puts-gerry-adams-alleged-ira-130909182",
+        "category": "World",
+        "publishedAt": "2026-03-09T19:03:47+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_62",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "A sweeping biography of Robert McNamara wins $50,000 book prize",
+        "summary": "# Summary\n\n\"McNamara at War,\" a biography of former Defense Secretary Robert McNamara by Philip and William Taubman, has won the $50,000 Barbara and David Zalaznick Book Prize in American History. The book traces McNamara's rise as a business leader after World War II and his subsequent downfall as a Vietnam War advocate who later concluded the conflict was unwinnable. McNamara served as defense secretary for seven years before resigning in 1968 to become president of the World Bank, amid disagreements with President Johnson over Vietnam War policy. The Taubman brothers will receive an engraved medal and the title of American Historian Laureate at a ceremony in April.",
+        "url": "https://abcnews.com/Entertainment/wireStory/sweeping-biography-robert-mcnamara-wins-50000-book-prize-130910267",
+        "category": "Culture",
+        "publishedAt": "2026-03-09T18:42:47+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_63",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "PA state trooper died 'doing what he dedicated his life to': Governor",
+        "summary": "# Summary\n\nPennsylvania State Police Corporal Timothy O'Connor Jr., a 15-year veteran, was fatally shot during a traffic stop near West Caln Township in Chester County on Sunday night. The alleged shooter, 32-year-old Jesse Nathan Elks, opened fire from his vehicle as O'Connor approached, then exited the car and died by suicide at the scene. Governor Josh Shapiro called O'Connor a hero and dedicated public servant, noting he was a 40-year-old married father of one daughter. Authorities are investigating the motive behind the shooting.",
+        "url": "https://abcnews.com/US/pennsylvania-state-trooper-fatally-shot-authorities/story?id=130892008",
+        "category": "US News",
+        "publishedAt": "2026-03-09T18:38:34+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_64",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Bangladesh working with India to extradite 2 suspects in killing of prominent activist",
+        "summary": "# Summary\n\nBangladesh is working through diplomatic channels with India to extradite two suspects, Faisal Karim Masud and Alamgir Hossain, arrested in India's West Bengal state in connection with the December killing of activist Sharif Osman Hadi. Hadi, a student leader and spokesperson for a youth group, was shot in Dhaka on December 12 and died in Singapore on December 18, sparking widespread protests across Bangladesh. An Indian court ordered the suspects held for questioning, and Bangladesh's government is seeking consular access to confirm their identities before proceeding with extradition under the two countries' treaty. Hadi had been a prominent figure in the 2024 uprising that ended former Prime Minister Sheikh Hasina's 15-year rule.",
+        "url": "https://abcnews.com/International/wireStory/bangladesh-working-india-extradite-2-suspects-killing-prominent-130897030",
+        "category": "World",
+        "publishedAt": "2026-03-09T18:28:04+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_66",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Vance reflects on attending his 1st dignified transfer for US service members",
+        "summary": "# Summary\n\nVice President JD Vance attended his first dignified transfer ceremony at Dover Air Force Base on Saturday to pay respects to six American service members killed in a conflict with Iran, with a seventh service member expected to return Monday. Vance reflected on the experience during remarks to the International Association of Fire Fighters, calling for prayers for the fallen service members and their families. He also drew a connection between military personnel and first responders, noting the shared sacrifice of those in uniform who risk their lives for their communities.",
+        "url": "https://abcnews.com/Politics/vance-reflects-attending-1st-dignified-transfer-us-service/story?id=130906865",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T18:07:43+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_67",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "17-year-old returns to cheering after rare combined heart, kidney double transplant",
+        "summary": "# Summary\n\nSeventeen-year-old Macey Brown from Missouri underwent a rare combined heart and kidney transplant at St. Louis Children's Hospital in October 2025, the first pediatric surgery of its kind in Missouri. Brown had received her first heart transplant at 9 weeks old due to a congenital heart defect, but doctors warned it might not last beyond age 20; last summer, both her transplanted heart and kidneys began to fail. After spending 54 days in the hospital, she has recovered and returned to school and cheerleading, with both organs coming from the same donor to help prevent rejection. The case highlights the importance of organ donation, with medical experts noting that over 100,000 people are on transplant waiting lists while only 60% of Americans are registered as donors.",
+        "url": "https://abcnews.com/GMA/Wellness/17-year-returns-cheering-after-rare-combined-heart/story?id=130896513",
+        "category": "News",
+        "publishedAt": "2026-03-09T18:00:33+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_68",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Iran may be activating sleeper cells outside the country, alert says",
+        "summary": "# Summary\n\nThe U.S. intercepted encrypted communications believed to originate from Iran that may activate \"sleeper assets\" outside the country, according to a federal alert sent to law enforcement agencies. The transmission was detected shortly after Ayatollah Ali Khamenei's death in a U.S.-Israeli attack on February 28, and appeared to be encoded for \"clandestine recipients.\" While no specific operational threat has been identified, the alert instructs law enforcement to increase monitoring of suspicious radio-frequency activity, reflecting concerns that Iranian sleeper cells could be used for retaliation.",
+        "url": "https://abcnews.com/US/iran-activating-sleeper-cells-alert/story?id=130897687",
+        "category": "US News",
+        "publishedAt": "2026-03-09T17:39:37+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_69",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "'Criminal explosion' strikes synagogue in Belgium, official says",
+        "summary": "# Summary\n\nAn explosion occurred at a synagogue in Li\u00e8ge, Belgium early Monday morning around 4 a.m., which officials characterized as a \"criminal explosion\" and \"violent act of antisemitism.\" The blast caused material damage but resulted in no casualties, and the site was secured. The city's mayor condemned the attack and stated that external conflicts should not be brought into the city.",
+        "url": "https://abcnews.com/International/criminal-explosion-strikes-synagogue-belgium-official/story?id=130892648",
+        "category": "World",
+        "publishedAt": "2026-03-09T17:38:06+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_71",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Travis Kelce's expected retirement decision revealed",
+        "summary": "# Summary\n\nTravis Kelce is expected to play a 14th season with the Kansas City Chiefs rather than retire, according to NFL Network and ESPN reports. The tight end had publicly expressed uncertainty about his future following last season but indicated in January's \"New Heights\" podcast that his love for football remained and he would return if his body could handle another season. Kelce's likely decision to continue comes after an accomplished career that includes 11 consecutive Pro Bowl selections, over 13,000 receiving yards, and appearances in three recent Super Bowl teams.",
+        "url": "https://abcnews.com/GMA/Culture/travis-kelces-expected-retirement-decision-revealed/story?id=128908137",
+        "category": "News",
+        "publishedAt": "2026-03-09T16:56:06+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_72",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Pentagon IDs 7th US service member killed in Iran war",
+        "summary": "# Pentagon Identifies 7th Service Member Killed in Iran War\n\nThe Defense Department identified Sgt. Benjamin Pennington, 26, as the seventh U.S. service member killed in the conflict with Iran. Pennington died from injuries sustained during a March 1 Iranian retaliatory strike on Prince Sultan Air Base in Saudi Arabia, where he was working at a strategic radar installation for missile defense. He will be posthumously promoted to staff sergeant. Pentagon officials have indicated that additional casualties are likely as the conflict continues.",
+        "url": "https://abcnews.com/Politics/pentagon-ids-7th-us-service-member-killed-iran/story?id=130902276",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T16:38:32+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_74",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Senator introduces bill to combat illiteracy: 'Reading unlocks life-long success'",
+        "summary": "# Summary\n\nSenator Andy Kim (D-N.J.) introduced the \"Open Books, Open Doors Act,\" which seeks $100 million in annual federal grants to combat illiteracy and address \"book deserts\"\u2014areas lacking reliable access to books. The bill would support science-based reading programs, early screening for reading disabilities, and evidence-based book access strategies, with backing from over 20 education organizations. Recent data shows about a third of fourth graders cannot read above basic levels, with limited book access and decreased leisure reading cited as major contributing factors. Education Secretary Linda McMahon has opposed increased federal education spending, arguing states and local leaders should lead literacy efforts instead.",
+        "url": "https://abcnews.com/Politics/sen-andy-kim-introduces-bill-combat-illiteracy-reading/story?id=130862493",
+        "category": "Politics",
+        "publishedAt": "2026-03-09T16:05:20+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_75",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Hungarian leader Orb\u00e1n urges European Union to lift Russian energy sanctions",
+        "summary": "# Summary\n\nHungarian Prime Minister Viktor Orb\u00e1n has called on the European Union to suspend sanctions on Russian energy, citing recent spikes in oil and gas prices following escalations in the Middle East conflict. Orb\u00e1n, who maintains close ties to Russia, sent a letter to EU leadership and convened an emergency government meeting to address energy price concerns in Hungary. Hungary and neighboring Slovakia have long resisted EU efforts to reduce Russian energy dependence and currently hold exemptions from EU restrictions on Russian oil imports. Tensions have intensified between Hungary and Ukraine over halted oil deliveries through the Druzhba pipeline, with Orb\u00e1n blocking EU aid to Ukraine and vetoing new sanctions against Russia in response.",
+        "url": "https://abcnews.com/International/wireStory/hungarian-leader-orbn-urges-european-union-lift-russian-130897422",
+        "category": "World",
+        "publishedAt": "2026-03-09T15:17:51+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_76",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Simon & Schuster names former Amazon executive Greg Greeley as CEO, succeeding Jonathan Karp",
+        "summary": "# Summary\n\nSimon & Schuster has appointed Greg Greeley, a former Amazon executive, as its new CEO, effective immediately, succeeding Jonathan Karp who stepped down to lead his own imprint. The 62-year-old Greeley brings nearly 20 years of experience at Amazon\u2014including serving as vice president of Amazon Prime\u2014along with leadership roles at Airbnb, Opentrons, and Thrasio. The publisher, which celebrated its centennial in 2024 and publishes bestselling authors including Stephen King and Colleen Hoover, appointed Greeley at a time when the publishing industry is navigating significant changes, particularly around the role of artificial intelligence.",
+        "url": "https://abcnews.com/Entertainment/wireStory/simon-schuster-names-former-amazon-executive-greg-greeley-130901282",
+        "category": "Culture",
+        "publishedAt": "2026-03-09T15:16:52+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_77",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Iraq coach Graham Arnold urges FIFA to postpone his team's World Cup playoff because of Iran war",
+        "summary": "# Summary\n\nIraq's national soccer team coach Graham Arnold has requested that FIFA postpone the country's World Cup playoff match scheduled for March 31 against either Suriname or Bolivia due to disruptions from the Iran conflict. Arnold cited major logistical obstacles including closed Iraqi airspace until April 1, players unable to obtain visas due to embassy closures, and his own stranding in the United Arab Emirates. He proposed delaying the final playoff until a week before the World Cup begins while allowing the preliminary match between Suriname and Bolivia to proceed as scheduled, arguing the team needs its full roster of domestic players available for what he called \"the country's biggest game in 40 years.\"",
+        "url": "https://abcnews.com/Sports/wireStory/iraq-coach-graham-arnold-urges-fifa-postpone-teams-130903570",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T15:16:13+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_78",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Russian anthem rings out at Paralympics for first time in 12 years after Voronchikhina takes gold",
+        "summary": "# Summary\n\nRussia's national anthem played at the Paralympics for the first time in over a decade after Para alpine skier Varvara Voronchikhina won gold in the women's super-G standing competition at Milan Cortina. Russian athletes are competing under their own flag at these Winter Paralympics after years of competing as neutral athletes due to doping violations and the invasion of Ukraine. This marks the first time Russia's anthem has been played at a major global sporting event since the 2022 invasion of Ukraine and the first time at the Paralympics since 2014. The International Paralympic Committee's decision to grant wildcard entries to Russian athletes drew criticism from Ukraine and other nations, some of which boycotted the opening ceremony.",
+        "url": "https://abcnews.com/Sports/wireStory/russian-anthem-rings-paralympics-time-12-years-after-130903594",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T15:16:11+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_79",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Madrid-Man City, PSG-Chelsea rematches headline Champions League last-16 with newcomer Bod\u00f8/Glimt",
+        "summary": "# Summary\n\nThe Champions League round of 16 begins Tuesday with several notable matchups, including rematches between Real Madrid and Manchester City, and PSG and Chelsea. Bod\u00f8/Glimt of Norway makes its historic entry into this stage, ending a 29-year absence for Norwegian teams, and will host Sporting Lisbon on its Arctic Circle artificial turf where recent opponents Manchester City and Inter Milan both lost 3-1. Real Madrid's Kylian Mbapp\u00e9 is doubtful for the PSG-Chelsea match due to a knee injury, while other notable fixtures include Galatasaray vs. Liverpool and Barcelona vs. Newcastle, both rematches from the league phase that took place months earlier.",
+        "url": "https://abcnews.com/Sports/wireStory/madrid-man-city-psg-chelsea-rematches-headline-champions-130903640",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T15:16:10+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_80",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Paris Hilton launches recovery fund for women business owners after disasters",
+        "summary": "# Summary\n\nParis Hilton launched the Back in Business Recovery Fund, a national initiative to support women-owned small businesses affected by disasters. Hilton is donating $350,000 with a goal to raise $1 million by the end of March, partnering with her organization 11:11 Media Impact and GoFundMe.org, which is contributing $100,000. The fund expands on efforts following the 2025 Los Angeles fires, where Hilton and these organizations distributed over $1 million in grants to 50 women-owned businesses, with 90% still operating a year later.",
+        "url": "https://abcnews.com/Business/wireStory/paris-hilton-launches-recovery-fund-women-business-owners-130897680",
+        "category": "Business",
+        "publishedAt": "2026-03-09T13:54:58+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_82",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Uber's women-only option goes nationwide in the US",
+        "summary": "# Summary\n\nUber is expanding its women-only matching feature nationwide across the U.S., allowing both women riders and drivers to request to be matched with other women. The rollout comes despite an ongoing class action lawsuit in California filed by male drivers who argue the policy is discriminatory. Uber piloted the feature in select cities last summer and says it addresses safety concerns, though both Uber and rival Lyft face similar discrimination lawsuits over their women-preference policies.",
+        "url": "https://abcnews.com/US/wireStory/ubers-women-option-nationwide-us-130898520",
+        "category": "US News",
+        "publishedAt": "2026-03-09T14:02:55+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_83",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Stars hit Paris runways, but fall\u2019s real trend was dressing for hard times \u2014 and real life",
+        "summary": "# Summary\n\nParis Fashion Week showcased a shift in luxury fashion as major designers responded to current global tensions by creating clothes that reflect real life rather than offering escape. Key trends included protective silhouettes with high collars and strong tailoring, a move away from years of oversized clothing back toward more fitted shapes closer to the body, and a deliberate embrace of imperfect, messier glamour with rougher textures and darker moods. Designers like Pierpaolo Piccioli at Celine, Sarah Burton at Givenchy, and Se\u00e1n McGirr at McQueen emphasized resilience and personal strength through their collections, replacing the polished, sealed-off aesthetic of luxury with clothes that acknowledge and connect to the tensions of the contemporary world.",
+        "url": "https://abcnews.com/International/wireStory/stars-hit-paris-runways-falls-real-trend-dressing-130899790",
+        "category": "World",
+        "publishedAt": "2026-03-09T14:35:00+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_84",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "South Korea advances to the WBC quarterfinals with 7-2 win over Australia",
+        "summary": "# Summary\n\nSouth Korea defeated Australia 7-2 at the Tokyo Dome to advance to the World Baseball Classic quarterfinals. The win was crucial as South Korea, Australia, and Taiwan all finished group play with 2-2 records, and South Korea needed to win by five runs or more to advance through the tiebreaking system. Bo Gyeong Moon led South Korea's offense with four RBIs, while a throwing error by Australian shortstop Jarryd Dale in the ninth inning proved pivotal in South Korea scoring the deciding run. This marks South Korea's first quarterfinal appearance in the WBC after three consecutive failures to advance from pool play.",
+        "url": "https://abcnews.com/Sports/wireStory/south-korea-advances-wbc-quarterfinals-7-2-win-130900608",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T15:12:43+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_85",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Hims & Hers Health, Novo Nordisk end weight loss medication suit, enter collaboration",
+        "summary": "# Summary\n\nHims & Hers Health and Novo Nordisk have settled a patent lawsuit, with Hims agreeing to stop selling compounded versions of Novo Nordisk's weight-loss drugs like Wegovy and Ozempic. Under the new agreement announced Monday, Hims will instead sell Novo Nordisk's branded versions of these medications through its telehealth platform starting later this month, while ceasing all advertising of compounded GLP-1 drugs. Novo Nordisk has dismissed the lawsuit but reserved the right to refile it in the future. The settlement ended a dispute that began when Hims announced plans for a cheaper, off-brand version of Wegovy shortly after the FDA determined GLP-1 drugs were no longer in shortage.",
+        "url": "https://abcnews.com/Business/wireStory/hims-health-novo-nordisk-end-lawsuit-weight-loss-130901552",
+        "category": "Business",
+        "publishedAt": "2026-03-09T15:11:49+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_86",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Simon & Schuster names former Amazon executive Greg Greeley as CEO, succeeding Jonathan Karp",
+        "summary": "# Summary\n\nSimon & Schuster has appointed Greg Greeley, a former Amazon executive, as its new CEO, effective immediately, succeeding Jonathan Karp who stepped down to lead his own imprint. The 62-year-old Greeley brings nearly 20 years of experience from Amazon, where he held positions including vice president of Amazon Prime, as well as leadership roles at Airbnb, Opentrons, and Thrasio. The board chair noted that Greeley's experience managing enterprises across physical and digital markets makes him well-suited to lead the publisher through industry changes, including ongoing debates about AI's role in publishing.",
+        "url": "https://abcnews.com/Business/wireStory/simon-schuster-names-former-amazon-executive-greg-greeley-130901284",
+        "category": "Business",
+        "publishedAt": "2026-03-09T15:07:58+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_88",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "23 red cards and police intervention as mass brawl mars end of title match in Brazil",
+        "summary": "# Summary\n\nA Brazilian soccer match between Cruzeiro and Atletico Mineiro ended in a mass brawl during the final seconds, resulting in 23 red cards and requiring military police intervention. The fight began after Atletico goalkeeper Everson rugby-tackled and kneed Cruzeiro midfielder Christian, escalating into a prolonged confrontation involving players, coaching staff, and security personnel. Former Brazil forward Hulk, who plays for Atletico, was among those sent off and subsequently apologized on Instagram, saying the incident did not represent the values soccer should embody. Cruzeiro won the match 1-0 to claim the state championship title.",
+        "url": "https://abcnews.com/Sports/wireStory/23-red-cards-police-intervention-mass-brawl-mars-130902923",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T15:04:20+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_89",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Belarus journalist convicted of treason and sentenced to 9 years in prison",
+        "summary": "# Summary\n\nBelarusian journalist Pavel Dabravolski, 36, was convicted of treason and sentenced to nine years in prison following a closed-door trial, marking the fifth media worker jailed in two weeks. Dabravolski, who reported for international and domestic outlets and most recently worked for BelaPAN, was found guilty during the government's ongoing crackdown on press freedom under President Alexander Lukashenko. Opposition leaders and press advocates have characterized the conviction as politically motivated, citing trumped-up charges related to his coverage of the 2020 protests, and note the escalating repression of journalists in a country with Europe's worst freedom of speech record. The conviction contradicts claims that the human rights situation has improved, with human rights organizations estimating 1,140 political prisoners remain in Belarus.",
+        "url": "https://abcnews.com/International/wireStory/belarus-journalist-convicted-treason-sentenced-9-years-prison-130902704",
+        "category": "World",
+        "publishedAt": "2026-03-09T15:03:59+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_90",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "How Trump can try to stop the oil price surge, according to experts",
+        "summary": "# Summary\n\nOil prices surged to their highest levels since September 2024, reaching $3.32 per gallon for gasoline, amid escalating Middle East conflict and near-closure of the Strait of Hormuz, a critical route for one-fifth of global crude oil. The Trump administration is considering several policy options to address the spike, including government-backed shipping insurance for tankers, U.S. Naval escorts through the strait, tapping the Strategic Petroleum Reserve, or ending the conflict. Experts noted that while Naval escorts could theoretically reduce safety concerns, scaling such protection for the roughly 100 ships that transit daily through the 21-mile-wide strait would be challenging, and the most effective solution would be a ceasefire with Iran to restore normal shipping traffic.",
+        "url": "https://abcnews.com/Business/trump-stop-surge-oil-prices-experts-weigh/story?id=130786830",
+        "category": "Business",
+        "publishedAt": "2026-03-09T14:11:31+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_91",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Jaguars and CB Montaric Brown agree to a 3-year, $33 million contract, AP source says",
+        "summary": "# Summary\n\nCornerback Montaric \"Buster\" Brown has agreed to a three-year, $33 million contract with the Jacksonville Jaguars, keeping him off the free agency market. Brown, a seventh-round draft pick in 2022, had his best season in 2025 with 51 tackles, 12 pass defenses, and two interceptions while transitioning to the team's zone-based defensive scheme. The deal maintains the Jaguars' secondary core for 2026, which ranked 11th in total defense last season. Jacksonville still needs to address other defensive needs, including finding a third pass rusher and potentially replacing defensive tackle Arik Armstead.",
+        "url": "https://abcnews.com/Sports/wireStory/jaguars-cb-montaric-brown-agree-3-year-33-130898993",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T13:49:28+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_92",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Jury selection to begin in South Florida for 4 charged in 2021 assassination of Haitian president",
+        "summary": "# Summary\n\nJury selection began Monday in the U.S. federal trial of four men charged in the July 2021 assassination of Haitian President Jovenel Mo\u00efse. Arcangel Pretel Ortiz, Antonio Intriago, Walter Veintemilla, and James Solages face charges of conspiracy to kidnap or kill Mo\u00efse and related offenses, with possible life sentences; a fifth defendant, Christian Sanon, was severed from the trial due to medical reasons. According to court documents, the conspiracy was planned and financed from South Florida, with the conspirators initially planning to install Sanon as Mo\u00efse's replacement before pivoting to support a former Haitian judge. Five other co-conspirators have already pleaded guilty and are serving life sentences.",
+        "url": "https://abcnews.com/US/wireStory/jury-selection-begin-south-florida-5-charged-2021-130891018",
+        "category": "US News",
+        "publishedAt": "2026-03-09T13:46:40+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_93",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Stock markets shudder worldwide after oil prices briefly spike to nearly $120 per barrel",
+        "summary": "# Summary\n\nGlobal stock markets fell sharply as oil prices briefly spiked to nearly $120 per barrel\u2014their highest level since June 2022\u2014amid escalating tensions in the Iran war that threaten Middle Eastern oil production and shipping. Major U.S. indexes declined, with the S&P 500 falling 0.8% and the Dow dropping 440 points, while Asian and European markets experienced steeper losses, including Japan's Nikkei falling 5.2%. Oil and airline stocks were particularly hard hit, and analysts warn that sustained high energy prices could intensify global inflation and economic slowdown if the conflict persists.",
+        "url": "https://abcnews.com/US/wireStory/japans-nikkei-225-share-index-falls-7-oil-130887874",
+        "category": "US News",
+        "publishedAt": "2026-03-09T13:46:47+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_94",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Stock markets shudder worldwide after oil prices briefly spike to nearly $120 per barrel",
+        "summary": "# Summary\n\nGlobal stock markets declined sharply as oil prices briefly spiked to nearly $120 per barrel\u2014their highest level since June 2022\u2014amid escalating conflict in the Iran war that threatens Middle East oil production and shipping. The S&P 500, Dow Jones, and Nasdaq all fell more than 0.8% on Monday, while international markets experienced steeper losses, with Japan's Nikkei dropping 5.2% and European markets losing 2-3%. Analysts warn that sustained high oil and gas prices could revive global inflation, reduce corporate profits, and complicate economic growth, particularly for countries already dealing with higher U.S. tariffs on exports.",
+        "url": "https://abcnews.com/Business/wireStory/japans-nikkei-225-share-index-falls-7-oil-130887883",
+        "category": "Business",
+        "publishedAt": "2026-03-09T13:46:48+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_96",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Merz's party stumbles into a year of German state elections with a narrow defeat",
+        "summary": "# Summary\n\nChancellor Friedrich Merz's Christian Democratic Union (CDU) suffered a narrow defeat in Baden-W\u00fcrttemberg's state election on Sunday, with the Greens taking 30.2% of the vote compared to the CDU's 29.7%. The result marks a disappointing start to 2025, which will feature five German state elections, despite the CDU's long-standing confidence in winning the traditionally conservative region. The Greens' victory was largely attributed to candidate Cem \u00d6zdemir's prominent profile and experience, while the CDU's Manuel Hagel was less well-known and faced negative press coverage. The two parties are expected to govern Baden-W\u00fcrttemberg together in coalition, with \u00d6zdemir becoming Germany's first state governor with Turkish roots.",
+        "url": "https://abcnews.com/International/wireStory/merzs-party-stumbles-year-german-state-elections-narrow-130893121",
+        "category": "World",
+        "publishedAt": "2026-03-09T13:47:36+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_97",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "China beats North Korea 2-1 to take top spot in Group B at Women's Asian Cup",
+        "summary": "# Summary\n\nChina defeated defending champion North Korea 2-1 in a Women's Asian Cup match to claim top spot in Group B. China scored twice in the first half, with the second goal awarded via VAR review in stoppage time, while North Korea scored once on a counter-attack. Both teams had already secured quarterfinal spots before the match, and North Korea will face Australia in the quarterfinals on Friday.",
+        "url": "https://abcnews.com/Sports/wireStory/china-beats-north-korea-2-1-top-spot-130895475",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T13:14:57+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_98",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Bracket Watch: Northern Iowa is back in the NCAA Tournament for the first time in a decade",
+        "summary": "# Summary\n\nNorthern Iowa won the Missouri Valley Conference tournament championship, defeating UIC 23-point performance by Trey Campbell to secure the program's first NCAA Tournament bid since 2016. Six teams have earned automatic bids to this year's tournament, including Long Island University, Tennessee State, Northern Iowa, High Point, Queens University, and North Dakota State. Additional automatic bids remain to be decided Monday night in the Sun Belt and Southern Conference tournaments, while the West Coast Conference semifinals will determine whether Gonzaga, Saint Mary's, and Santa Clara advance to the NCAA Tournament.",
+        "url": "https://abcnews.com/Sports/wireStory/bracket-watch-semifinal-win-puts-liu-tennessee-state-130875932",
+        "category": "Sports",
+        "publishedAt": "2026-03-09T13:22:34+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_99",
+    "sourceCount": 1,
+    "sources": [
+      "ABC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "ABC News",
+        "title": "Finnish pair wins a barrel of ale in annual 'wife-carrying' contest in England",
+        "summary": "# Summary\n\nA Finnish couple, Teemu Touvinen and Jatta Leinonen, won the U.K. Wife Carrying Race in Dorking, Surrey on Sunday with a time of 1 minute and 45 seconds, earning a barrel of local ale as their prize. The quirky annual event features couples racing up and down a hillside while one partner carries the other, with participants wearing silly costumes and facing obstacles like hay bales and buckets of water. The race, inspired by a 19th-century Finnish legend, allows contestants to carry spouses, partners, or other eligible participants over 18 and weighing at least 110 pounds, with the popular \"Estonian Hold\" carrying technique featuring the carried person hanging upside-down. The fastest British couple will represent the U.K. at the World Wife Carrying Championships in Finland in July.",
+        "url": "https://abcnews.com/International/wireStory/finnish-pair-wins-barrel-ale-annual-wife-carrying-130897911",
+        "category": "World",
+        "publishedAt": "2026-03-09T13:30:54+00:00",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_102",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Five Iranian footballers 'in Australian safe house' after Asian Cup protest",
+        "summary": "# Summary\n\nFive members of the Iranian women's football team have taken refuge in an Australian safe house after their elimination from the Asian Cup, with reports they intend to seek asylum. The players faced backlash in Iran after declining to sing the national anthem during their first match against South Korea, with critics calling them \"wartime traitors.\" Hundreds of supporters surrounded the team's coach on Sunday with calls to \"save our girls,\" and a family member confirmed the women are being protected by police. The situation has drawn international attention, with human rights advocates calling for Australia to provide support for the players who fear for their safety upon returning to Iran.",
+        "url": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:29:46 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_103",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "How the Iran war may affect your bills and finances",
+        "summary": "# Summary\n\nThe US-Israeli war with Iran is affecting UK household finances across multiple areas. Petrol prices have risen by several pence per litre, with further increases likely if oil prices remain elevated, which could also push up food and other goods through higher transport costs. Mortgage lenders have raised interest rates and some have withdrawn products entirely, with more \"painful\" increases expected, while energy bills remain capped until July but may rise significantly afterward due to wholesale market costs. Heating oil prices, which have no price cap, have more than doubled since the conflict began, particularly affecting rural and Northern Ireland households.",
+        "url": "https://www.bbc.com/news/articles/c2e4ygndjpwo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 14:21:08 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_104",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "RAF jets have taken out two more drones, says Healey",
+        "summary": "# Summary\n\nRAF Typhoon fighter jets have destroyed two drones\u2014one over Jordan and one heading to Bahrain\u2014according to Defence Secretary John Healey. HMS Prince of Wales, a UK aircraft carrier placed on advanced readiness Saturday, is now unlikely to deploy to the Middle East and is expected instead to head to the Arctic for NATO exercises, while HMS Dragon will sail to the Eastern Mediterranean in the coming days. The UK has faced criticism for responding too slowly to protect Cyprus after a drone struck RAF Akrotiri's runway last week, with the government defending its military buildup in the region since January.",
+        "url": "https://www.bbc.com/news/articles/c0mgyw32j8jo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 18:49:15 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_106",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Passer-by tried to tackle vape shop blaze before inferno",
+        "summary": "# Glasgow Vape Shop Fire Summary\n\nA fire broke out at a vape shop next to Glasgow Central Station on Sunday at approximately 15:45, with an eyewitness reporting that explosions from charging equipment prevented him and another man from containing the blaze. The fire spread rapidly throughout the 19th-century building, causing a partial collapse and destroying multiple businesses, while Glasgow Central Station was closed to all trains. Building control officers have expressed little hope that the gutted building can be salvaged, with the remaining facade likely needing to be demolished.",
+        "url": "https://www.bbc.com/news/articles/cd70wdxrrn4o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 12:52:53 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_107",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "SEND reforms to 'strip away' children's legal protections, charity says",
+        "summary": "# Summary\n\nThe UK government's planned reforms to the special educational needs and disabilities (SEND) system will \"strip away\" legal protections for children, according to the charity IPSEA. The reforms would restrict education, health and care plans (EHCPs) to only the most complex cases by 2035 and replace them with less legally enforceable \"Individual Support Plans\" that depend on funding bands rather than individual needs. IPSEA warns that proposed changes to special needs tribunals would reduce parents' ability to challenge placement decisions and give local authorities more control over school choices. The government says the reforms aim to make mainstream schools more inclusive, while the consultation remains open until mid-May.",
+        "url": "https://www.bbc.com/news/articles/c24dy787revo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:30:11 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_108",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Reeves to look at how to help households with heating oil bills",
+        "summary": "# Summary\n\nChancellor Rachel Reeves has pledged to explore support options for households reliant on heating oil, which has surged in price due to global oil market disruptions linked to the US-Israeli conflict with Iran. Oil prices reached a four-year high of nearly $120 per barrel on Monday, causing heating oil prices to spike significantly\u2014with Northern Ireland households facing an 81% increase and some rural English homes reporting doubled costs. Unlike gas and electricity, heating oil has no price cap protection, affecting approximately 500,000 homes in Northern Ireland and smaller numbers across England, Scotland, and Wales. Reeves has scheduled meetings with Treasury officials and rural and Northern Ireland MPs on Wednesday to discuss potential government action, while the Competition and Markets Authority has warned suppliers against profiteering.",
+        "url": "https://www.bbc.com/news/articles/c07jyd0rrz2o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 20:02:27 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_109",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "King praises Commonwealth at biggest royal gathering since Andrew arrest",
+        "summary": "# Summary\n\nKing Charles attended the Commonwealth Day service at Westminster Abbey with senior royals, where he praised the Commonwealth as a force for unity in a \"fragmented world.\" The event, attended by over 1,800 guests including Prime Minister Sir Keir Starmer and representatives from 56 Commonwealth nations, was the largest royal gathering since Prince Andrew's arrest on suspicion of misconduct in public office last month. Anti-monarchy protesters demonstrated outside the Abbey, raising questions about the royals' knowledge of Andrew's links to deceased financier Jeffrey Epstein. The service featured performances and readings, while Commonwealth leaders continue to consider whether Andrew should remain in the line of succession, with Canada's Prime Minister joining Australia and New Zealand in calling for his removal.",
+        "url": "https://www.bbc.com/news/articles/c5yqzvjzgg4o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:18:35 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_110",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Rape victim 'warned police Andy Malkinson may not be attacker'",
+        "summary": "# Summary\n\nA rape victim who initially identified Andy Malkinson in a police video parade in 2003 testified that she later had doubts about the identification after seeing him in court, but police officers dismissed her concerns as \"trial nerves.\" Malkinson was wrongfully convicted and spent 17 years in prison before his release. The woman is now testifying at the trial of Paul Quinn, who is accused of the same rape and is linked to the crime through DNA evidence that is estimated to be at least one billion times more likely to match him than not match him.",
+        "url": "https://www.bbc.com/news/articles/cde4j20jr6jo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 17:03:35 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_113",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "In maps: Ten days of strikes across the Middle East",
+        "summary": "# Summary\n\nThe Israeli military has launched extensive strikes on Iran, Lebanon, and other Middle East targets over a ten-day conflict that began on February 28, with the former Iranian Supreme Leader Ayatollah Ali Khamenei killed in initial strikes. The IDF reports approximately 3,400 strikes carried out, disabling over 150 Iranian defense systems, while Iran has launched hundreds of missiles and drones at Gulf states and Israel in response. Civilian casualties are reported across the region, including 1,205 in Iran, 394 in Lebanon over the past week, and attacks on Gulf countries have disrupted shipping in the Strait of Hormuz and damaged critical infrastructure. The US has supported Israeli operations with strikes including Tomahawk missiles, and seven American service personnel have been killed since the conflict began.",
+        "url": "https://www.bbc.com/news/articles/c4g0pnnj8xyo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:09:57 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_114",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "I had to travel 90 miles for care when postpartum psychosis set in",
+        "summary": "# Summary\n\nA 30-year-old woman from York was forced to travel 90 miles to Derby for emergency care when she developed postpartum psychosis four days after giving birth, as her local mother and baby unit in Leeds had no available beds. NHS data shows approximately 100 women from Yorkshire have been sent to units outside their local area over five years, with some traveling to Birmingham and London, highlighting significant access issues to specialist perinatal mental health care. The woman has since recovered and is campaigning for more mother and baby units, while experts and politicians argue that improved access to these specialist services is critical, as suicide remains the leading cause of death for women within a year of giving birth.",
+        "url": "https://www.bbc.com/news/articles/c78x14w295lo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 00:40:31 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_115",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Paddington first new musical to win nine WhatsOnStage awards in 'record-setting haul'",
+        "summary": "# Summary\n\nPaddington The Musical won nine awards at the WhatsOnStage Awards, setting a record for the most prizes ever won by a new musical. The show, which debuted at the Savoy Theatre in November and is based on Michael Bond's children's books, tied the joint record previously held by Miss Saigon and Harry Potter and the Cursed Child. Paddington's wins included best new musical and best professional debut, along with awards for direction, costumes, makeup, and sound. Other notable winners included Rachel Zegler for best performer in a musical for Evita, Jonathan Bailey for Richard II, and Stephen Fry for The Importance of Being Earnest.",
+        "url": "https://www.bbc.com/news/articles/cwy6wn3lnyyo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 01:04:49 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_116",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Bitter times for cocoa farmers as chocolate market slumps",
+        "summary": "# Summary\n\nCocoa farmers in West Africa, primarily in Ghana and Ivory Coast, are facing severe financial hardship as cocoa prices have collapsed after surging in 2024. While chocolate prices have risen globally, farmers have not been paid for months as state regulators set prices significantly above current international market rates\u2014Ghana's cocoa board guaranteed $5,300 per tonne when global prices fell below $3,500. The payment delays are affecting approximately 800,000 farmers across the region, with some unable to afford basic healthcare or education for their children, despite cocoa being critical to both nations' economies.",
+        "url": "https://www.bbc.com/news/articles/c93jdk1yy3zo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 00:40:56 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_117",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "I was sexually assaulted in a crowd. Now I'm developing tech to spot suspicious behaviour",
+        "summary": "# Summary\n\nRosie Richardson, a technology director, is developing a laser-based system to detect suspicious behavior in public spaces like train stations and airports. The technology monitors crowds anonymously as dots on a map and alerts security personnel only when it identifies potential threats such as loitering or following patterns. Richardson was motivated to create the tool after experiencing sexual assault in a crowd at age 12 and aims to shift responsibility for safety from individuals to public authorities and space owners. A criminology expert notes that while technology may help, broader societal change and education are needed to truly address violence against women.",
+        "url": "https://www.bbc.com/news/articles/c0jvy4xn0l4o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 06:00:05 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_118",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Images of face released in bid to solve mystery of man found dead in wetsuit",
+        "summary": "# Summary\n\nDetectives in Wales are releasing a digital reconstruction of a man's face in an attempt to identify him 18 months after his decomposed body was found in a wetsuit at a remote reservoir. The body, discovered at Claerwen Reservoir in October 2024, has not been matched to any missing persons despite extensive searches of local, national, and international databases. Specialists at Liverpool John Moores University used photographs, dental records, and CT scans to create the facial reconstruction, revealing distinctive features including an overbite and protruding teeth. Police say the man, believed to be a white male aged 30-60, remains unidentified with no belongings or clues as to how he arrived at the isolated location.",
+        "url": "https://www.bbc.com/news/articles/cy577wd1xgro?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 06:07:53 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_119",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Frost pregnancy tip came from 'good source', ex-Mail journalist tells court",
+        "summary": "# Summary\n\nA former Daily Mail editor, Katie Nicholl, testified in a High Court trial that she obtained information about actress Sadie Frost's 2003 ectopic pregnancy from a freelance journalist with a \"good source,\" denying it came from unlawful means. Frost's lawyer argued the pregnancy details were known only to the father of the child and possibly one close friend, suggesting the information must have come from illegal information gathering, which Nicholl denied. The case is part of a broader trial where Associated Newspapers is accused of \"grave breaches of privacy\" over a 20-year period, which the publisher denies. A judgment is expected after the trial concludes in March.",
+        "url": "https://www.bbc.com/news/articles/c3v7y5z7w21o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 18:44:22 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_120",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Tributes to 'enormously talented' teenage goalkeeper who died after collapsing on pitch",
+        "summary": "# Summary\n\nAmelia Aplin, a 15-year-old goalkeeper for Oxford United's academy, died after collapsing during a Junior Premier League match against Fulham on Saturday afternoon. She was taken to hospital but died later that evening, with Thames Valley Police confirming there were no suspicious circumstances. Her school, Aylesbury High, and numerous football clubs paid tribute to her as a talented athlete and valued member of their communities. The JPL and other organizations expressed their condolences to her family and teammates.",
+        "url": "https://www.bbc.com/news/articles/czx75r7n205o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:25:51 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_123",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Call off King's US visit over Iran, urge Lib Dems",
+        "summary": "# Summary\n\nThe Liberal Democrats are calling on Prime Minister Sir Keir Starmer to prevent King Charles III and Queen Camilla from making a planned state visit to the United States in late April, citing Donald Trump's criticism of Britain's response to Iran. The dispute stems from the UK's initial refusal to allow American planes to use British bases for bombing raids on Iran, though Britain has since authorized the US to conduct \"defensive\" strikes on Iranian missile sites. Trump has publicly criticized Starmer, calling him \"no Winston Churchill,\" while the prime minister has defended his approach as consistent with Britain's principles and security interests. A cabinet minister rejected the Liberal Democrats' position, stating it is not their role to decide what the King should do.",
+        "url": "https://www.bbc.com/news/articles/cz6evlwl68do?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 13:35:59 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_124",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Horse racing trainer guilty of hockey stick assault",
+        "summary": "# Summary\n\nWelsh racehorse trainer Evan Williams, 54, has been found guilty of assault with intent to cause grievous bodily harm against 72-year-old Martin Dandridge, whom he struck repeatedly with a hockey stick in December 2024. The incident occurred when Dandridge was walking his dog near Williams's training facility in Llancarfan, Vale of Glamorgan; Williams claimed he mistook Dandridge for someone \"lamping\" (using bright lights to hunt animals) and that Dandridge's injuries resulted from falling due to his dog. The jury deliberated for one hour 45 minutes before finding Williams guilty, breaking Dandridge's arm during the assault. Williams will be sentenced on April 14 at Cardiff Crown Court, with reports to be prepared ahead of sentencing.",
+        "url": "https://www.bbc.com/news/articles/cp326z23qwno?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 18:10:20 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_125",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Crufts' youngest competitor wows judges - and beats her mum",
+        "summary": "# Crufts Summary\n\nFour-year-old Caitlyn competed at Crufts with her miniature schnauzer Zeeva and received a \"highly commended\" award, finishing fifth in the veteran bitch class\u2014outperforming her mother Lydia who competed in the same category with a different dog. Caitlyn became the youngest competitor at the world's biggest dog show, having qualified at age three and started competing at just eight weeks old. Zeeva, one of four miniature schnauzers the family owns and shows, shares a close bond with Caitlyn and even sleeps in her bed.",
+        "url": "https://www.bbc.com/news/articles/cvg8lmv73vxo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 16:39:27 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_126",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Man City host Liverpool, Port Vale face Chelsea - full FA Cup draw",
+        "summary": "# FA Cup Quarter-Final Draw Summary\n\nPort Vale, a League One club and the lowest-ranked side remaining in the competition, will face Chelsea away in the FA Cup quarter-finals after beating Sunderland. This will be Port Vale's first competitive meeting with Chelsea since 1929 and only their second appearance in the FA Cup quarter-finals in their history. Manchester City will host Liverpool in another quarter-final matchup, while Leeds United will face the winner of Monday's tie between West Ham United and Brentford.",
+        "url": "https://www.bbc.com/sport/football/articles/cedz4yeppp8o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 19:19:32 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_127",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Four big calls Borthwick could make to revive England",
+        "summary": "# Summary\n\nEngland head coach Steve Borthwick faces key selection decisions ahead of the Six Nations finale against France after the team's continued poor performance, including a loss to Italy. The article outlines four potential changes: recalling Marcus Smith to fly-half after his impressive try-assist record in 2024, bringing in physical ball-carriers like Ollie Chessum and Chandler Cunningham-South to balance the pack, resting injury-prone Maro Itoje to allow development of younger players, and potentially empowering alternative leaders like Courtney Lawes. Additionally, Borthwick could reassess England's defensive tactics with attack coaches Lee Blackett and Richard Wigglesworth to improve the team's scoring efficiency, as England has managed less than two points per 22-meter entry in recent matches.",
+        "url": "https://www.bbc.com/sport/rugby-union/articles/c62gek7wkreo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 10:33:43 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_128",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Old Firm chaos: What happened? Who said what? What now?",
+        "summary": "# Summary\n\nCeltic defeated Rangers 3-2 on penalties in a Scottish Cup match at Ibrox on Sunday, with Tomas Cvancara scoring the decisive penalty after 120 goalless minutes. Following the match, violent clashes erupted between supporters of both clubs on the pitch, resulting in nine arrests, injuries to police officers and fans (including a 10-year-old struck by a coin), and condemnation from Police Scotland, political leaders, and football authorities. This incident occurred during Celtic's first full away allocation at Ibrox since 2018, raising questions about future ticket distributions for Old Firm derbies.",
+        "url": "https://www.bbc.com/sport/football/articles/c743ymjm7k7o?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 13:55:14 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_130",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "'Devastated' curlers miss out on semi-finals on tough day for GB",
+        "summary": "# Summary\n\nGreat Britain's Winter Paralympics campaign faced setbacks as wheelchair curlers Jo Butterfield and Jason Kean missed the mixed doubles semi-finals after losing 11-10 to Italy in an extra end, despite mounting a comeback from 10-4 down. Para-alpine skier Neil Simpson finished fourth in the super G, missing out on defending his title from Beijing 2020. In the mixed team curling event, Britain suffered defeats to South Korea (7-6) and Sweden (6-5), damaging their semi-final chances. Menna Fitzpatrick returned from injury to finish sixth in the women's visually impaired super G, with multiple events remaining for British athletes.",
+        "url": "https://www.bbc.com/sport/articles/c3dzyx09xngo?at_medium=RSS&at_campaign=rss",
+        "category": "Top Stories",
+        "publishedAt": "Mon, 09 Mar 2026 19:58:29 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_133",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "G7 to take 'necessary measures' to support energy supplies",
+        "summary": "# Summary\n\nG7 nations pledged to take \"necessary measures\" to support global energy supplies following escalating conflict in the Middle East, though a meeting between G7 finance ministers and the International Energy Agency ended without agreement to release strategic oil reserves. Oil prices surged to nearly $120 a barrel due to fears of prolonged supply disruptions, with approximately one-fifth of global oil shipments typically transiting through the Strait of Hormuz now halted. Global stock markets fell in response, and analysts warn that prolonged conflict could push oil prices to $120-$150 per barrel, potentially causing demand destruction and further inflation pressures that may delay interest rate cuts by central banks.",
+        "url": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 17:33:36 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_134",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+        "summary": "# Summary\n\nCroatia has reinstated compulsory military service for the first time since 2008, with hundreds of teenagers reporting for duty. The first batch of approximately 800 conscripts will undergo two months of military training at barracks across the country, covering traditional skills alongside modern training in drone control and cyberwarfare. The reinstatement was prompted by regional instability, particularly the proximity of the war in Ukraine, with Croatia aiming to train 4,000 recruits annually. The move has prompted neighboring countries, including Slovenia and Serbia, to consider or announce plans to reinstate their own military service requirements.",
+        "url": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 14:49:34 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_135",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+        "summary": "# Summary\n\nNaveed Akram, the 24-year-old alleged gunman in the December 14 Bondi Beach attack that killed 16 people, has sought a court order to suppress his immediate family's names, addresses, and school/work locations on safety grounds. A magistrate granted a temporary non-publication order, though noting his mother's name had already been widely published, and News Corp Australia indicated it would likely challenge the order. Akram faces 59 charges including 15 counts of murder and has not yet entered a plea; his father was killed by police at the scene of the attack.",
+        "url": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 08:13:58 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_136",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Carney calls three by-elections in Canada that could grant him a majority",
+        "summary": "# Summary\n\nCanadian Prime Minister Mark Carney has called three by-elections for April 13 that could give his Liberal Party a majority government. The Liberals currently hold 169 seats\u2014three short of a majority\u2014and winning all three contested seats would secure the 172 needed to govern. Two of the by-elections are in Toronto in traditionally Liberal strongholds, while the third is a closely watched rematch in the Montreal suburb of Terrebonne, where the Liberals won by a single vote in 2025. The vacant seats resulted from the resignations of Chrystia Freeland and Bill Blair, who left for other roles.",
+        "url": "https://www.bbc.com/news/articles/cnv69zp3z4ro?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 14:49:39 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_137",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Bag of cannabis and cash accidentally donated to NZ charity shop",
+        "summary": "# Summary\n\nTwo teenagers in New Zealand were arrested after accidentally leaving a backpack containing 43.2g of cannabis and NZ$3,700 (approximately $2,200) in cash at a charity shop in Southland on February 18. A shop volunteer discovered the bag in the donation area after noticing a strong smell and alerted police. When officers searched the teenagers' vehicle, they also found an air pistol, a police scanner, and additional cash. Due to New Zealand's Youth Court confidentiality rules, officials have not released details about the charges or court appearances.",
+        "url": "https://www.bbc.com/news/articles/c1w5yq924j1o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 11:31:34 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_138",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Guinea opposition leader urges 'direct resistance' after 40 parties dissolved",
+        "summary": "# Summary\n\nGuinea's authorities dissolved 40 political parties, citing non-compliance with legal requirements\u2014a charge the parties deny. Opposition leader Cellou Dalein Diallo, whose own party was among those dissolved, called for \"direct resistance\" to President Mamady Doumbouya, stating that democratic change is no longer possible. The dissolution comes two months before legislative elections and targets parties that could challenge Doumbouya's consolidation of power following his 2021 coup and subsequent election as president.",
+        "url": "https://www.bbc.com/news/articles/cjrqg80y57po?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 14:25:45 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_140",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "India offered sanctuary to Iranian ship three days before US sank it",
+        "summary": "# Summary\n\nIndia granted permission on March 1 for three Iranian naval ships to dock at Indian ports, three days before the US sank the Iranian warship Iris Dena on March 4 in international waters off Sri Lanka's coast, killing at least 87 crew members. The three ships\u2014Iris Dena, Iris Bushehr, and Iris Lavan\u2014had participated in a military exercise in India between February 15-25 before leaving Indian waters on February 25. US Defense Secretary Pete Hegseth characterized the sinking as a demonstration of American military capability, though Iran's Foreign Minister called it an \"atrocity\" conducted without warning in international waters.",
+        "url": "https://www.bbc.com/news/articles/c2e4yxj0pd3o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 12:04:29 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_141",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Istanbul's mayor on trial for corruption charges",
+        "summary": "# Summary\n\nIstanbul's Mayor Ekrem Imamoglu appeared in court as the central defendant in a mass corruption trial, facing over 140 charges including corruption and running a criminal organization, with prosecutors seeking a jail term of up to 2,430 years. Imamoglu and his Republican People's Party deny wrongdoing and claim the trial is politically motivated, accusing President Erdogan of launching a crackdown. The trial began chaotically on Monday when Imamoglu contested the judge's procedural decision, leading to a recess just 15 minutes after proceedings started. Human rights organizations have characterized the prosecution as politically motivated and raising serious fair trial concerns, while Imamoglu was arrested in March after being named as his party's 2028 presidential candidate.",
+        "url": "https://www.bbc.com/news/articles/c204ymjnn80o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 18:35:32 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_142",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "N Korea cancels Pyongyang Marathon for 'some reasons'",
+        "summary": "# Summary\n\nNorth Korea has cancelled the 2026 Pyongyang Marathon scheduled for April 5, citing unspecified reasons. The cancellation was announced by Koryo Tours, the official tour partner, which said the decision was made \"at a level above the organisers\" without further explanation. The annual marathon, established in 1981 to celebrate North Korea's founding leader Kim Il Sung's birth, had just resumed last year after a five-year suspension due to the Covid pandemic. Koryo Tours confirmed that all deposits will be refunded and participants can either retain their deposit for future events or North Korea tours.",
+        "url": "https://www.bbc.com/news/articles/crl4wx8ydxeo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 13:42:56 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_143",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Australians must prove they are over 18 to access porn under new laws",
+        "summary": "# Summary\n\nAustralia has implemented new laws requiring users to verify they are over 18 before accessing adult content, including pornography, R-rated video games, and sexually explicit AI chatbots. Platforms must introduce stricter age-verification checks using methods such as facial recognition, digital IDs, and credit card details, with companies facing fines for breaches. However, experts warn the laws will have limited effectiveness, as digitally savvy young people can use VPNs, parental credentials, or access unregulated overseas sites to circumvent the restrictions, while also raising concerns about data privacy for all users.",
+        "url": "https://www.bbc.com/news/articles/cwy92qpv424o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 03:02:04 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_144",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Rapper-politician Balendra Shah unseats Nepal's ex-PM as he heads for victory",
+        "summary": "# Summary\n\nRapper Balendra Shah, 35, has defeated former Nepalese Prime Minister Sharma KP Oli in his parliamentary constituency with 68,348 votes compared to Oli's 18,734. Shah's Rastriya Swatantra Party (RSP) is on course to win the general election with a majority in directly elected seats according to partial results. The victory represents a generational shift, as Shah and his party have gained support from Gen Z voters frustrated with Nepal's traditional political establishment and issues like unemployment and forced migration.",
+        "url": "https://www.bbc.com/news/articles/c93w6y0lnd9o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 04:36:12 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_146",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "War fuels debate in Cyprus over UK military bases",
+        "summary": "# Summary\n\nA drone strike on Britain's RAF Akrotiri airbase in Cyprus, attributed to Iranian-backed Hezbollah, has intensified debate over the UK's military presence on the island. Protesters demonstrated outside Cyprus' presidential palace demanding the removal of British bases, arguing they occupy the country similar to Turkish occupation of northern Cyprus. The UK Ministry of Defence stated the bases are crucial for regional security and have recently supported operations against Iranian threats, while Cyprus' government emphasized the base was targeted, not Cyprus itself. Cyprus' Foreign Minister indicated the issue of British bases warrants further discussion, though renegotiating the 1960 treaty establishing them would be complex, requiring agreement from the UK, Greece, Turkey, and both Cypriot communities.",
+        "url": "https://www.bbc.com/news/articles/cx2r1xldl1ko?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 08:03:40 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_147",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Boy, 12, among six dead as tornadoes hit Michigan and Oklahoma",
+        "summary": "# Summary\n\nAt least six people died and more than a dozen were injured when tornadoes struck Michigan and Oklahoma on Friday, including a 12-year-old boy named Silas Anderson who died in Edwardsburg, Michigan. Four deaths occurred in southern Michigan and two in Oklahoma, with storms causing widespread damage including destroyed homes, uprooted trees, downed power lines, and damaged buildings. The National Weather Service warned that severe weather could continue into the weekend with thunderstorms and flash flooding expected from the Great Plains to Texas. Both Michigan Governor Gretchen Whitmer and Oklahoma Governor Kevin Stitt declared states of emergency in their respective affected counties to coordinate emergency response and recovery efforts.",
+        "url": "https://www.bbc.com/news/articles/crrxpwzvd5vo?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 01:08:16 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_148",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Swiss reject right-wing plan to cut licence fee for public broadcaster",
+        "summary": "# Summary\n\nSwiss voters rejected a right-wing initiative to reduce the public broadcaster's annual licence fee from 335 Swiss francs to 200 francs, with only 38% supporting the proposal. The Swiss People's Party had argued the fee was too high given rising living costs, but the government and other parliamentary parties opposed the cut, citing the need to maintain coverage across Switzerland's four languages and ensure adequate foreign news and sports reporting. In a separate referendum, approximately 70% of voters backed the government's counter-proposal to enshrine cash availability in the constitution, with the Swiss National Bank guaranteeing the supply of cash.",
+        "url": "https://www.bbc.com/news/articles/c0q32322wq8o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Sun, 08 Mar 2026 20:47:29 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  },
+  {
+    "storyId": "story_149",
+    "sourceCount": 1,
+    "sources": [
+      "BBC News"
+    ],
+    "unique": true,
+    "articles": [
+      {
+        "source": "BBC News",
+        "title": "Spain's migrants welcome amnesty: 'It will help us in every way'",
+        "summary": "# Summary\n\nSpain's government has announced a migrant regularization scheme that will provide at least 500,000 undocumented migrants with one-year renewable residency visas, with applications open from April to June 2024. Applicants must prove five months of residency and have no criminal record. The government cites both humanitarian reasons and economic necessity, as Spain's central bank estimates the country will need approximately 25 million migrants over the next three decades to sustain its economy and social security system. While businesses and migrant advocacy groups support the measure, it faces criticism from right-wing opposition parties who argue it will encourage more illegal immigration.",
+        "url": "https://www.bbc.com/news/articles/crk8rdz5131o?at_medium=RSS&at_campaign=rss",
+        "category": "World",
+        "publishedAt": "Mon, 09 Mar 2026 00:17:54 GMT",
+        "similarityScore": 1.0
+      }
+    ]
+  }
+]
