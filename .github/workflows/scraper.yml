@@ -6,7 +6,12 @@ on:
     - cron: "30 15 * * *"   # 11:30am ET
     - cron: "30 21 * * *"   # 5:30pm ET
     - cron: "30 1 * * *"    # 9:30pm ET
-  workflow_dispatch:          # allow manual runs from GitHub UI
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Articles per source (leave empty for full run)"
+        required: false
+        default: ""
 
 jobs:
   scrape:
@@ -32,4 +37,10 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python compare.py
+        run: |
+          LIMIT="${{ github.event.inputs.limit }}"
+          if [ -n "$LIMIT" ]; then
+            python compare.py --limit "$LIMIT"
+          else
+            python compare.py
+          fi
