@@ -105,6 +105,7 @@ def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
         results.append({
             **article,
             "fullText": "",
+            "imageUrl": "",
             "source": SOURCE_NAME,
             "contentHash": _content_hash(article["title"], article.get("teaser", "")),
         })

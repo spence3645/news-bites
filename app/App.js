@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
   FlatList,
   TouchableOpacity,
   Animated,
@@ -231,6 +232,7 @@ export default function App() {
 
   const renderCard = useCallback(({ item: story }) => {
     const color = categoryColor(story.category);
+    const imageUrl = story.articles.find((a) => a.imageUrl)?.imageUrl || null;
     return (
       <TouchableOpacity
         style={[styles.card, { backgroundColor: t.surface, borderColor: t.border }]}
@@ -248,7 +250,12 @@ export default function App() {
           )}
         </View>
 
-        <Text style={[styles.cardTitle, { color: t.textPrimary }]}>{story.mergedTitle}</Text>
+        <View style={styles.cardBody}>
+          <Text style={[styles.cardTitle, { color: t.textPrimary, flex: 1 }]}>{story.mergedTitle}</Text>
+          {imageUrl && (
+            <Image source={{ uri: imageUrl }} style={[styles.cardThumb, { backgroundColor: t.surfaceAlt }]} />
+          )}
+        </View>
 
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.sourcesScroll} contentContainerStyle={styles.sourcesScrollContent}>
           {[...new Set(story.articles.map((a) => a.source))].map((source) => (
@@ -264,6 +271,7 @@ export default function App() {
   const renderStoryDetail = (story) => {
     const color = categoryColor(story.category);
     const summary = cleanSummary(story.mergedSummary || '');
+    const imageUrl = story.articles.find((a) => a.imageUrl)?.imageUrl || null;
     return (
       <SafeAreaView style={[{ flex: 1 }, { backgroundColor: t.bg }]}>
         <TouchableOpacity onPress={closeStory} style={styles.backButton}>
@@ -276,6 +284,9 @@ export default function App() {
           </View>
 
           <Text style={[styles.detailTitle, { color: t.textPrimary }]}>{story.mergedTitle}</Text>
+          {imageUrl && (
+            <Image source={{ uri: imageUrl }} style={[styles.detailImage, { backgroundColor: t.surfaceAlt }]} />
+          )}
           <Text style={[styles.articleSummary, { color: t.textSecondary }]}>{summary}</Text>
 
           <View style={[styles.sourcesDivider, { borderTopColor: color + '30' }]}>
@@ -452,7 +463,9 @@ const styles = StyleSheet.create({
   },
   multiSourceBadge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: 20 },
   multiSourceText: { fontSize: 11, fontWeight: '700' },
+  cardBody: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
   cardTitle: { fontSize: 17, fontWeight: '700', lineHeight: 24 },
+  cardThumb: { width: 64, height: 64, borderRadius: 8, flexShrink: 0 },
   sourcesScroll: { marginTop: 2 },
   sourcesScrollContent: { flexDirection: 'row', gap: 6, paddingRight: 4 },
   sourceChip: { borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3 },
@@ -495,7 +508,8 @@ const styles = StyleSheet.create({
   backButton: { paddingHorizontal: 20, paddingVertical: 14 },
   backText: { fontSize: 16, fontWeight: '600' },
   detailContent: { paddingHorizontal: 24, paddingTop: 8, paddingBottom: 60 },
-  detailTitle: { fontSize: 26, fontWeight: '800', lineHeight: 34, marginBottom: 24 },
+  detailTitle: { fontSize: 26, fontWeight: '800', lineHeight: 34, marginBottom: 16 },
+  detailImage: { width: '100%', height: 200, borderRadius: 12, marginBottom: 20 },
   articleSummary: { fontSize: 16, lineHeight: 26, marginBottom: 28 },
   sourcesDivider: { borderTopWidth: 1, paddingTop: 16, marginBottom: 12 },
   sourcesLabel: { fontSize: 11, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8 },

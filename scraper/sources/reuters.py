@@ -71,7 +71,7 @@ def _fetch_sitemap(today: str) -> list[dict]:
 
 def _fetch_article(url: str) -> dict:
     """Attempt to fetch full text; returns empty strings if paywalled (401/403)."""
-    result = {"teaser": "", "fullText": ""}
+    result = {"teaser": "", "fullText": "", "imageUrl": ""}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         if resp.status_code in (401, 403):
@@ -82,6 +82,10 @@ def _fetch_article(url: str) -> dict:
         tag = soup.find("meta", property="og:description")
         if tag and tag.get("content"):
             result["teaser"] = tag["content"].strip()
+
+        img_tag = soup.find("meta", property="og:image")
+        if img_tag and img_tag.get("content"):
+            result["imageUrl"] = img_tag["content"].strip()
 
         paragraphs = [
             p.get_text(" ", strip=True)
@@ -123,6 +127,7 @@ def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
             **article,
             "teaser": teaser,
             "fullText": full_text,
+            "imageUrl": fetched.get("imageUrl", ""),
             "source": SOURCE_NAME,
             "contentHash": _content_hash(article["title"], full_text),
         })

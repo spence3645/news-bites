@@ -278,7 +278,7 @@ def enrich_cluster(cluster: dict) -> dict:
         "mergedTitle": merged_title,
         "mergedSummary": merged_summary,
         "category": category,
-        "articles": [{"source": a["source"], "url": a["url"]} for a in articles],
+        "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
     }
 
 

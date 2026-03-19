@@ -93,7 +93,7 @@ def _fetch_feed(url: str) -> list[dict]:
 
 
 def _fetch_article(url: str) -> dict:
-    result = {"teaser": "", "fullText": ""}
+    result = {"teaser": "", "fullText": "", "imageUrl": ""}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         resp.raise_for_status()
@@ -102,6 +102,10 @@ def _fetch_article(url: str) -> dict:
         tag = soup.find("meta", property="og:description")
         if tag and tag.get("content"):
             result["teaser"] = tag["content"].strip()
+
+        img_tag = soup.find("meta", property="og:image")
+        if img_tag and img_tag.get("content"):
+            result["imageUrl"] = img_tag["content"].strip()
 
         for script in soup.find_all("script", type="application/ld+json"):
             try:
@@ -160,6 +164,7 @@ def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
             "title": article["title"],
             "teaser": teaser,
             "fullText": full_text,
+            "imageUrl": fetched.get("imageUrl", ""),
             "source": SOURCE_NAME,
             "publishedAt": article["publishedAt"],
             "contentHash": _content_hash(article["title"], full_text),

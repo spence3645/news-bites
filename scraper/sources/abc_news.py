@@ -98,7 +98,7 @@ def _fetch_sitemap(today: str) -> list[dict]:
 
 def _fetch_article(url: str) -> dict:
     """Fetch teaser (og:description) and fullText (body paragraphs) from an article page."""
-    result = {"teaser": "", "fullText": ""}
+    result = {"teaser": "", "fullText": "", "imageUrl": ""}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         resp.raise_for_status()
@@ -108,6 +108,10 @@ def _fetch_article(url: str) -> dict:
         tag = soup.find("meta", property="og:description")
         if tag and tag.get("content"):
             result["teaser"] = tag["content"].strip()
+
+        img_tag = soup.find("meta", property="og:image")
+        if img_tag and img_tag.get("content"):
+            result["imageUrl"] = img_tag["content"].strip()
 
         # Full text: try JSON-LD articleBody first
         for script in soup.find_all("script", type="application/ld+json"):
@@ -151,6 +155,7 @@ def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
         fetched = _fetch_article(article["url"])
         article["teaser"] = fetched["teaser"]
         article["fullText"] = fetched["fullText"]
+        article["imageUrl"] = fetched.get("imageUrl", "")
         article["source"] = SOURCE_NAME
         article["contentHash"] = _content_hash(article["title"], fetched["fullText"])
         results.append(article)
