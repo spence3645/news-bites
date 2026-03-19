@@ -92,6 +92,9 @@ from sources.fierce_healthcare import scrape as scrape_fierce_health
 from sources.grist import scrape as scrape_grist
 from sources.carbon_brief import scrape as scrape_carbon_brief
 from sources.yale_environment_360 import scrape as scrape_yale_e360
+from sources.nine_to_five_google import scrape as scrape_9to5google
+from sources.science_alert import scrape as scrape_science_alert
+from sources.deadspin import scrape as scrape_deadspin
 
 SOURCES = {
     # General / US News
@@ -136,6 +139,7 @@ SOURCES = {
     "gizmodo": scrape_gizmodo,
     "mittech": scrape_mit_tech,
     "9to5mac": scrape_9to5mac,
+    "9to5google": scrape_9to5google,
     "macrumors": scrape_macrumors,
     "register": scrape_register,
     # Science
@@ -148,10 +152,12 @@ SOURCES = {
     "sciencenews": scrape_science_news,
     "newscientist": scrape_new_scientist,
     "nasa": scrape_nasa,
+    "sciencealert": scrape_science_alert,
     # Sports
     "espn": scrape_espn,
     "cbssports": scrape_cbs_sports,
     "yahoosports": scrape_yahoo_sports,
+    "deadspin": scrape_deadspin,
     # Entertainment
     "tmz": scrape_tmz,
     "people": scrape_people,

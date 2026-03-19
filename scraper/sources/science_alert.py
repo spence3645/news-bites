@@ -9,10 +9,10 @@ from email.utils import parsedate_to_datetime
 import requests
 from bs4 import BeautifulSoup
 
-SOURCE_NAME = "Politico"
+SOURCE_NAME = "ScienceAlert"
 
 RSS_FEEDS = [
-    "https://www.politico.com/rss/politicopicks.xml",
+    "https://www.sciencealert.com/feed",
 ]
 
 HEADERS = {

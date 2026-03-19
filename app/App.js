@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'expo-status-bar';
 import {
   StyleSheet,
@@ -85,17 +86,56 @@ const THEMES = {
   },
 };
 
+import { BannerAd, BannerAdSize, TestIds, MobileAds, InterstitialAd, AdEventType, AdsConsent, AdsConsentStatus } from 'react-native-google-mobile-ads';
+
 const categoryColor = (cat) => CATEGORY_COLORS[cat] || '#6B7280';
 const cleanSummary = (text = '') => text.replace(/^#+\s+[\w\s]+\n+/i, '').trim();
 
-const AdBanner = ({ t }) => (
-  <View style={[styles.adBanner, { backgroundColor: t.adBg, borderTopColor: t.adBorder }]}>
-    <Text style={[styles.adLabel, { color: t.adText, borderColor: t.adBorder }]}>Ad</Text>
-    <Text style={[styles.adText, { color: t.adText }]}>Your ad could live here</Text>
+const AD_UNIT_ID = __DEV__
+  ? TestIds.BANNER
+  : 'ca-app-pub-4363944782565472/8131630949';
+
+const INTERSTITIAL_ID = __DEV__
+  ? TestIds.INTERSTITIAL
+  : 'ca-app-pub-4363944782565472/3027611520'; // replace with your interstitial ad unit ID
+
+const interstitial = InterstitialAd.createForAdRequest(INTERSTITIAL_ID);
+
+const AdBanner = () => (
+  <View style={styles.adBanner}>
+    <BannerAd
+      unitId={AD_UNIT_ID}
+      size={BannerAdSize.BANNER}
+      onAdFailedToLoad={(e) => console.warn('AdMob error:', e.message)}
+    />
   </View>
 );
 
 export default function App() {
+  useEffect(() => {
+    MobileAds().initialize();
+    AdsConsent.requestInfoUpdate().then(async (info) => {
+      if (info.isConsentFormAvailable && info.status === AdsConsentStatus.REQUIRED) {
+        await AdsConsent.showForm();
+      }
+    }).catch(() => {});
+  }, []);
+
+  const storyOpenCount = useRef(0);
+  const interstitialReady = useRef(false);
+
+  useEffect(() => {
+    const unsubLoad = interstitial.addAdEventListener(AdEventType.LOADED, () => {
+      interstitialReady.current = true;
+    });
+    const unsubClose = interstitial.addAdEventListener(AdEventType.CLOSED, () => {
+      interstitialReady.current = false;
+      interstitial.load();
+    });
+    interstitial.load();
+    return () => { unsubLoad(); unsubClose(); };
+  }, []);
+
   const [stories, setStories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -103,18 +143,35 @@ export default function App() {
   const [selectedCategories, setSelectedCategories] = useState(new Set());
   const [filterVisible, setFilterVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [error, setError] = useState(false);
 
   const t = THEMES[darkMode ? 'dark' : 'light'];
 
-  const fetchStories = (isRefresh = false) => {
+  const fetchStories = useCallback((isRefresh = false) => {
     if (isRefresh) setRefreshing(true);
+    setError(false);
     fetch(API_URL)
       .then((res) => res.json())
-      .then((data) => setStories(data.sort((a, b) => b.sourceCount - a.sourceCount)))
+      .then((data) => {
+        const sorted = data.sort((a, b) => b.sourceCount - a.sourceCount);
+        setStories(sorted);
+        AsyncStorage.setItem('cached_stories', JSON.stringify(sorted)).catch(() => {});
+      })
+      .catch(() => setStories((prev) => { if (prev.length === 0) setError(true); return prev; }))
       .finally(() => { setLoading(false); setRefreshing(false); });
-  };
+  }, []);
 
-  useEffect(() => { fetchStories(); }, []);
+  useEffect(() => {
+    AsyncStorage.getItem('cached_stories')
+      .then((cached) => {
+        if (cached) {
+          setStories(JSON.parse(cached));
+          setLoading(false);
+        }
+      })
+      .catch(() => {})
+      .finally(() => fetchStories());
+  }, [fetchStories]);
 
   const CATEGORY_ORDER = ['All', 'World', 'Politics', 'Business', 'Tech', 'Science', 'Sports', 'Entertainment', 'Gaming', 'Music', 'Climate'];
   const activeCategories = new Set(stories.map((c) => c.category));
@@ -123,6 +180,10 @@ export default function App() {
   const slideAnim = useRef(new Animated.Value(width)).current;
 
   const openStory = (story) => {
+    storyOpenCount.current += 1;
+    if (storyOpenCount.current % 10 === 0 && interstitialReady.current) {
+      interstitial.show();
+    }
     setSelectedStory(story);
     slideAnim.setValue(width);
     Animated.timing(slideAnim, { toValue: 0, duration: 280, useNativeDriver: true }).start();
@@ -168,7 +229,7 @@ export default function App() {
 
   const filterActive = selectedCategories.size > 0;
 
-  const renderCard = ({ item: story }) => {
+  const renderCard = useCallback(({ item: story }) => {
     const color = categoryColor(story.category);
     return (
       <TouchableOpacity
@@ -198,7 +259,7 @@ export default function App() {
         </ScrollView>
       </TouchableOpacity>
     );
-  };
+  }, [t]);
 
   const renderStoryDetail = (story) => {
     const color = categoryColor(story.category);
@@ -235,7 +296,7 @@ export default function App() {
           </ScrollView>
         </ScrollView>
 
-        <AdBanner t={t} />
+        <AdBanner />
       </SafeAreaView>
     );
   };
@@ -265,6 +326,13 @@ export default function App() {
       {/* Feed */}
       {loading ? (
         <ActivityIndicator style={{ marginTop: 60 }} size="large" color={t.textPrimary} />
+      ) : error ? (
+        <View style={styles.errorContainer}>
+          <Text style={[styles.errorText, { color: t.textMuted }]}>Couldn't load stories.</Text>
+          <TouchableOpacity onPress={() => fetchStories()} style={[styles.retryButton, { backgroundColor: t.surfaceAlt }]}>
+            <Text style={[styles.retryText, { color: t.textPrimary }]}>Try again</Text>
+          </TouchableOpacity>
+        </View>
       ) : (
         <FlatList
           data={filteredStories}
@@ -273,10 +341,16 @@ export default function App() {
           renderItem={renderCard}
           refreshing={refreshing}
           onRefresh={() => fetchStories(true)}
+          ListEmptyComponent={
+            <View style={styles.emptyContainer}>
+              <Text style={[styles.emptyTitle, { color: t.textPrimary }]}>No Stories Loaded Yet...</Text>
+              <Text style={[styles.emptySubtitle, { color: t.textMuted }]}>New stories added at 6:30am EST</Text>
+            </View>
+          }
         />
       )}
 
-      <AdBanner t={t} />
+      <AdBanner />
 
       {/* Filter Dropdown */}
       <Modal
@@ -415,23 +489,8 @@ const styles = StyleSheet.create({
   filterCheck: { fontSize: 14, fontWeight: '700' },
   filterDivider: { height: 1, marginHorizontal: 16, marginVertical: 2 },
   adBanner: {
-    height: 60,
-    borderTopWidth: 1,
-    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
   },
-  adLabel: {
-    fontSize: 10,
-    fontWeight: '700',
-    borderWidth: 1,
-    borderRadius: 3,
-    paddingHorizontal: 4,
-    paddingVertical: 1,
-    letterSpacing: 0.5,
-  },
-  adText: { fontSize: 13, fontWeight: '500' },
   detail: { ...StyleSheet.absoluteFillObject },
   backButton: { paddingHorizontal: 20, paddingVertical: 14 },
   backText: { fontSize: 16, fontWeight: '600' },
@@ -450,4 +509,11 @@ const styles = StyleSheet.create({
   },
   sourceLinkName: { fontSize: 15, fontWeight: '600' },
   sourceLinkArrow: { fontSize: 16, fontWeight: '700' },
+  emptyContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingTop: 80, gap: 8 },
+  emptyTitle: { fontSize: 17, fontWeight: '600' },
+  emptySubtitle: { fontSize: 14 },
+  errorContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 16 },
+  errorText: { fontSize: 16 },
+  retryButton: { paddingHorizontal: 20, paddingVertical: 10, borderRadius: 10 },
+  retryText: { fontSize: 15, fontWeight: '600' },
 });

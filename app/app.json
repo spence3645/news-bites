@@ -13,7 +13,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.newsbites"
+      "bundleIdentifier": "com.matthewspencer.newsbites"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,10 +22,19 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.anonymous.newsbites"
+      "package": "com.matthewspencer.newsbites"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-4363944782565472~9556393253",
+          "iosAppId": "ca-app-pub-4363944782565472~9556393253"
+        }
+      ]
+    ]
   }
 }
