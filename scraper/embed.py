@@ -6,10 +6,11 @@ _model = SentenceTransformer("all-mpnet-base-v2")
 
 
 def embed(text: str) -> list[float]:
-    """
-    Convert text to a vector embedding.
-    Input should be title + summary combined for best similarity results.
-    Returns a list of 384 floats.
-    """
     vector = _model.encode(text, normalize_embeddings=True)
     return vector.tolist()
+
+
+def embed_batch(texts: list[str]) -> list[list[float]]:
+    """Encode a list of texts in one batched call — much faster than calling embed() one at a time."""
+    vectors = _model.encode(texts, normalize_embeddings=True, batch_size=64, show_progress_bar=False)
+    return [v.tolist() for v in vectors]

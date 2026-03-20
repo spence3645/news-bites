@@ -34,7 +34,7 @@ from itertools import combinations
 import numpy as np
 
 from dynamo import fetch_today, write_stories
-from embed import embed
+from embed import embed, embed_batch
 from main import SOURCES
 from summarize import enrich, enrich_update
 from utils import get_today
@@ -72,19 +72,21 @@ def run_source(name: str, scrape_fn, date_str: str, limit: int) -> list[dict]:
 
     # ── Step 2: Vectorize on title + teaser ──────────────────────
     print(f"[{name.upper()}] Embedding {len(articles)} articles...")
+    texts = [
+        article["title"] + (". " + article["teaser"] if article.get("teaser") else "")
+        for article in articles
+    ]
+    embeddings = embed_batch(texts)
     vectors = []
-    for article in articles:
-        text = article["title"]
-        if article.get("teaser"):
-            text += ". " + article["teaser"]
-        article["_vector"] = embed(text)
+    for article, vector in zip(articles, embeddings):
+        article["_vector"] = vector
         vectors.append(
             {
                 **{k: v for k, v in article.items() if k not in ("fullText", "_vector")},
                 "embedding": {
-                    "model": "all-MiniLM-L6-v2",
-                    "dimensions": len(article["_vector"]),
-                    "vector": article["_vector"],
+                    "model": "all-mpnet-base-v2",
+                    "dimensions": len(vector),
+                    "vector": vector,
                 },
             }
         )
@@ -321,11 +323,12 @@ def main():
             with open(path) as f:
                 articles = json.load(f)
             print(f"  [{name.upper()}] Embedding {len(articles)} cached articles...")
-            for article in articles:
-                text = article["title"]
-                if article.get("teaser"):
-                    text += ". " + article["teaser"]
-                article["_vector"] = embed(text)
+            texts = [
+                a["title"] + (". " + a["teaser"] if a.get("teaser") else "")
+                for a in articles
+            ]
+            for article, vector in zip(articles, embed_batch(texts)):
+                article["_vector"] = vector
             all_articles.extend(articles)
             print(f"  [{name.upper()}] Loaded {len(articles)} articles")
     else:
@@ -334,7 +337,7 @@ def main():
             print(f"\n{'─' * 50}\nProcessing: {name.upper()}\n{'─' * 50}")
             return run_source(name, scrape_fn, date_str, args.limit)
 
-        with ThreadPoolExecutor(max_workers=20) as pool:
+        with ThreadPoolExecutor(max_workers=40) as pool:
             futures = {pool.submit(_run_source, item): item[0] for item in SOURCES.items()}
             for future in as_completed(futures):
                 all_articles.extend(future.result())
