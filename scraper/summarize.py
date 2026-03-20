@@ -55,56 +55,6 @@ SYSTEM_PROMPT = (
 )
 
 
-def enrich_update(existing_summary: str, new_titles: list[str], new_texts: list[str]) -> dict:
-    """Update an existing summary by incorporating new article sources."""
-    combined_titles = "\n".join(f"- {t}" for t in new_titles)
-    combined_texts = "\n\n---\n\n".join(t[:800] for t in new_texts if t.strip())
-    cats = ", ".join(CATEGORIES)
-
-    _rate_limiter.acquire()
-    message = _call_with_backoff(lambda: _client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=800,
-        system=SYSTEM_PROMPT,
-        messages=[
-            {
-                "role": "user",
-                "content": (
-                    "The following story already has a summary. New sources have covered the same story. "
-                    "Update the summary to incorporate any new information from the new sources.\n\n"
-                    f"Existing summary:\n{existing_summary}\n\n"
-                    f"New source headlines:\n{combined_titles}\n\n"
-                    f"New source articles:\n{combined_texts}\n\n"
-                    f"Return a JSON object with exactly these three fields:\n"
-                    f"- \"title\": a single short headline under 10 words, no punctuation at the end\n"
-                    f"- \"summary\": a 3-4 sentence summary using short, direct sentences. Avoid em dashes, en dashes, and semicolons. Neutral tone.\n"
-                    f"- \"category\": exactly one of: {cats}\n\n"
-                    "Return only the JSON object, nothing else."
-                ),
-            }
-        ],
-    ))
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        data = json.loads(raw)
-        merged_title = str(data.get("title", new_titles[0]))
-        merged_summary = str(data.get("summary", existing_summary))
-        category = data.get("category") if data.get("category") in CATEGORIES else "World"
-        if not merged_summary:
-            print(f"  Warning: empty summary on update: {merged_title[:60]}")
-        return {"mergedTitle": merged_title, "mergedSummary": merged_summary, "category": category}
-    except Exception:
-        print(f"  Warning: failed to parse update response: {raw[:100]}")
-        return {"mergedTitle": new_titles[0], "mergedSummary": existing_summary, "category": "World"}
-
-
 def enrich(titles: list[str], texts: list[str]) -> dict:
     """Single API call that returns title, summary, and category for a cluster."""
     combined_titles = "\n".join(f"- {t}" for t in titles)

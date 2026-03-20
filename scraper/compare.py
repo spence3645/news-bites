@@ -36,7 +36,7 @@ import numpy as np
 from dynamo import fetch_today, write_stories
 from embed import embed, embed_batch
 from main import SOURCES
-from summarize import enrich, enrich_update
+from summarize import enrich
 from utils import get_today
 
 
@@ -381,7 +381,6 @@ def main():
 
     # ── Step 4: Load existing stories, build URL → story lookup ──
     existing = fetch_today(date_str)
-    # Map each known URL to its existing story
     url_to_story = {}
     for story in existing:
         for article in story.get("articles", []):
@@ -413,33 +412,16 @@ def main():
         if cached:
             cached_urls = {a["url"] for a in cached.get("articles", [])}
             new_urls = {a["url"] for a in articles} - cached_urls
-            # Always preserve the cached storyId to avoid unnecessary DynamoDB deletes
-            cached_story_id = cached["storyId"]
             if not new_urls:
-                # Nothing changed — reuse fully, no write needed
+                # Nothing changed — reuse summary, use new storyId (fresh DynamoDB write)
                 return i, {
-                    "storyId": cached_story_id,
+                    "storyId": cluster["storyId"],
                     "sourceCount": cluster["sourceCount"],
                     "mergedTitle": cached["mergedTitle"],
                     "mergedSummary": cached["mergedSummary"],
                     "category": cached["category"],
                     "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
                 }, True
-            # New sources joined — update summary using existing + new articles only
-            print(f"\n[{i + 1}/{len(top_raw)}] (updated +{len(new_urls)} sources) {articles[0]['title'][:55]}")
-            new_articles = [a for a in articles if a["url"] in new_urls]
-            new_titles = [a["title"] for a in new_articles]
-            new_texts = [a.get("fullText") or a.get("teaser") or "" for a in new_articles]
-            new_texts = [t for t in new_texts if t.strip()]
-            enriched = enrich_update(cached["mergedSummary"], new_titles, new_texts)
-            return i, {
-                "storyId": cached_story_id,
-                "sourceCount": cluster["sourceCount"],
-                "mergedTitle": enriched["mergedTitle"],
-                "mergedSummary": enriched["mergedSummary"],
-                "category": enriched["category"],
-                "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
-            }, False
         print(f"\n[{i + 1}/{len(top_raw)}] {articles[0]['title'][:65]}")
         return i, enrich_cluster(cluster), False
 
