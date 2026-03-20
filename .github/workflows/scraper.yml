@@ -27,6 +27,12 @@ jobs:
           cache: pip
           cache-dependency-path: scraper/requirements.txt
 
+      - name: Cache sentence-transformers model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/torch/sentence_transformers
+          key: sentence-transformers-all-MiniLM-L6-v2
+
       - name: Install dependencies
         run: pip install -r scraper/requirements.txt
 
