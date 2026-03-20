@@ -1,3 +1,4 @@
+import json
 import os
 import threading
 import time
@@ -27,8 +28,8 @@ class _RateLimiter:
             self._next_allowed = time.monotonic() + self._interval
 
 
-# 25 req/min keeps token usage (~2k tokens avg) under the 50k tokens/min limit
-_rate_limiter = _RateLimiter(25)
+# 50 req/min — full Haiku allowance
+_rate_limiter = _RateLimiter(50)
 
 
 def _call_with_backoff(fn):
@@ -44,105 +45,119 @@ def _call_with_backoff(fn):
             time.sleep(delay)
             delay *= 2
 
-SYSTEM_PROMPT = (
-    "You are a news summarization assistant. "
-    "Write clear, factual, neutral summaries. "
-    "Never editorialize or add information not present in the article."
-)
 
 CATEGORIES = ["World", "Politics", "Business", "Tech", "Science", "Sports", "Entertainment", "Gaming", "Music", "Climate"]
 
-
-def summarize(title: str, full_text: str) -> str:
-    """Send an article to Claude Haiku and return a 3-4 sentence summary."""
-    _rate_limiter.acquire()
-    message = _call_with_backoff(lambda: _client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=256,
-        system=SYSTEM_PROMPT,
-        messages=[
-            {
-                "role": "user",
-                "content": (
-                    f"Summarize this news article in 3-4 sentences. "
-                    f"Be concise and stick to the key facts of the article, nothing more.\n\n"
-                    f"Title: {title}\n\n"
-                    f"Article:\n{full_text}"
-                ),
-            }
-        ],
-    ))
-    return message.content[0].text.strip()
+SYSTEM_PROMPT = (
+    "You are a news summarization assistant. "
+    "Write clear, factual, neutral summaries. "
+    "Never editorialize or add information not present in the articles."
+)
 
 
-def generate_title(titles: list[str]) -> str:
-    """Combine multiple source headlines into one short unified title."""
-    combined = "\n".join(f"- {t}" for t in titles)
-    _rate_limiter.acquire()
-    message = _call_with_backoff(lambda: _client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=64,
-        system="You are a headline writer. Write concise, factual news headlines.",
-        messages=[
-            {
-                "role": "user",
-                "content": (
-                    "The following are headlines for the same story from different news sources. "
-                    "Write a single short headline (under 10 words) that captures the story. "
-                    "Return only the headline, no punctuation at the end.\n\n"
-                    f"{combined}"
-                ),
-            }
-        ],
-    ))
-    return message.content[0].text.strip()
-
-
-def generate_category(titles: list[str]) -> str:
-    """Pick the best matching category from the fixed list based on article titles."""
-    combined = "\n".join(f"- {t}" for t in titles)
+def enrich_update(existing_summary: str, new_titles: list[str], new_texts: list[str]) -> dict:
+    """Update an existing summary by incorporating new article sources."""
+    combined_titles = "\n".join(f"- {t}" for t in new_titles)
+    combined_texts = "\n\n---\n\n".join(t[:800] for t in new_texts if t.strip())
     cats = ", ".join(CATEGORIES)
+
     _rate_limiter.acquire()
     message = _call_with_backoff(lambda: _client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=16,
-        system="You are a news categorization assistant.",
-        messages=[
-            {
-                "role": "user",
-                "content": (
-                    f"Categorize this news story into exactly one of these categories: {cats}.\n\n"
-                    f"Headlines:\n{combined}\n\n"
-                    "Return only the category name, nothing else."
-                ),
-            }
-        ],
-    ))
-    result = message.content[0].text.strip()
-    return result if result in CATEGORIES else "World"
-
-
-def merge(texts: list[str]) -> str:
-    """Combine article text/teasers from multiple sources into one 4-5 sentence summary."""
-    # Truncate each source text to avoid hitting token limits
-    combined = "\n\n---\n\n".join(t[:2000] for t in texts if t.strip())
-    _rate_limiter.acquire()
-    message = _call_with_backoff(lambda: _client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=300,
+        max_tokens=800,
         system=SYSTEM_PROMPT,
         messages=[
             {
                 "role": "user",
                 "content": (
-                    "The following are articles covering the same news story from different sources. "
-                    "Write a single, unified 3-4 sentence summary that captures the key facts. "
-                    "Use short, direct sentences. Avoid em dashes, en dashes, and semicolons — use periods instead. "
-                    "Remove redundancy and write in a clear, neutral tone. "
-                    "Return only the summary, no headings or labels.\n\n"
-                    f"{combined}"
+                    "The following story already has a summary. New sources have covered the same story. "
+                    "Update the summary to incorporate any new information from the new sources.\n\n"
+                    f"Existing summary:\n{existing_summary}\n\n"
+                    f"New source headlines:\n{combined_titles}\n\n"
+                    f"New source articles:\n{combined_texts}\n\n"
+                    f"Return a JSON object with exactly these three fields:\n"
+                    f"- \"title\": a single short headline under 10 words, no punctuation at the end\n"
+                    f"- \"summary\": a 3-4 sentence summary using short, direct sentences. Avoid em dashes, en dashes, and semicolons. Neutral tone.\n"
+                    f"- \"category\": exactly one of: {cats}\n\n"
+                    "Return only the JSON object, nothing else."
                 ),
             }
         ],
     ))
-    return message.content[0].text.strip()
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        data = json.loads(raw)
+        merged_title = str(data.get("title", new_titles[0]))
+        merged_summary = str(data.get("summary", existing_summary))
+        category = data.get("category") if data.get("category") in CATEGORIES else "World"
+        if not merged_summary:
+            print(f"  Warning: empty summary on update: {merged_title[:60]}")
+        return {"mergedTitle": merged_title, "mergedSummary": merged_summary, "category": category}
+    except Exception:
+        print(f"  Warning: failed to parse update response: {raw[:100]}")
+        return {"mergedTitle": new_titles[0], "mergedSummary": existing_summary, "category": "World"}
+
+
+def enrich(titles: list[str], texts: list[str]) -> dict:
+    """Single API call that returns title, summary, and category for a cluster."""
+    combined_titles = "\n".join(f"- {t}" for t in titles)
+    combined_texts = "\n\n---\n\n".join(t[:800] for t in texts if t.strip())
+    cats = ", ".join(CATEGORIES)
+
+    _rate_limiter.acquire()
+    message = _call_with_backoff(lambda: _client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=800,
+        system=SYSTEM_PROMPT,
+        messages=[
+            {
+                "role": "user",
+                "content": (
+                    "The following are headlines and articles covering the same news story from different sources.\n\n"
+                    f"Headlines:\n{combined_titles}\n\n"
+                    f"Articles:\n{combined_texts}\n\n"
+                    f"Return a JSON object with exactly these three fields:\n"
+                    f"- \"title\": a single short headline under 10 words, no punctuation at the end\n"
+                    f"- \"summary\": a 3-4 sentence summary using short, direct sentences. Avoid em dashes, en dashes, and semicolons. Neutral tone.\n"
+                    f"- \"category\": exactly one of: {cats}\n\n"
+                    "Return only the JSON object, nothing else."
+                ),
+            }
+        ],
+    ))
+
+    raw = message.content[0].text.strip()
+
+    # Strip markdown code fences if present
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        data = json.loads(raw)
+        merged_title = str(data.get("title", titles[0]))
+        merged_summary = str(data.get("summary", ""))
+        category = data.get("category") if data.get("category") in CATEGORIES else "World"
+        if not merged_summary:
+            print(f"  Warning: empty summary for cluster: {merged_title[:60]}")
+        return {
+            "mergedTitle": merged_title,
+            "mergedSummary": merged_summary,
+            "category": category,
+        }
+    except Exception:
+        print(f"  Warning: failed to parse enrich response: {raw[:100]}")
+        return {
+            "mergedTitle": titles[0],
+            "mergedSummary": "",
+            "category": "World",
+        }

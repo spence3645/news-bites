@@ -1,8 +1,8 @@
 import hashlib
 import html
 import json
-import time
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from utils import get_today
 
@@ -126,7 +126,7 @@ def _fetch_article(url: str) -> dict:
     return result
 
 
-def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
+def scrape(limit: int | None = None) -> list[dict]:
     print(f"[{SOURCE_NAME}] Fetching RSS feeds...")
 
     seen_urls = set()
@@ -146,23 +146,27 @@ def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
     if limit is not None:
         all_articles = all_articles[:limit]
 
-    results = []
-    total = len(all_articles)
-    for i, article in enumerate(all_articles):
-        print(f"[{SOURCE_NAME}] ({i + 1}/{total}) {article['title'][:70]}")
-
+    def _fetch(article):
         fetched = _fetch_article(article["url"])
-        results.append({
+        return {
             **article,
             "teaser": fetched["teaser"] or article.get("teaser", ""),
             "fullText": fetched["fullText"],
             "imageUrl": fetched.get("imageUrl", ""),
             "source": SOURCE_NAME,
             "contentHash": _content_hash(article["title"], fetched["fullText"]),
-        })
+        }
 
-        if delay and i < total - 1:
-            time.sleep(delay)
+    results = [None] * len(all_articles)
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(_fetch, article): i for i, article in enumerate(all_articles)}
+        for future in as_completed(futures):
+            i = futures[future]
+            try:
+                results[i] = future.result()
+            except Exception as e:
+                print(f"    Warning: failed to fetch article — {e}")
+    results = [r for r in results if r is not None]
 
     print(f"[{SOURCE_NAME}] Done — {len(results)} articles scraped")
     return results

@@ -3,8 +3,8 @@ Shared scraper utilities and factory for standard RSS sources.
 """
 import hashlib
 import json
-import time
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from email.utils import parsedate_to_datetime
 
 import requests
@@ -118,10 +118,10 @@ def fetch_article(url: str) -> dict:
     return result
 
 
-def make_scraper(source_name: str, rss_feeds: list[str], delay: float = 0.75):
+def make_scraper(source_name: str, rss_feeds: list[str], fetch_articles: bool = True, max_workers: int = 5):
     """Return a scrape() function for a standard RSS source."""
 
-    def scrape(limit: int | None = None, delay: float = delay, today: str | None = None) -> list[dict]:
+    def scrape(limit: int | None = None, today: str | None = None) -> list[dict]:
         print(f"[{source_name}] Fetching RSS feeds...")
 
         seen_urls = set()
@@ -134,6 +134,7 @@ def make_scraper(source_name: str, rss_feeds: list[str], delay: float = 0.75):
 
         print(f"[{source_name}] Found {len(all_articles)} articles across {len(rss_feeds)} feeds")
 
+        # Filter to today BEFORE fetching article pages
         _today = today or get_today()
         all_articles = [a for a in all_articles if _is_today(a.get("publishedAt", ""), _today)]
         print(f"[{source_name}] {len(all_articles)} articles published today")
@@ -141,22 +142,40 @@ def make_scraper(source_name: str, rss_feeds: list[str], delay: float = 0.75):
         if limit is not None:
             all_articles = all_articles[:limit]
 
-        results = []
-        total = len(all_articles)
-        for i, article in enumerate(all_articles):
-            print(f"[{source_name}] ({i + 1}/{total}) {article['title'][:70]}")
+        if not fetch_articles:
+            return [
+                {
+                    **article,
+                    "fullText": "",
+                    "imageUrl": "",
+                    "source": source_name,
+                    "contentHash": _content_hash(article["title"], article.get("teaser", "")),
+                }
+                for article in all_articles
+            ]
+
+        def _fetch(article):
             fetched = fetch_article(article["url"])
-            results.append({
+            return {
                 **article,
                 "teaser": fetched["teaser"] or article.get("teaser", ""),
                 "fullText": fetched["fullText"],
                 "imageUrl": fetched.get("imageUrl", ""),
                 "source": source_name,
                 "contentHash": _content_hash(article["title"], fetched["fullText"]),
-            })
-            if delay and i < total - 1:
-                time.sleep(delay)
+            }
 
+        results = [None] * len(all_articles)
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures = {pool.submit(_fetch, article): i for i, article in enumerate(all_articles)}
+            for future in as_completed(futures):
+                i = futures[future]
+                try:
+                    results[i] = future.result()
+                except Exception as e:
+                    print(f"    Warning: failed to fetch article — {e}")
+
+        results = [r for r in results if r is not None]
         print(f"[{source_name}] Done — {len(results)} articles scraped")
         return results
 

@@ -5,6 +5,7 @@ Writes clustered stories to DynamoDB Stories table.
 import os
 
 import boto3
+import boto3.dynamodb.conditions
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -40,6 +41,14 @@ def _delete_stale(keep_ids: set):
         )
 
     print(f"  Removed {deleted} stale items")
+
+
+def fetch_today(date_str: str) -> list[dict]:
+    """Return all stories already written for date_str."""
+    result = _table.query(
+        KeyConditionExpression=boto3.dynamodb.conditions.Key("date").eq(date_str)
+    )
+    return result.get("Items", [])
 
 
 def write_stories(clusters: list[dict], date_str: str):

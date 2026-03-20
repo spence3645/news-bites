@@ -80,7 +80,7 @@ def _fetch_feed(url: str) -> list[dict]:
     return articles
 
 
-def scrape(limit: int | None = None, delay: float = 0.75) -> list[dict]:
+def scrape(limit: int | None = None) -> list[dict]:
     print(f"[{SOURCE_NAME}] Fetching RSS feeds...")
 
     seen_urls = set()

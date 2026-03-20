@@ -31,10 +31,12 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from itertools import combinations
 
-from dynamo import write_stories
+import numpy as np
+
+from dynamo import fetch_today, write_stories
 from embed import embed
 from main import SOURCES
-from summarize import generate_category, generate_title, merge
+from summarize import enrich, enrich_update
 from utils import get_today
 
 
@@ -55,9 +57,8 @@ def save(data: list, path: str):
     print(f"  Saved {len(data)} records → {path}")
 
 
-def cosine_similarity(a: list[float], b: list[float]) -> float:
-    # Vectors are pre-normalized so cosine similarity = dot product
-    return sum(x * y for x, y in zip(a, b))
+def cosine_similarity(a, b) -> float:
+    return float(np.dot(a, b))
 
 
 def run_source(name: str, scrape_fn, date_str: str, limit: int) -> list[dict]:
@@ -140,19 +141,21 @@ def find_clusters(articles: list[dict], threshold: float, min_pair: float = 0.55
     """Cluster articles by similarity, then strip outliers whose best match in the cluster is below min_pair."""
     print(f"\nComparing {len(articles)} articles across sources (threshold: {threshold}, min_pair: {min_pair})...")
 
-    pairs = [
-        (a, b)
-        for a, b in combinations(range(len(articles)), 2)
-        if articles[a]["source"] != articles[b]["source"]
-    ]
-    print(f"Checking {len(pairs)} cross-source pairs...")
+    # Build full similarity matrix in one numpy matmul (vectors are pre-normalized → dot product = cosine sim)
+    vectors = np.array([a["_vector"] for a in articles], dtype=np.float32)
+    sim_matrix = vectors @ vectors.T  # (n, n)
 
+    # Find all cross-source pairs above threshold
+    rows, cols = np.where(sim_matrix >= threshold)
     matches = []
-    for i, j in pairs:
-        score = cosine_similarity(articles[i]["_vector"], articles[j]["_vector"])
-        if score >= threshold:
-            matches.append((score, i, j))
+    for i, j in zip(rows.tolist(), cols.tolist()):
+        if i >= j:
+            continue
+        if articles[i]["source"] == articles[j]["source"]:
+            continue
+        matches.append((float(sim_matrix[i, j]), i, j))
 
+    print(f"Found {len(matches)} cross-source matches above threshold...")
     matches.sort(reverse=True)
 
     # Union-find clustering
@@ -262,22 +265,20 @@ def check_clusters(clusters: list[dict], top_n: int = 30):
 
 
 def enrich_cluster(cluster: dict) -> dict:
-    """Merge teasers and generate title/category for a single cluster."""
+    """Single API call to generate title, summary, and category for a cluster."""
     articles = cluster["_articles"]
     titles = [a["title"] for a in articles]
     texts = [a.get("fullText") or a.get("teaser") or "" for a in articles]
     texts = [t for t in texts if t.strip()]
 
-    merged_summary = merge(texts) if texts else ""
-    merged_title = generate_title(titles)
-    category = generate_category(titles)
+    enriched = enrich(titles, texts)
 
     return {
         "storyId": cluster["storyId"],
         "sourceCount": cluster["sourceCount"],
-        "mergedTitle": merged_title,
-        "mergedSummary": merged_summary,
-        "category": category,
+        "mergedTitle": enriched["mergedTitle"],
+        "mergedSummary": enriched["mergedSummary"],
+        "category": enriched["category"],
         "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
     }
 
@@ -327,7 +328,7 @@ def main():
             print(f"\n{'─' * 50}\nProcessing: {name.upper()}\n{'─' * 50}")
             return run_source(name, scrape_fn, date_str, args.limit)
 
-        with ThreadPoolExecutor(max_workers=len(SOURCES)) as pool:
+        with ThreadPoolExecutor(max_workers=20) as pool:
             futures = {pool.submit(_run_source, item): item[0] for item in SOURCES.items()}
             for future in as_completed(futures):
                 all_articles.extend(future.result())
@@ -368,20 +369,79 @@ def main():
         check_clusters(raw_clusters)
         return
 
-    # ── Step 4: Enrich top 100 clusters in parallel ──────────────
-    print(f"\nEnriching {len(top_raw)} clusters (summarize + title + category)...")
+    # ── Step 4: Load existing stories, build URL → story lookup ──
+    existing = fetch_today(date_str)
+    # Map each known URL to its existing story
+    url_to_story = {}
+    for story in existing:
+        for article in story.get("articles", []):
+            url_to_story[article["url"]] = story
+
+    def _find_cached(cluster_articles: list[dict]):
+        """Return existing story if 2+ URLs overlap, else None."""
+        urls = {a["url"] for a in cluster_articles}
+        matches = {}
+        for url in urls:
+            story = url_to_story.get(url)
+            if story:
+                sid = story["storyId"]
+                matches[sid] = matches.get(sid, 0) + 1
+        best_id, best_count = max(matches.items(), key=lambda x: x[1], default=(None, 0))
+        if best_count >= 2:
+            return next(s for s in existing if s["storyId"] == best_id)
+        return None
+
+    # ── Step 5: Enrich only new/changed clusters ─────────────────
+    print(f"\nEnriching {len(top_raw)} clusters (reusing cached where possible)...")
     clusters = [None] * len(top_raw)
+    reused = 0
 
     def _enrich(args):
         i, cluster = args
-        print(f"\n[{i + 1}/{len(top_raw)}] {cluster['_articles'][0]['title'][:65]}")
-        return i, enrich_cluster(cluster)
+        articles = cluster["_articles"]
+        cached = _find_cached(articles)
+        if cached:
+            cached_urls = {a["url"] for a in cached.get("articles", [])}
+            new_urls = {a["url"] for a in articles} - cached_urls
+            # Always preserve the cached storyId to avoid unnecessary DynamoDB deletes
+            cached_story_id = cached["storyId"]
+            if not new_urls:
+                # Nothing changed — reuse fully, no write needed
+                return i, {
+                    "storyId": cached_story_id,
+                    "sourceCount": cluster["sourceCount"],
+                    "mergedTitle": cached["mergedTitle"],
+                    "mergedSummary": cached["mergedSummary"],
+                    "category": cached["category"],
+                    "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
+                }, True
+            # New sources joined — update summary using existing + new articles only
+            print(f"\n[{i + 1}/{len(top_raw)}] (updated +{len(new_urls)} sources) {articles[0]['title'][:55]}")
+            new_articles = [a for a in articles if a["url"] in new_urls]
+            new_titles = [a["title"] for a in new_articles]
+            new_texts = [a.get("fullText") or a.get("teaser") or "" for a in new_articles]
+            new_texts = [t for t in new_texts if t.strip()]
+            enriched = enrich_update(cached["mergedSummary"], new_titles, new_texts)
+            return i, {
+                "storyId": cached_story_id,
+                "sourceCount": cluster["sourceCount"],
+                "mergedTitle": enriched["mergedTitle"],
+                "mergedSummary": enriched["mergedSummary"],
+                "category": enriched["category"],
+                "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
+            }, False
+        print(f"\n[{i + 1}/{len(top_raw)}] {articles[0]['title'][:65]}")
+        return i, enrich_cluster(cluster), False
 
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=20) as pool:
         futures = {pool.submit(_enrich, (i, c)): i for i, c in enumerate(top_raw)}
         for future in as_completed(futures):
-            i, result = future.result()
+            i, result, was_cached = future.result()
             clusters[i] = result
+            if was_cached:
+                reused += 1
+
+    print(f"\nReused {reused} cached stories, enriched {len(top_raw) - reused} new ones")
 
     # ── Step 5: Save + write to DynamoDB ────────────────────────
     clusters_path = f"output/{date_str}_clusters.json"
