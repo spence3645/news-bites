@@ -297,10 +297,16 @@ def _parse_date(date_str: str) -> datetime | None:
         return None
 
 
+def _ts():
+    return datetime.now(timezone.utc).strftime("%H:%M:%S")
+
+
 def main():
     args = parse_args()
     now_utc = datetime.now(timezone.utc)
     date_str = args.date or get_today()
+    t_start = datetime.now(timezone.utc)
+    print(f"[{_ts()}] Pipeline started")
 
     # ── Step 1: Scrape + summarize + vectorize all sources ───────
     all_articles = []
@@ -332,6 +338,7 @@ def main():
             futures = {pool.submit(_run_source, item): item[0] for item in SOURCES.items()}
             for future in as_completed(futures):
                 all_articles.extend(future.result())
+        print(f"[{_ts()}] Scraping done — {len(all_articles)} articles")
 
     # ── Step 2: Filter to target date ───────────────────────────
     # Skip when loading from cache — articles were already filtered at scrape time
@@ -355,14 +362,14 @@ def main():
     # ── Step 2b: Deduplicate near-identical articles (wire reposts) ─
     before = len(all_articles)
     all_articles = dedupe_articles(all_articles, threshold=0.97)
-    print(f"Dedup: {before} → {len(all_articles)} (removed {before - len(all_articles)} near-identical articles)")
+    print(f"[{_ts()}] Embedding + dedup done — {len(all_articles)} articles")
 
     # ── Step 3: Cluster (exclude AP wire + guide/gallery articles) ──
     cluster_articles = [a for a in all_articles if a["source"] != "AP News" and _is_clusterable(a)]
     print(f"Clustering {len(cluster_articles)} articles (AP + guides/galleries excluded)")
     raw_clusters = find_clusters(cluster_articles, args.threshold)
     top_raw = [c for c in raw_clusters if c["sourceCount"] >= 2][:100]
-    print(f"2+ source clusters: {len(top_raw)}")
+    print(f"[{_ts()}] Clustering done — {len(top_raw)} multi-source clusters")
 
     # ── Step 3b: Check mode — print stats and exit ───────────────
     if args.check:
@@ -442,13 +449,17 @@ def main():
                 reused += 1
 
     print(f"\nReused {reused} cached stories, enriched {len(top_raw) - reused} new ones")
+    print(f"[{_ts()}] Enrichment done")
 
     # ── Step 5: Save + write to DynamoDB ────────────────────────
     clusters_path = f"output/{date_str}_clusters.json"
     save(clusters, clusters_path)
     write_stories(clusters, date_str)
+    print(f"[{_ts()}] DynamoDB write done")
 
+    elapsed = (datetime.now(timezone.utc) - t_start).seconds
     print(f"\n{'═' * 50}")
+    print(f"Total time:       {elapsed // 60}m {elapsed % 60}s")
     print(f"Total stories:    {len(clusters)}")
     print("\nTop matched stories:")
     for cluster in clusters[:5]:
