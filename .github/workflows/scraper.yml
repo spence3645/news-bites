@@ -2,10 +2,8 @@ name: Run Scraper
 
 on:
   schedule:
-    - cron: "30 10 * * *"   # 6:30am ET
-    - cron: "30 15 * * *"   # 11:30am ET
-    - cron: "30 21 * * *"   # 5:30pm ET
-    - cron: "30 1 * * *"    # 9:30pm ET
+    - cron: "*/15 11-23 * * *"  # every 15 min, 6am–6pm ET (UTC 11–23)
+    - cron: "*/15 0-2 * * *"    # every 15 min, 7pm–10pm ET (UTC 0–2)
   workflow_dispatch:
     inputs:
       limit:
@@ -15,7 +13,7 @@ on:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-4-cores
     timeout-minutes: 45
 
     steps:
