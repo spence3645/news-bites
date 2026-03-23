@@ -88,6 +88,7 @@ const THEMES = {
 };
 
 import { BannerAd, BannerAdSize, TestIds, MobileAds, InterstitialAd, AdEventType, AdsConsent, AdsConsentStatus } from 'react-native-google-mobile-ads';
+import * as Notifications from 'expo-notifications';
 
 const categoryColor = (cat) => CATEGORY_COLORS[cat] || '#6B7280';
 const cleanSummary = (text = '') => text.replace(/^#+\s+[\w\s]+\n+/i, '').trim();
@@ -112,9 +113,31 @@ const AdBanner = () => (
   </View>
 );
 
+async function scheduleNotifications() {
+  const { status } = await Notifications.requestPermissionsAsync();
+  if (status !== 'granted') return;
+
+  await Notifications.cancelAllScheduledNotificationsAsync();
+
+  const messages = [
+    { hour: 7,  minute: 0,  body: "Good morning! Sit back, relax, and catch up on today's top stories." },
+    { hour: 12, minute: 0,  body: "Happy lunch! Take a few minutes to catch up on the latest news." },
+    { hour: 18, minute: 0,  body: "Good evening! A lot has happened today, here's your chance to catch up." },
+    { hour: 22, minute: 0,  body: "Winding down for the night? Check in on today's final stories before you sleep." },
+  ];
+
+  for (const { hour, minute, body } of messages) {
+    await Notifications.scheduleNotificationAsync({
+      content: { title: "News Bites", body },
+      trigger: { hour, minute, repeats: true },
+    });
+  }
+}
+
 export default function App() {
   useEffect(() => {
     MobileAds().initialize();
+    scheduleNotifications();
     AdsConsent.requestInfoUpdate().then(async (info) => {
       if (info.isConsentFormAvailable && info.status === AdsConsentStatus.REQUIRED) {
         await AdsConsent.showForm();
@@ -147,6 +170,11 @@ export default function App() {
   const [error, setError] = useState(false);
 
   const t = THEMES[darkMode ? 'dark' : 'light'];
+
+  const lastUpdated = stories.length > 0 ? stories[0].updatedAt : null;
+  const lastUpdatedLabel = lastUpdated
+    ? new Date(lastUpdated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+    : null;
 
   const fetchStories = useCallback((isRefresh = false) => {
     if (isRefresh) setRefreshing(true);
@@ -318,7 +346,12 @@ export default function App() {
 
       {/* Header */}
       <View style={[styles.header, { borderBottomColor: t.borderSubtle }]}>
-        <Text style={[styles.headerTitle, { color: t.textPrimary }]}>News Bites</Text>
+        <View>
+          <Text style={[styles.headerTitle, { color: t.textPrimary }]}>News Bites</Text>
+          {lastUpdatedLabel && (
+            <Text style={[styles.lastUpdated, { color: t.textMuted }]}>Updated {lastUpdatedLabel}</Text>
+          )}
+        </View>
         <View style={styles.headerActions}>
           <TouchableOpacity onPress={() => setDarkMode((d) => !d)} style={[styles.themeToggle, { backgroundColor: t.surfaceAlt }]}>
             <Text style={styles.themeToggleIcon}>{darkMode ? '☀︎' : '☽'}</Text>
@@ -422,6 +455,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   headerTitle: { fontSize: 22, fontWeight: '700' },
+  lastUpdated: { fontSize: 11, marginTop: 2 },
   headerActions: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   themeToggle: {
     width: 34,

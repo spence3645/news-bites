@@ -266,7 +266,7 @@ def check_clusters(clusters: list[dict], top_n: int = 30):
             print(f"  ↳ weakest pair: [{arts[weak_i]['source']}] vs [{arts[weak_j]['source']}] = {cosine_similarity(arts[weak_i]['_vector'], arts[weak_j]['_vector']):.2f}")
 
 
-def enrich_cluster(cluster: dict) -> dict:
+def enrich_cluster(cluster: dict) -> dict | None:
     """Single API call to generate title, summary, and category for a cluster."""
     articles = cluster["_articles"]
     titles = [a["title"] for a in articles]
@@ -274,6 +274,8 @@ def enrich_cluster(cluster: dict) -> dict:
     texts = [t for t in texts if t.strip()]
 
     enriched = enrich(titles, texts)
+    if enriched is None:
+        return None
 
     return {
         "storyId": cluster["storyId"],
@@ -423,7 +425,8 @@ def main():
                     "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
                 }, True
         print(f"\n[{i + 1}/{len(top_raw)}] {articles[0]['title'][:65]}")
-        return i, enrich_cluster(cluster), False
+        result = enrich_cluster(cluster)
+        return i, result, False
 
     with ThreadPoolExecutor(max_workers=20) as pool:
         futures = {pool.submit(_enrich, (i, c)): i for i, c in enumerate(top_raw)}
@@ -433,7 +436,8 @@ def main():
             if was_cached:
                 reused += 1
 
-    print(f"\nReused {reused} cached stories, enriched {len(top_raw) - reused} new ones")
+    clusters = [c for c in clusters if c is not None]
+    print(f"\nReused {reused} cached stories, enriched {len(clusters)} ({len(top_raw) - len(clusters)} failed)")
     print(f"[{_ts()}] Enrichment done")
 
     # ── Step 5: Save + write to DynamoDB ────────────────────────

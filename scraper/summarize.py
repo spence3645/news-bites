@@ -106,8 +106,4 @@ def enrich(titles: list[str], texts: list[str]) -> dict:
         }
     except Exception:
         print(f"  Warning: failed to parse enrich response: {raw[:100]}")
-        return {
-            "mergedTitle": titles[0],
-            "mergedSummary": "",
-            "category": "World",
-        }
+        return None

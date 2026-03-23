@@ -3,6 +3,7 @@ Writes clustered stories to DynamoDB Stories table.
 """
 
 import os
+from datetime import datetime, timezone
 
 import boto3
 from boto3.dynamodb.conditions import Key
@@ -56,6 +57,7 @@ def write_stories(clusters: list[dict], date_str: str):
     print(f"\nWriting {len(clusters)} stories to DynamoDB ({TABLE_NAME})...")
 
     # Step 1: write new data — if this fails, old data is untouched
+    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with _table.batch_writer() as batch:
         for cluster in clusters:
             batch.put_item(Item={
@@ -66,6 +68,7 @@ def write_stories(clusters: list[dict], date_str: str):
                 "category": cluster["category"],
                 "sourceCount": cluster["sourceCount"],
                 "articles": cluster["articles"],
+                "updatedAt": updated_at,
             })
 
     print(f"  Wrote {len(clusters)} stories")
