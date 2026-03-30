@@ -93,6 +93,16 @@ import * as Notifications from 'expo-notifications';
 const categoryColor = (cat) => CATEGORY_COLORS[cat] || '#6B7280';
 const cleanSummary = (text = '') => text.replace(/^#+\s+[\w\s]+\n+/i, '').trim();
 
+function timeAgo(isoString) {
+  if (!isoString) return null;
+  const diff = Math.floor((Date.now() - new Date(isoString).getTime()) / 1000);
+  if (diff < 0) return 'Just now';
+  if (diff < 60) return `${diff}s ago`;
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+  return `${Math.floor(diff / 86400)}d ago`;
+}
+
 const AD_UNIT_ID = __DEV__
   ? TestIds.BANNER
   : 'ca-app-pub-4363944782565472/8131630949';
@@ -168,12 +178,13 @@ export default function App() {
   const [filterVisible, setFilterVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [error, setError] = useState(false);
+  const [sortBy, setSortBy] = useState('sources'); // 'sources' | 'latest'
 
   const t = THEMES[darkMode ? 'dark' : 'light'];
 
   const lastUpdated = stories.length > 0 ? stories[0].updatedAt : null;
   const lastUpdatedLabel = lastUpdated
-    ? new Date(lastUpdated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+    ? new Date(lastUpdated).toLocaleString('en-US', { hour: 'numeric', minute: '2-digit' })
     : null;
 
   const fetchStories = useCallback((isRefresh = false) => {
@@ -238,9 +249,14 @@ export default function App() {
     })
   ).current;
 
-  const filteredStories = selectedCategories.size === 0
+  const filteredStories = (selectedCategories.size === 0
     ? stories
-    : stories.filter((s) => selectedCategories.has(s.category));
+    : stories.filter((s) => selectedCategories.has(s.category))
+  ).slice().sort((a, b) =>
+    sortBy === 'latest'
+      ? new Date(b.mostRecentUpdate || 0) - new Date(a.mostRecentUpdate || 0)
+      : b.sourceCount - a.sourceCount
+  );
 
   const toggleCategory = (cat) => {
     setSelectedCategories((prev) => {
@@ -285,13 +301,18 @@ export default function App() {
           )}
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.sourcesScroll} contentContainerStyle={styles.sourcesScrollContent}>
-          {[...new Set(story.articles.map((a) => a.source))].map((source) => (
-            <View key={source} style={[styles.sourceChip, { backgroundColor: t.chipBg }]}>
-              <Text style={[styles.sourceChipText, { color: t.chipText }]}>{source}</Text>
-            </View>
-          ))}
-        </ScrollView>
+        <View style={styles.cardFooter}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.sourcesScroll} contentContainerStyle={styles.sourcesScrollContent}>
+            {[...new Set(story.articles.map((a) => a.source))].map((source) => (
+              <View key={source} style={[styles.sourceChip, { backgroundColor: t.chipBg }]}>
+                <Text style={[styles.sourceChipText, { color: t.chipText }]}>{source}</Text>
+              </View>
+            ))}
+          </ScrollView>
+          {story.mostRecentUpdate && (
+            <Text style={[styles.updatedAt, { color: t.textMuted }]}>{timeAgo(story.mostRecentUpdate)}</Text>
+          )}
+        </View>
       </TouchableOpacity>
     );
   }, [t]);
@@ -347,7 +368,7 @@ export default function App() {
       {/* Header */}
       <View style={[styles.header, { borderBottomColor: t.borderSubtle }]}>
         <View>
-          <Text style={[styles.headerTitle, { color: t.textPrimary }]}>News Bites</Text>
+          <Text style={[styles.headerTitle, { color: t.textPrimary }]}>One Bite News</Text>
           {lastUpdatedLabel && (
             <Text style={[styles.lastUpdated, { color: t.textMuted }]}>Updated {lastUpdatedLabel}</Text>
           )}
@@ -356,6 +377,20 @@ export default function App() {
           <TouchableOpacity onPress={() => setDarkMode((d) => !d)} style={[styles.themeToggle, { backgroundColor: t.surfaceAlt }]}>
             <Text style={styles.themeToggleIcon}>{darkMode ? '☀︎' : '☽'}</Text>
           </TouchableOpacity>
+          <View style={[styles.sortToggle, { backgroundColor: t.surfaceAlt }]}>
+            <TouchableOpacity
+              onPress={() => setSortBy('sources')}
+              style={[styles.sortOption, sortBy === 'sources' && { backgroundColor: t.filterBtnActiveBg }]}
+            >
+              <Text style={[styles.sortOptionText, { color: sortBy === 'sources' ? t.filterBtnActiveText : t.filterBtnText }]}>Top</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSortBy('latest')}
+              style={[styles.sortOption, sortBy === 'latest' && { backgroundColor: t.filterBtnActiveBg }]}
+            >
+              <Text style={[styles.sortOptionText, { color: sortBy === 'latest' ? t.filterBtnActiveText : t.filterBtnText }]}>Latest</Text>
+            </TouchableOpacity>
+          </View>
           <TouchableOpacity
             onPress={() => setFilterVisible(true)}
             style={[styles.filterButton, { backgroundColor: filterActive ? t.filterBtnActiveBg : t.filterBtnBg }]}
@@ -454,7 +489,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderBottomWidth: 1,
   },
-  headerTitle: { fontSize: 22, fontWeight: '700' },
+  headerTitle: { fontSize: 18, fontWeight: '700' },
   lastUpdated: { fontSize: 11, marginTop: 2 },
   headerActions: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   themeToggle: {
@@ -500,10 +535,15 @@ const styles = StyleSheet.create({
   cardBody: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
   cardTitle: { fontSize: 17, fontWeight: '700', lineHeight: 24 },
   cardThumb: { width: 64, height: 64, borderRadius: 8, flexShrink: 0 },
-  sourcesScroll: { marginTop: 2 },
+  cardFooter: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 2 },
+  sourcesScroll: { flex: 1 },
   sourcesScrollContent: { flexDirection: 'row', gap: 6, paddingRight: 4 },
   sourceChip: { borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3 },
   sourceChipText: { fontSize: 11, fontWeight: '500' },
+  updatedAt: { fontSize: 11, marginLeft: 8, flexShrink: 0 },
+  sortToggle: { flexDirection: 'row', borderRadius: 8, overflow: 'hidden' },
+  sortOption: { paddingHorizontal: 10, paddingVertical: 6 },
+  sortOptionText: { fontSize: 13, fontWeight: '600' },
   modalOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.3)',

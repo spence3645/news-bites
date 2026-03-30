@@ -290,6 +290,18 @@ def check_clusters(clusters: list[dict], top_n: int = 30):
             print(f"  ↳ weakest pair: [{arts[weak_i]['source']}] vs [{arts[weak_j]['source']}] = {cosine_similarity(arts[weak_i]['_vector'], arts[weak_j]['_vector']):.2f}")
 
 
+def _latest_published(articles: list[dict]) -> str:
+    """Return the most recent publishedAt across articles as an ISO string, or now if none."""
+    dates = [_parse_date(a.get("publishedAt")) for a in articles]
+    dates = [d for d in dates if d]
+    if not dates:
+        return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    latest = max(dates)
+    if not latest.tzinfo:
+        latest = latest.replace(tzinfo=timezone.utc)
+    return latest.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def enrich_cluster(cluster: dict) -> dict | None:
     """Single API call to generate title, summary, and category for a cluster."""
     articles = cluster["_articles"]
@@ -307,6 +319,7 @@ def enrich_cluster(cluster: dict) -> dict | None:
         "mergedTitle": enriched["mergedTitle"],
         "mergedSummary": enriched["mergedSummary"],
         "category": enriched["category"],
+        "mostRecentUpdate": _latest_published(articles),
         "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
     }
 
@@ -449,6 +462,7 @@ def main():
                     "mergedTitle": cached["mergedTitle"],
                     "mergedSummary": cached["mergedSummary"],
                     "category": cached["category"],
+                    "mostRecentUpdate": _latest_published(articles),
                     "articles": [{"source": a["source"], "url": a["url"], "imageUrl": a.get("imageUrl", "")} for a in articles],
                 }, True
         print(f"\n[{i + 1}/{len(top_raw)}] {articles[0]['title'][:65]}")

@@ -67,8 +67,9 @@ def write_stories(clusters: list[dict], date_str: str):
                 "mergedSummary": cluster["mergedSummary"],
                 "category": cluster["category"],
                 "sourceCount": cluster["sourceCount"],
-                "articles": cluster["articles"],
                 "updatedAt": updated_at,
+                "mostRecentUpdate": cluster.get("mostRecentUpdate", ""),
+                "articles": cluster["articles"],
             })
 
     print(f"  Wrote {len(clusters)} stories")
