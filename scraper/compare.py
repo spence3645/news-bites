@@ -43,10 +43,11 @@ from utils import get_today
 def parse_args():
     parser = argparse.ArgumentParser(description="Cross-source story comparison")
     parser.add_argument("--limit", type=int, default=None, help="Articles per source (default: all)")
-    parser.add_argument("--threshold", type=float, default=0.75, help="Similarity threshold 0-1 (default: 0.75)")
+    parser.add_argument("--threshold", type=float, default=0.72, help="Similarity threshold 0-1 (default: 0.72)")
     parser.add_argument("--from-cache", action="store_true", help="Load saved articles from output/, skip scraping and summarization")
     parser.add_argument("--date", type=str, default=None, help="Override date for cache lookup and DynamoDB writes (YYYY-MM-DD)")
     parser.add_argument("--check", action="store_true", help="Show similarity stats for each cluster without enriching")
+    parser.add_argument("--dropped", action="store_true", help="Show cross-source pairs below threshold to evaluate cutoff")
     return parser.parse_args()
 
 
@@ -237,6 +238,29 @@ def find_clusters(articles: list[dict], threshold: float, min_pair: float = 0.55
     return clusters
 
 
+def check_dropped(articles: list[dict], threshold: float, min_score: float = 0.50):
+    """Show all cross-source pairs below threshold but above min_score, sorted by score desc."""
+    vectors = np.array([a["_vector"] for a in articles], dtype=np.float32)
+    sim_matrix = vectors @ vectors.T
+
+    pairs = []
+    rows, cols = np.where((sim_matrix >= min_score) & (sim_matrix < threshold))
+    for i, j in zip(rows.tolist(), cols.tolist()):
+        if i >= j:
+            continue
+        if articles[i]["source"] == articles[j]["source"]:
+            continue
+        pairs.append((float(sim_matrix[i, j]), articles[i], articles[j]))
+
+    pairs.sort(key=lambda x: x[0], reverse=True)
+    print(f"\n{'═' * 60}")
+    print(f"DROPPED PAIRS (score {min_score:.2f}–{threshold:.2f}), {len(pairs)} total")
+    print(f"{'═' * 60}")
+    for score, a, b in pairs:
+        print(f"\n  {score:.3f}  [{a['source']}] {a['title'][:60]}")
+        print(f"         [{b['source']}] {b['title'][:60]}")
+
+
 def check_clusters(clusters: list[dict], top_n: int = 30):
     """Print similarity stats for each cluster to spot weak groupings."""
     print(f"\n{'═' * 60}")
@@ -376,9 +400,12 @@ def main():
     top_raw = [c for c in raw_clusters if c["sourceCount"] >= 2][:100]
     print(f"[{_ts()}] Clustering done — {len(top_raw)} multi-source clusters")
 
-    # ── Step 3b: Check mode — print stats and exit ───────────────
+    # ── Step 3b: Check/dropped mode — print stats and exit ───────
     if args.check:
         check_clusters(raw_clusters)
+        return
+    if args.dropped:
+        check_dropped(cluster_articles, args.threshold)
         return
 
     # ── Step 4: Load existing stories, build URL → story lookup ──
