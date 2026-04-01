@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "News Bites",
-    "slug": "news-bites",
+    "name": "One Bite News",
+    "slug": "one-bite-news",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.matthewspencer.newsbites"
+      "bundleIdentifier": "com.matthewspencer.onebitenews"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,12 +22,13 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.matthewspencer.newsbites"
+      "package": "com.matthewspencer.onebitenews"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      "expo-notifications",
       [
         "react-native-google-mobile-ads",
         {

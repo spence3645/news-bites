@@ -1,5 +1,5 @@
 """
-News Bites — Cross-Source Story Comparison
+One Bite News — Cross-Source Story Comparison
 
 Orchestrates the full pipeline per source, saves intermediate files, then
 finds articles covering the same story across different outlets.

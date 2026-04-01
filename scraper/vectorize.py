@@ -1,5 +1,5 @@
 """
-News Bites — Vectorization
+One Bite News — Vectorization
 
 Loads a summaries JSON, generates an embedding for each article,
 and writes the results to a vectors JSON for testing.

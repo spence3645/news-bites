@@ -1,5 +1,5 @@
 """
-News Bites — Summarization Pipeline
+One Bite News — Summarization Pipeline
 
 Loads a scraped articles JSON, sends each article to Claude Haiku for
 summarization, and writes the results to a separate JSON file.

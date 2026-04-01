@@ -23,7 +23,7 @@ RSS_FEEDS = [
 ]
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; NewsBitesBot/1.0; +https://newsbites.app)",
+    "User-Agent": "Mozilla/5.0 (compatible; OneBiteNewsBot/1.0; +https://onebitenews.app)",
     "Accept-Language": "en-US,en;q=0.9",
 }
 

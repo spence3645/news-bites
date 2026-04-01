@@ -90,6 +90,14 @@ const THEMES = {
 import { BannerAd, BannerAdSize, TestIds, MobileAds, InterstitialAd, AdEventType, AdsConsent, AdsConsentStatus } from 'react-native-google-mobile-ads';
 import * as Notifications from 'expo-notifications';
 
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: true,
+    shouldSetBadge: false,
+  }),
+});
+
 const categoryColor = (cat) => CATEGORY_COLORS[cat] || '#6B7280';
 const cleanSummary = (text = '') => text.replace(/^#+\s+[\w\s]+\n+/i, '').trim();
 
@@ -138,8 +146,8 @@ async function scheduleNotifications() {
 
   for (const { hour, minute, body } of messages) {
     await Notifications.scheduleNotificationAsync({
-      content: { title: "News Bites", body },
-      trigger: { hour, minute, repeats: true },
+      content: { title: "One Bite News", body },
+      trigger: { type: Notifications.SchedulableTriggerInputTypes.CALENDAR, hour, minute, repeats: true },
     });
   }
 }

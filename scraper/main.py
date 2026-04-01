@@ -1,5 +1,5 @@
 """
-News Bites — Scraper
+One Bite News — Scraper
 Usage:
     python main.py                        # scrape all sources, save to output/articles.json
     python main.py --limit 10             # cap at 10 articles per source
@@ -59,7 +59,7 @@ SOURCES = {
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="News Bites scraper")
+    parser = argparse.ArgumentParser(description="One Bite News scraper")
     parser.add_argument("--limit", type=int, default=None, help="Max articles per source")
     parser.add_argument("--source", choices=list(SOURCES.keys()), help="Run a single source")
     parser.add_argument("--out", type=str, default=None, help="Output file path (default: output/YYYY-MM-DD.json)")
