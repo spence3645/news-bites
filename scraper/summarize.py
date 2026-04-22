@@ -33,15 +33,16 @@ _rate_limiter = _RateLimiter(50)
 
 
 def _call_with_backoff(fn):
-    """Call fn(), retrying on 429 with exponential backoff."""
+    """Call fn(), retrying on 429 and 500 errors with exponential backoff."""
     delay = 10
     for attempt in range(5):
         try:
             return fn()
-        except anthropic.RateLimitError:
+        except (anthropic.RateLimitError, anthropic.InternalServerError) as e:
             if attempt == 4:
                 raise
-            print(f"  Rate limit hit — retrying in {delay}s...")
+            label = "Rate limit" if isinstance(e, anthropic.RateLimitError) else "Server error"
+            print(f"  {label} — retrying in {delay}s...")
             time.sleep(delay)
             delay *= 2
 
