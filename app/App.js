@@ -131,31 +131,23 @@ const AdBanner = () => (
   </View>
 );
 
-async function scheduleNotifications() {
+async function registerForPushNotifications() {
   const { status } = await Notifications.requestPermissionsAsync();
   if (status !== 'granted') return;
 
-  await Notifications.cancelAllScheduledNotificationsAsync();
+  const { data: token } = await Notifications.getDevicePushTokenAsync();
 
-  const messages = [
-    { hour: 7,  minute: 0,  body: "Good morning! Sit back, relax, and catch up on today's top stories." },
-    { hour: 12, minute: 0,  body: "Happy lunch! Take a few minutes to catch up on the latest news." },
-    { hour: 18, minute: 0,  body: "Good evening! A lot has happened today, here's your chance to catch up." },
-    { hour: 22, minute: 0,  body: "Winding down for the night? Check in on today's final stories before you sleep." },
-  ];
-
-  for (const { hour, minute, body } of messages) {
-    await Notifications.scheduleNotificationAsync({
-      content: { title: "One Bite News", body },
-      trigger: { type: Notifications.SchedulableTriggerInputTypes.CALENDAR, hour, minute, repeats: true },
-    });
-  }
+  await fetch('https://uhhmb07qi5.execute-api.us-east-1.amazonaws.com/register-token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ token }),
+  }).catch(() => {}); // non-critical — silently ignore network errors
 }
 
 export default function App() {
   useEffect(() => {
     MobileAds().initialize();
-    scheduleNotifications();
+    registerForPushNotifications();
     AdsConsent.requestInfoUpdate().then(async (info) => {
       if (info.isConsentFormAvailable && info.status === AdsConsentStatus.REQUIRED) {
         await AdsConsent.showForm();
